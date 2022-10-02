@@ -1,0 +1,35 @@
+using System;
+
+namespace Mono.Unix.Native
+{
+	[Map]
+	[CLSCompliant(false)]
+	public enum UnixSocketProtocol
+	{
+		IPPROTO_ICMP = 1,
+		IPPROTO_IGMP = 2,
+		IPPROTO_IPIP = 4,
+		IPPROTO_TCP = 6,
+		IPPROTO_EGP = 8,
+		IPPROTO_PUP = 12,
+		IPPROTO_UDP = 17,
+		IPPROTO_IDP = 22,
+		IPPROTO_TP = 29,
+		IPPROTO_DCCP = 33,
+		IPPROTO_IPV6 = 41,
+		IPPROTO_RSVP = 46,
+		IPPROTO_GRE = 47,
+		IPPROTO_ESP = 50,
+		IPPROTO_AH = 51,
+		IPPROTO_MTP = 92,
+		IPPROTO_BEETPH = 94,
+		IPPROTO_ENCAP = 98,
+		IPPROTO_PIM = 103,
+		IPPROTO_COMP = 108,
+		IPPROTO_SCTP = 132,
+		IPPROTO_UDPLITE = 136,
+		IPPROTO_RAW = 255,
+		IPPROTO_IP = 1024,
+		SOL_SOCKET = 2048
+	}
+}

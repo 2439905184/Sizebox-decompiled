@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1898691826399099
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4544358055043761}
+  - component: {fileID: 114777880679440463}
+  m_Layer: 0
+  m_Name: CloudController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4544358055043761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898691826399099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114777880679440463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898691826399099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c50dce0f68cb444aa99b95ac3b8cb1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SimpleClouds: {fileID: 0}
+  CloudHubPreFab: {fileID: 1158253558480116, guid: 6457210502bb5b94ca0a9a52d391b7d4, type: 2}
+  UseSimpleClouds: 0
+  CloudAltitude: 9.9
+  Overcast: 0
+  CloudSpawnAreaRandomX: 30
+  CloudSpawnAreaRandomZ: 30
+  CloudSpawnAreaRandomHieght: 6
+  CloudSpawnAreaRandomFillPercent: 45
+  CloudSpawnAreaRandomReductionFactorPerLayer: 15
+  CloudScale: 400
+  CloudHubs: []
+  CloudGtsActivationRange: 20000
+  CloudPlayerActivationRange: 20000
+  CloudSleepingByCoroutine: 1
+  ActiveShadows: 1
+  CloudPhysicsWakeSleepPerFrame: 100
+  ChangedPhysicsStates: 0
+  CloudShadowsCheckedPerFrame: 100
+  CheckedShadows: 0
+  CloudLODAdjustmentsPerFrame: 100
+  SetLODs: 0
+  CloudPhysics: 1
+  CloudCompression: 1
+  DisableCloudElastisity: 0
+  LimitCloudpush: 0
+  CloudElastisityFactor: 0.02
+  CloudElastisityPositionTolerence: 10
+  CloudElastisityPositionMaxLimit: 1
+  LockCloudTileElevation: 1
+  LockCloudTileRotation: 0
+  GtsAirComressionFactor: 4
+  CloudLODEnabled: 1
+  MidDistanceLOD: 15000
+  SkyFill: 10
+  CloudHubSpawnRange: 0
+  BeingInShadowRangeOverridesPhysics: 1
+  PlayerProximityCanActivateShadowChecks: 1
+  UseTestVisuals: 0
+  Populate: 0
+  WipeClouds: 0

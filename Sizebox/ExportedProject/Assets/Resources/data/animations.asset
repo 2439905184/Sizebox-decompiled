@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e409e2b15803fd4cb410aa70bb52e67, type: 3}
+  m_Name: Animations
+  m_EditorClassIdentifier:
+  animations:
+  - Air Squat
+  - Back Squat
+  - Bicep Curl
+  - Burpree
+  - Combo Hits One-One
+  - Combo When Surrounded
+  - Crawl
+  - Crossarms
+  - Crouch
+  - Crouch Idle
+  - Down
+  - Drinking
+  - Embar
+  - Embar 2
+  - Front Raises
+  - Getting Up
+  - Grab Front High
+  - Grab Low Front
+  - Greet
+  - Greet 2
+  - Greet 3
+  - Greet 4
+  - Greet 5
+  - Hands Together
+  - Idle
+  - Idle 2
+  - Jump
+  - Jump 2
+  - Jump Low
+  - Jump Up
+  - Kick
+  - Kicking
+  - Kiss
+  - Legs Up
+  - Lie Down
+  - Lie Down 2
+  - Lie Down 3
+  - Lie Down 4
+  - Look Down
+  - lookdown_00
+  - Massage Breasts 1
+  - Massage Breasts 2
+  - Massage Breasts 3
+  - Massage Breasts 4
+  - Massage Breasts 5
+  - Masturbation 1
+  - Open Legs 1
+  - Open Legs 2
+  - Pick Up
+  - Pushup
+  - Refuse
+  - Salute
+  - Scratch Head
+  - Sit
+  - Sit 2
+  - Sit 3
+  - Sit 4
+  - Sit 5
+  - Sit 6
+  - Sit 7
+  - Sitting Down
+  - Sitting Up
+  - Situps
+  - Spink Kick
+  - Thinking
+  - Try To Catch Up
+  - Victory
+  - Wait Gesture
+  - Wait Strech Arms
+  - Wait Torso Twist
+  - Walk

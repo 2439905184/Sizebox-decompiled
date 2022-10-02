@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f926d951ea2ac248bf8561e509487da, type: 3}
+  m_Name: MasterSliderSet
+  m_EditorClassIdentifier:
+  sets:
+  - name: General
+    sliders:
+    - {fileID: 11400000, guid: 10f465775b4c99c43a6f90f49c9f02cd, type: 2}
+    - {fileID: 11400000, guid: 32bb0b2e7c3b0684e8613ba01db9fcad, type: 2}
+    - {fileID: 11400000, guid: 062efc1b2f041614f817f802131eb99c, type: 2}
+    - {fileID: 11400000, guid: 8e193f1f251af234aacf71018dece1c1, type: 2}
+    - {fileID: 11400000, guid: f2587712be17a684d995a794c0aac2c8, type: 2}
+    - {fileID: 11400000, guid: 446ff163b430e804bad999014d337fe3, type: 2}
+    - {fileID: 11400000, guid: 62319cd0cb053f24a9901c7209b6d0a5, type: 2}
+    - {fileID: 11400000, guid: ff65c79f96766da4f9dfa388a7cd2615, type: 2}
+    - {fileID: 11400000, guid: 81d18988cc35ff54ab8408316d49292b, type: 2}
+    - {fileID: 11400000, guid: 19a0cee10f7209b4e92cacfadf30879e, type: 2}
+    - {fileID: 11400000, guid: c8182c2d53ef3bb499b1c5848ec2831f, type: 2}
+    - {fileID: 11400000, guid: cd36c5c0a6028934b92bbb37083625f6, type: 2}
+  - name: Head
+    sliders:
+    - {fileID: 11400000, guid: 10f465775b4c99c43a6f90f49c9f02cd, type: 2}
+    - {fileID: 11400000, guid: e35661e2b6e8a114f909e814bf0566a4, type: 2}
+    - {fileID: 11400000, guid: a60f9fc850783d342b0d1e5dddf29309, type: 2}
+    - {fileID: 11400000, guid: 343fa8248e986cb489f829e76fd7938f, type: 2}
+  - name: Shoulders
+    sliders:
+    - {fileID: 11400000, guid: 32bb0b2e7c3b0684e8613ba01db9fcad, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 56c5a1bf379ae3d4f89f76e7fc4a29c0, type: 2}
+    - {fileID: 11400000, guid: 412bb074b62e1464caf68d6a25bda039, type: 2}
+    - {fileID: 11400000, guid: 4665cd8c247d4c846a2deef976e5d942, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: cdaf01197e4899241896f0f82e27e06d, type: 2}
+    - {fileID: 11400000, guid: 96e1dc508a0da0242a853e17e6d0cc3b, type: 2}
+    - {fileID: 11400000, guid: 23c8d9465d1270d49ade39859d34db82, type: 2}
+  - name: Arms
+    sliders:
+    - {fileID: 11400000, guid: 062efc1b2f041614f817f802131eb99c, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 9810e5cf938abff4e95bd42dada8cbbd, type: 2}
+    - {fileID: 11400000, guid: f7238e7436927414da622c3dc7d5c39b, type: 2}
+    - {fileID: 11400000, guid: b8239d5df723a864d8fcee2d4d337e4a, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 2f7a345ab9e36b640a1b569942d3b921, type: 2}
+    - {fileID: 11400000, guid: f13c00cfeaf79554887bb0aee31cefc5, type: 2}
+    - {fileID: 11400000, guid: 8e193f1f251af234aacf71018dece1c1, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: c016eca3655fcf64e8ce49dc395e9db1, type: 2}
+    - {fileID: 11400000, guid: 102af58c84664454bb2787122a8d9db0, type: 2}
+    - {fileID: 11400000, guid: 4ab3c139791f7b9498b696142deef35d, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 1ad745eab61f8454696043774cb2da38, type: 2}
+    - {fileID: 11400000, guid: 777f589023c54f94392a237a5148e4b4, type: 2}
+    - {fileID: 11400000, guid: f947ac07f01f61647b1d9e79a94ffa05, type: 2}
+  - name: Breasts
+    sliders:
+    - {fileID: 11400000, guid: f2587712be17a684d995a794c0aac2c8, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 3a8c0ddc6064afe4f9024eebdc47549f, type: 2}
+    - {fileID: 11400000, guid: b095d6e1f352fed4e9754da8dd23feab, type: 2}
+    - {fileID: 11400000, guid: b07b64b3bfb61224ea0b2b30a5aeb5c9, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 674e58b33e3c06144b560ae3c985c61a, type: 2}
+    - {fileID: 11400000, guid: 3361ab9b97430c4419edc3456021fe7b, type: 2}
+    - {fileID: 11400000, guid: dc17528f2e0c18442905562e27f327d6, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 30cb97b1ed27ece409b248f2d203d83b, type: 2}
+    - {fileID: 11400000, guid: 6ff0a644bc419324ea11c5e1790b38d1, type: 2}
+    - {fileID: 11400000, guid: a21b0d8d564ba6a46828c2c863067a2d, type: 2}
+  - name: Torso
+    sliders:
+    - {fileID: 11400000, guid: 446ff163b430e804bad999014d337fe3, type: 2}
+    - {fileID: 11400000, guid: 62319cd0cb053f24a9901c7209b6d0a5, type: 2}
+    - {fileID: 11400000, guid: ff65c79f96766da4f9dfa388a7cd2615, type: 2}
+    - {fileID: 11400000, guid: e3cc67585b76ffc4d8bd107571996ca6, type: 2}
+    - {fileID: 11400000, guid: 942d982764f2ccd47806d6f7f1411e89, type: 2}
+    - {fileID: 11400000, guid: 0ddf5c9913f820d4ebc23b88eaf9bc71, type: 2}
+    - {fileID: 11400000, guid: 4b2f74f4290961d479e5e89a61b8ad51, type: 2}
+    - {fileID: 11400000, guid: fd22f7404c7862f40abbdee30f4c2bdb, type: 2}
+  - name: Hips
+    sliders:
+    - {fileID: 11400000, guid: 81d18988cc35ff54ab8408316d49292b, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 19a0cee10f7209b4e92cacfadf30879e, type: 2}
+    - {fileID: 11400000, guid: dcf8401cb9c52364ca8d822f0254fad5, type: 2}
+    - {fileID: 11400000, guid: 25cfbec30f11a254e90f23688aff0772, type: 2}
+    - {fileID: 11400000, guid: 52bfde7490a1c564d92880c4b0a59fbe, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 88294d8e064453d4b9900450e4eb3641, type: 2}
+  - name: Legs
+    sliders:
+    - {fileID: 11400000, guid: c8182c2d53ef3bb499b1c5848ec2831f, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 03f124e5e8d40aa4ea75a4cd3528e2a6, type: 2}
+    - {fileID: 11400000, guid: 406f1f7a0660c67498e29428f587d075, type: 2}
+    - {fileID: 11400000, guid: d306987bd2fa3b346b89b043556b89df, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: a3fc68381c99151429398d566f32a42a, type: 2}
+    - {fileID: 11400000, guid: 8fa975db91fb7614d9d789fa92234a8c, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: b67e2add3cd1c1f4b93b77504a5e6ac6, type: 2}
+    - {fileID: 11400000, guid: 4406f1c3c816b374399ffa3c63567403, type: 2}
+    - {fileID: 11400000, guid: c069497bad129294ba19ed0cead89e2b, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: f30dda03174e721458396d43115d60c0, type: 2}
+    - {fileID: 11400000, guid: 18a1b7305d033624d9ce423ccae7f1ce, type: 2}
+    - {fileID: 11400000, guid: aef452975d574f246870711d4f75fb93, type: 2}
+    - {fileID: 0}
+  - name: Feet
+    sliders:
+    - {fileID: 11400000, guid: cd36c5c0a6028934b92bbb37083625f6, type: 2}
+    - {fileID: 11400000, guid: 32903537430140444947a49c079c58ca, type: 2}
+    - {fileID: 11400000, guid: 653245abb0b3bbf4a9f7ecebaf18ce38, type: 2}
+    - {fileID: 11400000, guid: f0579ccebd29ef6419e1168a755f16b7, type: 2}

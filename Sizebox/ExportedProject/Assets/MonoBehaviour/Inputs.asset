@@ -1,0 +1,1834 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e8616f4b4f3674fb1998822b340838, type: 3}
+  m_Name: Inputs
+  m_EditorClassIdentifier:
+  m_ActionMaps:
+  - m_Name: EditMode
+    m_Id: ab6cd5a8-04ed-4939-96ec-f48fcbdf8ee9
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Move Camera
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 6bdfc79e-d9a0-48c3-b843-80e63c59d711
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Move Camera Up/Down
+      m_Type: 0
+      m_ExpectedControlType: Button
+      m_Id: 22a4d0c2-3853-4c5c-aacf-34fda7445aa3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Move Faster
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 51ab6ee4-d4a7-4a9c-882f-1aa91e9c13ad
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Change Camera Mode
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7dcd9899-59f4-47c8-a9ce-df126f537f29
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Look
+      m_Type: 0
+      m_ExpectedControlType:
+      m_Id: c3af7e49-5a3c-40f2-b2ba-1d0c1f67ae66
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Zoom
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 32dcd59d-63de-461e-8f25-75ec96df369b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Pose
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 479c27e7-7cfd-402a-b354-877e3c97d77b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Object
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: ddd555d8-df99-49b4-b9e4-60a25d404b27
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Move Object
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 6ca2997b-4387-42a0-9a74-3cb8c54fc0b9
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Micro
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: c03128f4-7c9a-44f9-bb28-f6fa00205501
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Macro
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: eda31bbc-557d-4cd6-9393-c60077cd8949
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Go to Selection
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 110a29fe-851d-44f7-b52e-899c9388482d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Delete Selection
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7085de9b-9512-4077-a224-dcb7eb194b2d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    m_Bindings:
+    - m_Name: Primary
+      m_Id: c6a47569-f233-4379-8566-3d5ac40cee86
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 3d29da28-bb0e-4ab4-8f48-81170a160561
+      m_Path: '<Keyboard>/w'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 3b6aec1e-00cd-487e-90fe-858befc653ee
+      m_Path: '<Keyboard>/s'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 17b54a5f-e2fb-49cd-84bc-bb9d9929d46e
+      m_Path: '<Keyboard>/a'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 1c4ab8a4-4c99-4bd6-a014-96b9740e2601
+      m_Path: '<Keyboard>/d'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: 9e3d6487-b27b-4d1a-8fee-373b108e5bbe
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera
+      m_Flags: 4
+    - m_Name: up
+      m_Id: a9bc771a-b7e9-4152-9b7e-23586ad098bb
+      m_Path: '<Gamepad>/leftStick/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name: down
+      m_Id: b77e04f5-65ae-4a25-8062-860fccd4e74e
+      m_Path: '<Gamepad>/leftStick/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name: left
+      m_Id: b3582579-dc51-48e6-995e-9bb742a9ed04
+      m_Path: '<Gamepad>/leftStick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 6a14c7a5-0eab-4895-9ec2-428d9bd36245
+      m_Path: '<Gamepad>/leftStick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Camera
+      m_Flags: 8
+    - m_Name:
+      m_Id: ce044b93-9e1c-4db4-a52e-e8a1694f527c
+      m_Path: '<Keyboard>/leftShift'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move Faster
+      m_Flags: 0
+    - m_Name:
+      m_Id: ff5e2657-0156-4f99-adc0-dbe345ec8301
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Faster
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1ef014c5-f2cf-49cb-8e24-2c922ba45128
+      m_Path: '<Keyboard>/delete'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Delete Selection
+      m_Flags: 0
+    - m_Name:
+      m_Id: a96763ae-a127-4dd0-a63b-82a897176a60
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Delete Selection
+      m_Flags: 0
+    - m_Name:
+      m_Id: ec8c7a2a-8e57-416c-848c-5e61e07b200d
+      m_Path: '<Keyboard>/f'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Go to Selection
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4eace4f4-6ce3-4781-a08e-d7da5dc5f8c1
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Go to Selection
+      m_Flags: 0
+    - m_Name:
+      m_Id: b7bbcdd0-766f-4155-b2ad-f7a493c03dd3
+      m_Path: '<Keyboard>/g'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro
+      m_Flags: 0
+    - m_Name:
+      m_Id: 887a20a9-7290-4139-b5f6-0c8cf30ac41f
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9da2b392-6b5a-4ba9-9351-2e12502210aa
+      m_Path: '<Keyboard>/n'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Micro
+      m_Flags: 0
+    - m_Name:
+      m_Id: e93ab7a6-f8ef-44d9-b12e-b61ea9a9c46b
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Micro
+      m_Flags: 0
+    - m_Name:
+      m_Id: 76efc63e-4954-4f43-b2aa-f10db1009e89
+      m_Path: '<Keyboard>/m'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Object
+      m_Flags: 0
+    - m_Name:
+      m_Id: 270a883e-e6de-4bd5-832b-c70dbcae9047
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Object
+      m_Flags: 0
+    - m_Name:
+      m_Id: e0bbec44-b0f6-486e-ae23-c16370a151a9
+      m_Path: '<Keyboard>/o'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Object
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8659866b-e8ca-4bd3-9bdc-3c1fcf81b851
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Object
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0a3c6121-4dca-4dde-990d-b3ae7b4f8706
+      m_Path: '<Keyboard>/p'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Pose
+      m_Flags: 0
+    - m_Name:
+      m_Id: 37fd0bbd-47e4-4dfb-9d32-c0e7644a6c3a
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Pose
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: 0a75d096-1258-45f9-9822-c087af5d0256
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera Up/Down
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 6be275cc-1070-4299-bd4b-bd282cd64681
+      m_Path: '<Keyboard>/q'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera Up/Down
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: b86ee986-54e3-45e0-b1dd-1a33bc83da4b
+      m_Path: '<Keyboard>/e'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera Up/Down
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: 8a11bba4-5963-43f1-a4eb-d20aae64bdb5
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera Up/Down
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 5cf23d8f-0ddb-4e95-8414-2eeac7bca0b3
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera Up/Down
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 6ed51bc1-97a5-4b9a-a73a-a698a60c7c44
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move Camera Up/Down
+      m_Flags: 8
+    - m_Name:
+      m_Id: 2d89df76-459d-4e65-86d1-f7d300877411
+      m_Path: '<Keyboard>/v'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Change Camera Mode
+      m_Flags: 0
+    - m_Name:
+      m_Id: b8ed5da4-d2a0-4205-ac0d-880bea7db6bd
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Camera Mode
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: e2a7478c-c803-459d-af39-6235707eb5ad
+      m_Path: 1DAxis(minValue=-0.1,maxValue=0.1)
+      m_Interactions:
+      m_Processors: Clamp(min=-0.1,max=0.1)
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: e45608e7-5485-4113-a674-392ff6778f08
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 000dd4ae-cf2a-456e-8a22-b5301fae2e5d
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: 98f344b5-a823-4edd-aa7f-112e1c9787ab
+      m_Path: 1DAxis(minValue=-0.1,maxValue=0.1)
+      m_Interactions:
+      m_Processors: Clamp(min=-0.1,max=0.1)
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 6ed1a8ce-0ac5-4636-bae4-0dfbadc8b405
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: a77f278a-aefe-40c9-a1aa-88ada7a8fe43
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name:
+      m_Id: 4b76fca5-3356-4da2-8b01-56b7c736011b
+      m_Path: '<Mouse>/scroll/y'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: 0f8bf8a0-176c-4815-af2f-a2c03bbb32a3
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 69748089-873d-4115-af44-678b0dd09c96
+      m_Path: '<Gamepad>/rightStick/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 68f51cc9-d536-4095-8ead-60a27e20b885
+      m_Path: '<Gamepad>/rightStick/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 57f4bf0e-7edc-4474-832b-bbb8e30f58a0
+      m_Path: '<Gamepad>/rightStick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 297de944-d64b-4698-a7da-4276308f2191
+      m_Path: '<Gamepad>/rightStick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: 5594b482-4151-46ad-8a30-eb21e35ea4df
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 7e892c00-b36e-4b1f-906c-1b9bea62c6a8
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 9cf8d529-12f8-4953-9ddc-394cfd452155
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: left
+      m_Id: e23a9f8b-a5f4-45e4-9eda-5231596d1548
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 46adc970-f2c2-4163-b8a2-f99559b88be0
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name:
+      m_Id: 2c655903-5672-40ba-a55a-8f0ae3ed4e2c
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Look
+      m_Flags: 0
+    - m_Name:
+      m_Id: 923d4b39-db1a-4aa1-8f5e-6e94c8d962b9
+      m_Path: '<Touchscreen>/delta'
+      m_Interactions:
+      m_Processors: InvertVector2
+      m_Groups: KBM
+      m_Action: Look
+      m_Flags: 0
+  - m_Name: Player
+    m_Id: 12073173-23ea-4888-9c32-036ce1b1e86a
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 5436bc99-bf9a-424c-a5af-af309eb0632f
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Sprint
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: f59d3b44-40ef-4dff-bf7b-e9e148a4bf10
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Change Camera
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 100c4c85-18ff-4b1d-9d7c-aadbf0529019
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Change Size
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 63d58c36-063d-4ce5-b86e-bd8fb7c01b6d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Look
+      m_Type: 0
+      m_ExpectedControlType:
+      m_Id: 27eaf064-304e-49c9-b94d-4b7dff50c286
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Zoom
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: 7dc3676c-6f7b-4521-927a-68761c8aeea3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Look Back
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: b94cbb3d-5b0d-4210-bdb0-c08d3bd5bac7
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Auto Walk
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 1e347342-f4d5-4bef-85bb-66fcff14500c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    m_Bindings:
+    - m_Name: Primary
+      m_Id: 7c5ac118-a4f1-48ba-b59a-b4794e6a8999
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: d9af1bb5-ed81-4b6d-85fb-396b04c16db9
+      m_Path: '<Keyboard>/w'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 51dff5bf-576b-4552-8ce4-41af810b6fd8
+      m_Path: '<Keyboard>/s'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: fae50e6d-a5d0-4ec4-b1d2-7ea36b422ec1
+      m_Path: '<Keyboard>/a'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 64cc5f07-a1a9-4ff3-ad8f-7dbf292ece3e
+      m_Path: '<Keyboard>/d'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: caf069f3-7ad7-4922-8206-3d328f7a7241
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 46816443-54e9-4711-ad32-d92905b5e703
+      m_Path: '<Gamepad>/leftStick/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: f9967b2d-82f3-4002-b209-fbfcebd97a56
+      m_Path: '<Gamepad>/leftStick/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 7c267b25-be3f-4b9d-95b4-6a5f4688a189
+      m_Path: '<Gamepad>/leftStick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: d525bdfe-d19b-454d-aa77-0b5d4de9256d
+      m_Path: '<Gamepad>/leftStick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Move
+      m_Flags: 8
+    - m_Name:
+      m_Id: dbc164fa-d9d0-4695-9e2c-d7d56425c4d5
+      m_Path: '<Keyboard>/leftShift'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Sprint
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1af3a0a3-7d5a-4081-a884-4123c47c9134
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Sprint
+      m_Flags: 0
+    - m_Name:
+      m_Id: 71d99310-b753-4482-b318-44e309bf4fdf
+      m_Path: '<Keyboard>/v'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Change Camera
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3524157b-8afd-4ed7-91a9-edf490e1a185
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Camera
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: 01bef77f-0e13-4be2-867b-ffe32b3f0d74
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Size
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: a8cb7cea-be23-44da-bdfe-8334cff48046
+      m_Path: '<Keyboard>/z'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Size
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 8d4d1308-ba25-4fec-ac33-69689a5f3547
+      m_Path: '<Keyboard>/x'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Size
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: c33fdc5c-1f15-4b42-a9f2-79e71cf6bd85
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Size
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: c64ce426-9f2a-47a7-afff-c3a5d9b6c50f
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Size
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 30e3fa13-dda7-4598-b3c5-eb56dea2cc7d
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Change Size
+      m_Flags: 8
+    - m_Name: Primary
+      m_Id: 381ebaf0-94c4-435f-a87d-67cb1258bb35
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 4
+    - m_Name: up
+      m_Id: ba032a9c-74bd-4891-ad1b-f3a976e7bbaa
+      m_Path: '<Gamepad>/rightStick/up'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 3c863e3a-e756-44ad-9528-b36c3be70d04
+      m_Path: '<Gamepad>/rightStick/down'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 3b08b1a0-36cc-498e-8d36-53c3935fae64
+      m_Path: '<Gamepad>/rightStick/left'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: right
+      m_Id: dd7e2142-992c-439b-9d69-080ee22a89a5
+      m_Path: '<Gamepad>/rightStick/right'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: 788cf94b-056a-40a8-b09b-cae2a91c66a8
+      m_Path: 2DVector(mode=2)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 6d3c7d5d-b1f0-42f8-b2eb-22f91250bb0b
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 097a6eb7-e8cc-4c0f-b80c-7216bcd925df
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: left
+      m_Id: ee8f6eea-4f80-48d5-abfb-0bc0ac850352
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 1efd5e03-f924-442c-baef-e921f00388ac
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look
+      m_Flags: 8
+    - m_Name:
+      m_Id: 8540e8e9-f26e-4ee0-820a-3cd06ecd7673
+      m_Path: '<Mouse>/delta'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Look
+      m_Flags: 0
+    - m_Name:
+      m_Id: a5673fba-eb18-45b8-ae7e-0c83f89ead10
+      m_Path: '<Touchscreen>/delta'
+      m_Interactions:
+      m_Processors: InvertVector2
+      m_Groups: KBM
+      m_Action: Look
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: d30b99c2-106d-42f6-9911-08acbb06be54
+      m_Path: 1DAxis(minValue=-0.1,maxValue=0.1)
+      m_Interactions:
+      m_Processors: Clamp(min=-0.1,max=0.1)
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: b870a697-b9dd-4d38-a7c2-7ecc8b4a60bc
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: a4230871-cfc9-4f3c-a0d9-d6847e39d904
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: a4838848-2f18-47ac-9bef-9d572f76c15f
+      m_Path: 1DAxis(minValue=-0.1,maxValue=0.1)
+      m_Interactions:
+      m_Processors: Clamp(min=-0.1,max=0.1)
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 9dba74ea-90a8-427b-8441-6fbb4770335a
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 01504ad1-a77f-455d-92b0-4fcd0d336150
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 8
+    - m_Name:
+      m_Id: e354db56-0a11-4c81-bf27-4d702448aedb
+      m_Path: '<Mouse>/scroll/y'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Zoom
+      m_Flags: 0
+    - m_Name:
+      m_Id: 8015ee0b-9ed5-4bcb-865c-6c8551cf5b24
+      m_Path: '<Mouse>/middleButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look Back
+      m_Flags: 0
+    - m_Name:
+      m_Id: 53e1323a-5401-4c7b-a5a9-6505b56ab750
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Look Back
+      m_Flags: 0
+    - m_Name:
+      m_Id: 072c3cc2-a13a-4c6f-97ba-dbffc7cb10b6
+      m_Path: '<Keyboard>/rightShift'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Auto Walk
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1d1f9c88-2b1c-4da1-bc1a-4c2f2b158912
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Auto Walk
+      m_Flags: 0
+  - m_Name: Macro
+    m_Id: 9f18619a-9c68-4201-8b02-63e1f9fcce97
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Stomp
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: dd4c2f3c-f5ab-416a-b2f9-2e0c3a0f650f
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Cancel
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: f7ea651c-a0ed-4cae-b8ca-d6d60afc30f3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    m_Bindings:
+    - m_Name:
+      m_Id: ee13cfce-e2dd-4d29-9355-cb15f39efa97
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Stomp
+      m_Flags: 0
+    - m_Name:
+      m_Id: 499bdc4a-f853-4b84-bb85-13889a7d24d0
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Stomp
+      m_Flags: 0
+    - m_Name:
+      m_Id: 75850fcd-b8c7-4fad-9b19-46b700cb542e
+      m_Path: '<Mouse>/rightButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Cancel
+      m_Flags: 0
+    - m_Name:
+      m_Id: c0f8df4f-9343-4952-8057-0974fcdaa89f
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Cancel
+      m_Flags: 0
+  - m_Name: Micro
+    m_Id: 052640b5-6ea6-421f-b2c5-32851ff06f3d
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Crouch
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 59bc8c52-9155-4def-a83a-44f012368b33
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Fly
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: bf853018-bbdf-4e31-8080-7075bba29797
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Interact
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 98e420bb-435b-4779-8b55-5addb837888e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Jump
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: e4592b68-963b-4df2-80da-6cc2064f6db3
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Walk
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 1eb87da8-3257-4211-85fb-12594d9a0a87
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Weapon Aim
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: fb338a9b-24a0-491f-9139-55bd96b03d30
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Weapon Fire
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 703d4cc1-c718-4068-9370-d55d68d9c1c0
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Weapon Mode
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: baa45ecd-9493-4390-92bb-93ca25cbd8fb
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Weapon Range
+      m_Type: 0
+      m_ExpectedControlType:
+      m_Id: f84e4c7e-de8f-483e-8e19-973c0698f96e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Super Fly
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: cfd52d35-9d99-4a7b-bd75-8fba49d4c0a8
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Flying Punch
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7e4f1f4b-d745-4eb0-a00f-29a46dfcbcfa
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Fly Down
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 05661b31-8fad-4756-afc8-8a6b6c15568b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    m_Bindings:
+    - m_Name:
+      m_Id: 423a1d17-3021-4a25-8d9e-042970199775
+      m_Path: '<Keyboard>/space'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Jump
+      m_Flags: 0
+    - m_Name:
+      m_Id: e467d851-836f-4f6c-8055-e58d96940a5a
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Gamepad;KBM
+      m_Action: Jump
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1d180e00-eccb-46ea-b299-e3a84e2df627
+      m_Path: '<Keyboard>/e'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Fly
+      m_Flags: 0
+    - m_Name:
+      m_Id: a004bab3-47c8-4766-b406-8506eaea7dc6
+      m_Path: '<Gamepad>/rightStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Fly
+      m_Flags: 0
+    - m_Name:
+      m_Id: c722ff2c-3a56-4bbc-8f7a-149accf84e65
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Walk
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6cb67a00-409c-418e-8161-3de486a9e618
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Walk
+      m_Flags: 0
+    - m_Name:
+      m_Id: 09b6ccca-8fc8-4c84-a4f4-81d28a33ec06
+      m_Path: '<Mouse>/rightButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Aim
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3c5875a3-9663-4031-a2f4-74b1e23e8aad
+      m_Path: '<Gamepad>/rightTriggerButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Gamepad
+      m_Action: Weapon Aim
+      m_Flags: 0
+    - m_Name:
+      m_Id: 59e82532-939c-4965-9cae-e32174793487
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Weapon Fire
+      m_Flags: 0
+    - m_Name:
+      m_Id: da007472-ab2e-4b5a-8192-1d39ec4bb2cd
+      m_Path: '<Gamepad>/rightTrigger'
+      m_Interactions:
+      m_Processors:
+      m_Groups: Gamepad
+      m_Action: Weapon Fire
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: cc02a9d2-b1dc-42f0-a39a-8be9e5aa815d
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Range
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 35a270a2-9e36-41ed-8e44-bf597e9ca8b6
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Range
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 56377fe4-8176-447d-b2e8-916ce7085e54
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Range
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: b708fea2-0989-4b14-954b-267bb226c5ec
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Range
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 8384a610-298f-4021-9a2c-97da391c8738
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Range
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: c7a4b3d1-5c7d-4dbb-9228-2150509ddf79
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Range
+      m_Flags: 8
+    - m_Name:
+      m_Id: 213b689d-ddd0-465e-86e3-2802bd27657b
+      m_Path: '<Mouse>/scroll/y'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Range
+      m_Flags: 0
+    - m_Name:
+      m_Id: e7921f2a-e2a7-4ea7-a3a1-7113f5da26d2
+      m_Path: '<Mouse>/middleButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Mode
+      m_Flags: 0
+    - m_Name:
+      m_Id: 23d00ed2-a011-4491-bae1-9ca7794355ee
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Weapon Mode
+      m_Flags: 0
+    - m_Name:
+      m_Id: f98037d3-01aa-4a23-a010-2ae6fd257d17
+      m_Path: '<Keyboard>/leftAlt'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Super Fly
+      m_Flags: 0
+    - m_Name:
+      m_Id: 0fcfe928-be6f-446e-b070-9004412a89c8
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Super Fly
+      m_Flags: 0
+    - m_Name:
+      m_Id: c540a99e-8170-4a33-9ef7-5fcdb8064113
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Flying Punch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7796b490-4fd6-4ca2-a07c-091d9023056a
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Flying Punch
+      m_Flags: 0
+    - m_Name:
+      m_Id: c66ec358-c97e-4fee-8687-4e929ec4f849
+      m_Path: '<Keyboard>/c'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Crouch
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4c025540-9968-42d6-bbd0-d454b6511908
+      m_Path: '<Gamepad>/leftStickPress'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Crouch
+      m_Flags: 0
+    - m_Name:
+      m_Id: c426d288-a50c-40db-8820-cc0f667565fc
+      m_Path: '<Keyboard>/leftCtrl'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Fly Down
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4480f0ee-2107-4d58-a1a1-6900e06c9a52
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Fly Down
+      m_Flags: 0
+    - m_Name:
+      m_Id: 46dcc00d-aa6b-4b38-b70d-feae4481512c
+      m_Path: '<Keyboard>/enter'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Interact
+      m_Flags: 0
+    - m_Name:
+      m_Id: 38953e79-2688-43c2-8d20-4ee129b5f171
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Interact
+      m_Flags: 0
+  - m_Name: Misc
+    m_Id: 2432e284-a936-4a49-a8b8-e96dc6dc1984
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Alternative Pause
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: fdec07bd-23d3-49ed-bdbb-4a20bbab8d5c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Bullet Time (Hold)
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 82bafbf7-c47d-498c-b2a4-e03944fc4a5b
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Bullet Time (Toggle)
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 6d7fdeac-733d-4a8f-a318-209a6b8dcf40
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Console
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: db19b532-abbd-4f3a-a961-5191be10a561
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Freeze Macros
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: fc4389a4-f9d0-403f-b857-863c178f3a13
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Macro Speed
+      m_Type: 0
+      m_ExpectedControlType:
+      m_Id: 4a38b4bd-50a7-4c92-8fab-b027227ebeee
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Reset Macro Speed
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: d552428c-9a75-43d8-a7eb-2a620f09a34d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Screenshot
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 2e4508f0-4700-4f94-ac74-592b3e23245c
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Switch Mode
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 22f9f1e5-4c76-4f6d-ad44-1bb2de735d0d
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Spawn Micro
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: c5de175b-26c8-4334-a252-7db1fe1ed16a
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    m_Bindings:
+    - m_Name:
+      m_Id: e63dec0f-8068-4daa-b729-539f18eb6018
+      m_Path: '<Keyboard>/printScreen'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Screenshot
+      m_Flags: 0
+    - m_Name:
+      m_Id: 4825e614-a649-407d-93fd-89bf9e89ef10
+      m_Path: '<Keyboard>/f11'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Screenshot
+      m_Flags: 0
+    - m_Name:
+      m_Id: dfdf9107-bed9-49b8-89cb-143c474a5d04
+      m_Path: '<Keyboard>/backquote'
+      m_Interactions:
+      m_Processors:
+      m_Groups: KBM
+      m_Action: Console
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3e2beb39-bc90-4aee-9816-2686e4177f3b
+      m_Path: '<Keyboard>/f12'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Console
+      m_Flags: 0
+    - m_Name:
+      m_Id: 6171ed87-6403-4b67-9abb-867b777d680b
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Alternative Pause
+      m_Flags: 0
+    - m_Name:
+      m_Id: 3f62a3bd-28db-4935-bcfe-1788840efb6e
+      m_Path: '<Gamepad>/start'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Alternative Pause
+      m_Flags: 0
+    - m_Name:
+      m_Id: 1eb9b571-b2ce-47bc-bcab-f8d7af6f894c
+      m_Path: '<Keyboard>/tab'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Switch Mode
+      m_Flags: 0
+    - m_Name:
+      m_Id: 85a01211-870a-4b14-9f74-791a8a3e97d9
+      m_Path: '<Gamepad>/select'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Switch Mode
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: 97185e50-b10b-4a3b-8552-6632b7d6ec0f
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro Speed
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: b54a35a7-e339-4949-95d6-af25355f5cae
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro Speed
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: daf012b5-5290-46cc-b17b-bfe65af8113e
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro Speed
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: 11bb9dcc-7110-4348-abfe-e18bb2e1c645
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro Speed
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 5bf08ba0-a5fd-4cc6-9310-c3b737f30283
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro Speed
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 7fe973cc-c90b-48a7-9bee-afd517320076
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Macro Speed
+      m_Flags: 8
+    - m_Name:
+      m_Id: 4c3de300-cfae-4ce9-afcb-e0519babbde1
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Reset Macro Speed
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2b79de88-e9b9-48bd-a489-726bbb172912
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Reset Macro Speed
+      m_Flags: 0
+    - m_Name:
+      m_Id: d0502dae-c757-4eba-8a76-1f1d0c096080
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Freeze Macros
+      m_Flags: 0
+    - m_Name:
+      m_Id: ac529f2a-38d6-429c-8c1d-c5edf42a7b21
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Freeze Macros
+      m_Flags: 0
+    - m_Name:
+      m_Id: 74dea218-a22b-4036-912d-5cbf18cd7465
+      m_Path: '<Keyboard>/b'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Bullet Time (Toggle)
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2b913a10-cade-42c3-b8b1-22aee9520abd
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Bullet Time (Toggle)
+      m_Flags: 0
+    - m_Name:
+      m_Id: 147001ab-8c1a-4c0f-8fbd-8b8bbda520b5
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Bullet Time (Hold)
+      m_Flags: 0
+    - m_Name:
+      m_Id: 9851fd94-1e0c-4d89-88c4-5855baa26490
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Bullet Time (Hold)
+      m_Flags: 0
+    - m_Name: Primary
+      m_Id: 59f20b00-34c8-48f3-ad14-f344e7275893
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Spawn Micro
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 48c33ba3-b408-4310-9467-2655e3067cd6
+      m_Path: '<Keyboard>/o'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Spawn Micro
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 42acc9e7-b1a0-492a-8c92-c00f50dec5c5
+      m_Path: '<Keyboard>/p'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Spawn Micro
+      m_Flags: 8
+    - m_Name: Secondary
+      m_Id: c8b65b00-f7b6-4259-8459-2c1858235264
+      m_Path: 1DAxis
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Spawn Micro
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: b75ef52d-d1e6-4b8a-8fdc-68107096e5d5
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Spawn Micro
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 630ea48f-1879-4785-9712-baf63b9944bc
+      m_Path:
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Spawn Micro
+      m_Flags: 8
+  - m_Name: Interface
+    m_Id: 79455639-cdeb-4800-bf6c-c7979ad1be79
+    m_Asset: {fileID: 11400000}
+    m_Actions:
+    - m_Name: Move
+      m_Type: 0
+      m_ExpectedControlType: Button
+      m_Id: 533ede30-61db-457e-91a2-726c1d81e62e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Select
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: c19d0b4e-1a4f-402b-bbce-19933805c00f
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Back
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 547a2036-e3e9-4568-bee0-e0e59b1832ce
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Scroll
+      m_Type: 0
+      m_ExpectedControlType:
+      m_Id: 1c5c1ae4-cb48-4df2-bda9-dcd88cf5fb8e
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Pointer
+      m_Type: 0
+      m_ExpectedControlType:
+      m_Id: e0f382f4-eb2a-4355-bc3f-0e0abac627df
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Left Click
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 87589013-2ce3-47ad-9fcb-a50a991abff7
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Right Click
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: b79cd49a-bebd-478a-b5f2-65c5fe413c85
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Middle Click
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 5fab4bf1-ac21-4cf9-8546-53ad18ccf182
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Position
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 7f8e767a-7ff4-48ca-9586-2b986f53321a
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    - m_Name: Orientation
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 47190629-ac9f-4cd4-917e-2592840fe345
+      m_Processors:
+      m_Interactions:
+      m_SingletonActionBindings: []
+    m_Bindings:
+    - m_Name: Keyboard Arrows
+      m_Id: d0ed8de8-de5a-44d9-845c-7cd5f31bc23e
+      m_Path: 2DVector(mode=1)
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 5e6577b0-03b4-45dc-8b0c-4d53c40d19d0
+      m_Path: '<Keyboard>/upArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: e70e4446-cb08-410d-aa8f-f7d65e5ca118
+      m_Path: '<Keyboard>/downArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 1ee7e6a6-26e5-44e2-8275-a1f5f28f7a68
+      m_Path: '<Keyboard>/leftArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: bd08efbc-955c-4fbf-8775-67ac2ef815f3
+      m_Path: '<Keyboard>/rightArrow'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 8
+    - m_Name:
+      m_Id: d800cf85-5d9c-403d-94ca-cb1f55e18847
+      m_Path: '<Gamepad>/dpad'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Move
+      m_Flags: 0
+    - m_Name:
+      m_Id: 27a143b5-a183-40b9-9875-47e4c7b174b2
+      m_Path: '<Gamepad>/buttonSouth'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Select
+      m_Flags: 0
+    - m_Name:
+      m_Id: 7aaa5209-c837-445c-827e-4818d871f2b6
+      m_Path: '<Keyboard>/enter'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Select
+      m_Flags: 0
+    - m_Name:
+      m_Id: d6256c1f-acf2-46ae-937e-46723b118d2f
+      m_Path: '<Gamepad>/buttonEast'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Back
+      m_Flags: 0
+    - m_Name:
+      m_Id: 33e69f62-7ec6-4587-a265-7714c01124c1
+      m_Path: '<Keyboard>/backspace'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Back
+      m_Flags: 0
+    - m_Name:
+      m_Id: 2b8750f5-9a04-4186-84dc-c65b00d10445
+      m_Path: '<Mouse>/scroll'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Scroll
+      m_Flags: 0
+    - m_Name:
+      m_Id: cb848daa-8086-4b53-a93d-aefe951c022b
+      m_Path: '<Mouse>/position'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Pointer
+      m_Flags: 0
+    - m_Name:
+      m_Id: 59b87576-6393-4279-8bdb-e5235a282f0f
+      m_Path: '<Mouse>/leftButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Left Click
+      m_Flags: 0
+    - m_Name:
+      m_Id: 679ccddd-7830-4a5a-bbc4-2fcd630ab4ac
+      m_Path: '<Mouse>/rightButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Right Click
+      m_Flags: 0
+    - m_Name:
+      m_Id: 58924c78-4097-489e-a16c-4c82e8b44068
+      m_Path: '<Mouse>/middleButton'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Middle Click
+      m_Flags: 0
+    - m_Name:
+      m_Id: b009834f-d6b7-407c-a882-08c5f58f1c9d
+      m_Path: '<TrackedDevice>/devicePosition'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Position
+      m_Flags: 0
+    - m_Name:
+      m_Id: a83badc5-4c0b-482b-a87b-ddc8332cef24
+      m_Path: '<TrackedDevice>/deviceRotation'
+      m_Interactions:
+      m_Processors:
+      m_Groups:
+      m_Action: Orientation
+      m_Flags: 0
+  - m_Name: Lua
+    m_Id: f6910b02-8c5c-41cb-8803-6a17772b1e71
+    m_Asset: {fileID: 11400000}
+    m_Actions: []
+    m_Bindings: []
+  m_ControlSchemes:
+  - m_Name: KBM
+    m_BindingGroup: KBM
+    m_DeviceRequirements: []
+  - m_Name: Gamepad
+    m_BindingGroup: Gamepad
+    m_DeviceRequirements: []

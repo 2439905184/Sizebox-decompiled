@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5a2f27e95f5e3499f60e89fb193d4e, type: 3}
+  m_Name: DefaultAssets
+  m_EditorClassIdentifier:
+  giantessAssets: []
+  maleMicroAssets: []
+  femaleMicroAssets: []
+  objectAssets:
+  - assetType: 2
+    assetName: City
+    bundleName:
+    bundlePath:
+    asset: {fileID: 1424841933238605, guid: 3cdf68001d5325742843f3f7c25474ff, type: 2}
+    sprite: {fileID: 21300000, guid: 76095378d9c5ef643a07881d7abdc405, type: 2}
+  - assetType: 2
+    assetName: Grass
+    bundleName:
+    bundlePath:
+    asset: {fileID: 1788292620036985, guid: 4bb542a0f2701c1478a4e4b86f5ca5ac, type: 2}
+    sprite: {fileID: 21300000, guid: a2a0a92a50eb128418d6682acbaee010, type: 2}
+  - assetType: 2
+    assetName: Muscle Car
+    bundleName:
+    bundlePath:
+    asset: {fileID: 1902035756225901, guid: d46ce2f042ca4d543b5a82ec686e8a3f, type: 2}
+    sprite: {fileID: 21300000, guid: 6a1be50ac81f5ff4c88118f1b07c3541, type: 2}
+  - assetType: 2
+    assetName: Sleek Car
+    bundleName:
+    bundlePath:
+    asset: {fileID: 1244659997920550, guid: 769e44d9d3b364f44a6276765ed7f4e7, type: 2}
+    sprite: {fileID: 21300000, guid: 24559c0ec26981945bf6529860db87ac, type: 2}
+  - assetType: 2
+    assetName: Jet Plane
+    bundleName:
+    bundlePath:
+    asset: {fileID: 1080964904890013, guid: cf2a3254279d90d43bfba9ef96e5c1be, type: 2}
+    sprite: {fileID: 21300000, guid: 8f19acfcab5ce514984774c79cbf6e89, type: 2}

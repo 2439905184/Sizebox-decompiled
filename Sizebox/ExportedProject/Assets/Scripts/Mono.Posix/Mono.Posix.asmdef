@@ -1,0 +1,5 @@
+{
+  "name": "Mono.Posix",
+  "references": [],
+  "allowUnsafeCode": true
+}

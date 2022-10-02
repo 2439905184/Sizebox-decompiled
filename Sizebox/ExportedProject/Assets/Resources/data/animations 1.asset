@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e409e2b15803fd4cb410aa70bb52e67, type: 3}
+  m_Name: Animations 1
+  m_EditorClassIdentifier:
+  animations:
+  - air squat
+  - back squat
+  - bicep curl
+  - burpree
+  - combo hits one-one
+  - combo when surrounded
+  - crawl_10
+  - crossarms_00
+  - crouchidle_10
+  - down_21
+  - drinking
+  - embar_00
+  - embar_01
+  - front raises
+  - getting up
+  - greet_04
+  - Idle2Crouch_Neutral2Crouch2Idle
+  - IdleGrab_FrontHigh
+  - IdleGrab_LowFront
+  - IdleGrab_Neutral
+  - JUMP00
+  - JUMP01
+  - kicking
+  - liedown_03
+  - liedown_05
+  - lookdown_00
+  - lookdown_00
+  - pickup_10
+  - pose_01
+  - pose_02
+  - pose_03
+  - POSE16
+  - punch_21
+  - pushup
+  - refuse_01
+  - salute
+  - scratchhead_00
+  - sit_02
+  - sit_03
+  - sit_05
+  - sitting down
+  - sitting up
+  - situps
+  - special_20
+  - special_21
+  - thinking_00
+  - WAIT01
+  - WAIT02
+  - WAIT03
+  - WAIT04
+  - walk_00
+  - WALK00_F
+  - WIN00

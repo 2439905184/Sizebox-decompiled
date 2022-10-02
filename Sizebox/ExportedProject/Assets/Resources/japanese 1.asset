@@ -1,0 +1,633 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7300e5572a4b1bb4aa8acd3af2349cb7, type: 3}
+  m_Name: japanese 1
+  m_EditorClassIdentifier:
+  translation:
+  - english: Wachu Eyes Horizontal
+    japanese: はちゅ目横潰れ
+  - english: Breast Expantion
+    japanese: BE
+  - english: A
+    japanese: あ
+  - english: I
+    japanese: い
+  - english: U
+    japanese: う
+  - english: E
+    japanese: え
+  - english: O
+    japanese: お
+  - english:
+    japanese: □
+  - english: Niko
+    japanese: にこ
+  - english: Nika
+    japanese: ニカッ
+  - english:
+    japanese: ω
+  - english:
+    japanese: ω□
+  - english: Ee
+    japanese: えー
+  - english: Grin
+    japanese: にやり
+  - english:
+    japanese: ∧
+  - english:
+    japanese: ▲
+  - english: A 2
+    japanese: あ２
+  - english: N
+    japanese: ん
+  - english: Waa
+    japanese: わー
+  - english: Shinati
+    japanese: シナティ
+  - english: Straigh Line
+    japanese: 一文字
+  - english:
+    japanese: ３
+  - english: Blink
+    japanese: まばたき
+  - english: Smile
+    japanese: 笑い
+  - english: Wink
+    japanese: ウィンク
+  - english: Wink 2
+    japanese: ウィンク２
+  - english: Right Wink
+    japanese: ウィンク右
+  - english: Right Wink 2
+    japanese: ｳｨﾝｸ２右
+  - english: Ha
+    japanese: はぅ
+  - english: Calm Down
+    japanese: なごみ
+  - english: Surprise
+    japanese: びっくり
+  - english: Disgusted Eyes
+    japanese: じと目
+  - english: What
+    japanese: なぬ！
+  - english: Increase Lower Eyelid
+    japanese: 下瞼上げ
+  - english: Serious
+    japanese: 真面目
+  - english: Worried
+    japanese: 困る
+  - english: Grin
+    japanese: にこり
+  - english: Angry
+    japanese: 怒り
+  - english: Eight
+    japanese: 八
+  - english: Up
+    japanese: 上
+  - english: Down
+    japanese: 下
+  - english:
+    japanese: ↑↓
+  - english:
+    japanese: ↓↑
+  - english: Front
+    japanese: 前
+  - english: Tooth Interior
+    japanese: 歯奥
+  - english: Kocchi Minna
+    japanese: ｺｯﾁﾐﾝﾅ
+  - english: Small Pupil
+    japanese: 瞳小
+  - english: White of the Eyes
+    japanese: 白目
+  - english: Cheek Line
+    japanese: 頬線
+  - english: Shy 1
+    japanese: 照れ１
+  - english: Shy 2
+    japanese: 照れ２
+  - english: Line of Vision
+    japanese: 顔線
+  - english: Pale
+    japanese: 青ざめ
+  - english: Tear
+    japanese: 涙
+  - english: Eye Light →
+    japanese: 目光→
+  - english: Eye Bright
+    japanese: 目光消
+  - english: Scratch Face
+    japanese: キズ_顔
+  - english: Scrach Body
+    japanese: キズ_体頂
+  - english: Scratch Body
+    japanese: キズ_体材
+  - english: Scratch Body
+    japanese: キズ_体
+  - english: Worried Eye
+    japanese: 目困
+  - english: HI reverse
+    japanese: HI逆
+  - english:
+    japanese: HIoff
+  - english: Tehe
+    japanese: てへ
+  - english: Aan
+    japanese: あ～ん
+  - english: Edge
+    japanese: 小口
+  - english: Left Small Pupil
+    japanese: 瞳小L
+  - english: Right Small Pupil
+    japanese: 瞳小R
+  - english:
+    japanese: hiL2
+  - english:
+    japanese: hiR2
+  - english:
+    japanese: hioffL
+  - english:
+    japanese: hioffR
+  - english: Nose Line
+    japanese: 鼻線
+  - english: Cheek
+    japanese: 頬
+  - english: Tooth ↓
+    japanese: 歯↓
+  - english: Increase Eyelashes
+    japanese: 睫増
+  - english: Niko 2
+    japanese: にこ2
+  - english: Niko 3
+    japanese: にこ3
+  - english: Bee
+    japanese: べー
+  - english: Wink
+    japanese: ウインク
+  - english: Right Wink
+    japanese: ウインク右
+  - english: Narrow Eyes
+    japanese: 目細める
+  - english: Angry
+    japanese: 怒る
+  - english: Eyebrow
+    japanese: 眉変形
+  - english: Tehe Eyebrow
+    japanese: てへ眉
+  - english: Worried 2
+    japanese: 困る２
+  - english: Right Wink 3
+    japanese: ｳｨﾝｸ３右
+  - english: Wink 3
+    japanese: ウィンク３
+  - english: Smile 2
+    japanese: 笑い２
+  - english: Smile
+    japanese: 微笑み
+  - english: Star No Highlight Eyes
+    japanese: 星目＋目光消し
+  - english: Star Eyes
+    japanese: 星目
+  - english: Reduce Mouth Corner
+    japanese: 口角下げ
+  - english: Increase Mouth Corner
+    japanese: 口角上げ
+  - english:
+    japanese: 3
+  - english: Chu
+    japanese: ちゅ
+  - english: Decrease Eye Light
+    japanese: 目光下
+  - english:
+    japanese: ////
+  - english: Wide Tongue
+    japanese: べろ厚
+  - english: Thin Tongue
+    japanese: べろ細
+  - english: Long Tongue
+    japanese: べろ長
+  - english: Ligth Tongue
+    japanese: べろ薄
+  - english: No Tattoo
+    japanese: タトゥーなし
+  - english: Shy
+    japanese: 照れ
+  - english: No Eye Light
+    japanese: 目光消し
+  - english: No Bag
+    japanese: バッグ消し
+  - english: No Gloves
+    japanese: グローブ消し
+  - english: No Clothes
+    japanese: ■服消し
+  - english: Swimsuit
+    japanese: ■水着
+  - english: Underwear
+    japanese: ■下着
+  - english: Underwear bdef
+    japanese: ■下着_bdef
+  - english: Luminiscense
+    japanese: 発光
+  - english: A 2
+    japanese: あ2
+  - english: A 3
+    japanese: あ3
+  - english: A 4
+    japanese: あ4
+  - english: I 2
+    japanese: い2
+  - english:
+    japanese: ∧2
+  - english: Pukuu
+    japanese: ぷくー
+  - english: Angry Eyes
+    japanese: 怒り目
+  - english: Tongue Front
+    japanese: 舌前
+  - english: Tongue Up
+    japanese: 舌上
+  - english: Lower Tooth
+    japanese: 歯下下
+  - english: No Lower Tooth
+    japanese: 歯下なし
+  - english: Upper Tooth
+    japanese: 歯上上
+  - english: No Upper Tooth
+    japanese: 歯上なし
+  - english: No Lower Eyelashes
+    japanese: 下睫毛なし
+  - english: Worried 2
+    japanese: 困る2
+  - english: Upper Right Eyebrow
+    japanese: 右眉上
+  - english: Upper Left Eyebrow
+    japanese: 左眉上
+  - english: Grin 2
+    japanese: にこり2
+  - english: Small Left Eye
+    japanese: 左目縮小
+  - english: Small Right Eye
+    japanese: 右目縮小
+  - english: No Eye Highlight
+    japanese: 目HL消し
+  - english: Blush
+    japanese: ほお赤
+  - english: Open Vagina
+    japanese: ├　<（i）>
+  - english: Nipples
+    japanese: └　乳首
+  - english: Crisp
+    japanese: ｷﾘｯ
+  - english: Wachu Eyes
+    japanese: はちゅ目
+  - english: Wachu Eyes Vertical
+    japanese: はちゅ目縦潰れ
+  - english: Wa
+    japanese: ワ
+  - english: Grin 2
+    japanese: にやり２
+  - english: Grin
+    japanese: にっこり
+  - english: Tongue
+    japanese: ぺろっ
+  - english: Tehe Tongue
+    japanese: てへぺろ
+  - english: Tehe Tongue 2
+    japanese: てへぺろ２
+  - english: Spread Mouth
+    japanese: 口横広げ
+  - english: No Upper Teeth
+    japanese: 歯無し上
+  - english: No Lower Teeth
+    japanese: 歯無し下
+  - english: Border
+    japanese: 輪郭
+  - english: Hearth
+    japanese: はぁと
+  - english: Vertical Pupil
+    japanese: 瞳縦潰れ
+  - english: Reduce Light
+    japanese: 光下
+  - english: Terrifying
+    japanese: 恐ろしい子！
+  - english: Shock
+    japanese: がーん
+  - english: Left Eyebrows
+    japanese: 眉頭左
+  - english: Right Eyebrows
+    japanese: 眉頭右
+  - english: Small Breasts
+    japanese: みっぱい
+  - english: Glasses
+    japanese: メガネ
+  - english: Highlight
+    japanese: ハイライト消
+  - english: Reflections
+    japanese: 映り込み消
+  - english: Pale
+    japanese: 青ざめる
+  - english: Hair Shadow
+    japanese: 髪影消
+  - english: Shy
+    japanese: 照れ消
+  - english: Unused AL
+    japanese: AL未使用
+  - english: Naked
+    japanese: 裸
+  - english: Naked 2
+    japanese: 裸2
+  - english: Vagina
+    japanese: (i)
+  - english: Body Sphere
+    japanese: 体スフィア消し
+  - english: Pupil Circle
+    japanese: 瞳丸
+  - english: Pupil Width
+    japanese: 瞳横拡大
+  - english: I 2
+    japanese: い２
+  - english: E 2
+    japanese: え２
+  - english: O 2
+    japanese: お２
+  - english: Nipa
+    japanese: にぱ
+  - english: Be
+    japanese: べ
+  - english: Duck Mouth
+    japanese: アヒル口
+  - english: Mu
+    japanese: む
+  - english: Gununu
+    japanese: ぐぬぬ
+  - english: Blink
+    japanese: またたき
+  - english: Niya
+    japanese: にや
+  - english: Upper Left
+    japanese: 上左
+  - english: Upper Right
+    japanese: 上右
+  - english: Lower Left
+    japanese: 下左
+  - english: Lower Rigth
+    japanese: 下右
+  - english: Kiri
+    japanese: キリ
+  - english: Left Kiri
+    japanese: キリ左
+  - english: Right Kiri
+    japanese: キリ右
+  - english: Left Worried
+    japanese: 困る左
+  - english: Right Worried
+    japanese: 困る右
+  - english: Rigth Angry
+    japanese: 怒り右
+  - english: Left Angry
+    japanese: 怒り左
+  - english: Wides Eyes
+    japanese: 見開き
+  - english: Left Wide Eye
+    japanese: 見開き左
+  - english: Right Wide Eye
+    japanese: 見開き右
+  - english: Left Wink
+    japanese: ｳｨﾝｸ左
+  - english: Right Wink 2
+    japanese: ｳｲﾝｸ2右
+  - english: Left Wink 2
+    japanese: ｳｲﾝｸ2左
+  - english: Left Disgusted Eye
+    japanese: じと目左
+  - english: Right Disgusted Eye
+    japanese: じと目右
+  - english: Slant Eyes
+    japanese: つり目
+  - english: Inc. Left Low Eyelid
+    japanese: 下瞼上げ左
+  - english: Inc. Rigth Low Eyelid
+    japanese: 下瞼上げ右
+  - english: Dec Low Eyelid
+    japanese: 下瞼下げ
+  - english: Dec Left Low Eyelid
+    japanese: 下瞼下げ左
+  - english: Dec Right Low Eyelid
+    japanese: 下瞼下げ右
+  - english: Sag Lower Eyelid
+    japanese: 下瞼垂れ
+  - english: Sag Left Lower Eyelid
+    japanese: 下瞼垂れ左
+  - english: Sag Right Lower Eyelid
+    japanese: 下瞼垂れ右
+  - english: Highligth OFF
+    japanese: ハイライトOFF
+  - english: Big Highligth
+    japanese: ハイライト大
+  - english: Kocchi Minna
+    japanese: こっちみんな
+  - english: Big Pupil
+    japanese: 瞳孔大
+  - english: Small Pupils
+    japanese: 瞳孔小
+  - english: Left Big Tear
+    japanese: 涙左１大
+  - english: Rigth Big Tear
+    japanese: 涙右１大
+  - english: A!
+    japanese: あ！
+  - english: a
+    japanese: ぉ
+  - english: Wa!
+    japanese: わ！
+  - english:
+    japanese: Д
+  - english: Nyuf
+    japanese: にゅふ
+  - english: Niko
+    japanese: にこっ
+  - english: Ni
+    japanese: にぃ
+  - english: Left Ni
+    japanese: にぃ左
+  - english: Rigth Ni
+    japanese: にぃ右
+  - english: Mu
+    japanese: むっ
+  - english:
+    japanese: ｖ
+  - english: Left Pukuu
+    japanese: ぷくー左
+  - english: Right Pukuu
+    japanese: ぷくー右
+  - english: No Lower Teeth
+    japanese: 下歯無
+  - english:
+    japanese: →←
+  - english:
+    japanese: ←→
+  - english:
+    japanese: ↓
+  - english: ↓
+    japanese: ↓(歯舌込
+  - english:
+    japanese: ↑
+  - english: Blush
+    japanese: 頬染
+  - english: Blush 1 → 2
+    japanese: 頬染１→２
+  - english: Bend Tongue
+    japanese: 舌絞り
+  - english: White
+    japanese: 白
+  - english: Disguise
+    japanese: 迷彩
+  - english: Red
+    japanese: 赤
+  - english: Sag Prevention
+    japanese: 垂れ防止
+  - english: Large Breasts
+    japanese: 乳揺れ大
+  - english: Small Breasts
+    japanese: 乳揺れ小
+  - english: Chubby
+    japanese: むっちり
+  - english: Slender
+    japanese: ほっそり
+  - english: Toes
+    japanese: つまさき
+  - english: Right Toes
+    japanese: 右つまさき
+  - english: Left Toes
+    japanese: 左つまさき
+  - english: Milk
+    japanese: 魔乳
+  - english: Pointed
+    japanese: 先端
+  - english: Transmision OFF
+    japanese: 透過オフ
+  - english: Small Round
+    japanese: 輪小
+  - english: Big Round
+    japanese: 輪大
+  - english: Thick Arms
+    japanese: 腕太い
+  - english: Thick Waist
+    japanese: 太ウエスト
+  - english: Slender Waist
+    japanese: 細ウエスト
+  - english: Thick Hips
+    japanese: ヒップ太い
+  - english: Slender Hips
+    japanese: ヒップ細い
+  - english: Thick Thighs
+    japanese: 腿太い
+  - english: Slender Thighs
+    japanese: 腿細い
+  - english: Thick Legs
+    japanese: 脛太い
+  - english: Slender Legs
+    japanese: 脛細い
+  - english: Muscle
+    japanese: すじ
+  - english: Change Color
+    japanese: 色変一括
+  - english: Bright Color
+    japanese: 明変一括
+  - english: Red Color
+    japanese: 色変え赤
+  - english: Reg Light
+    japanese: 明度変赤
+  - english: Blue Color
+    japanese: 色変え青
+  - english: Blue Light
+    japanese: 明度変青
+  - english: Crotch Color
+    japanese: 色変え股
+  - english: Crotch Light
+    japanese: 明度変股
+  - english: Bra
+    japanese: ブラ収納
+  - english: Bra
+    japanese: ※ブラ透過
+  - english: Bra Top
+    japanese: ※ブラ頂点
+  - english: Bottom 1
+    japanese: ボト１収納
+  - english: Bottom 1
+    japanese: ※ボ１頂
+  - english: Bottom 2
+    japanese: ボト２出し
+  - english: Bottom 2
+    japanese: ボト２紐
+  - english: Koshihimo Up
+    japanese: 腰紐上隠
+  - english: Koshihimo Down
+    japanese: 腰紐下隠
+  - english: Sad
+    japanese: 悲しい
+  - english: Open Left
+    japanese: 左開き
+  - english: Open Right
+    japanese: 右開き
+  - english: Left Wink
+    japanese: ウィンク左
+  - english: Tongue
+    japanese: 舌出し
+  - english: Lick
+    japanese: 舌なめる
+  - english: Thin Tongue
+    japanese: 舌先細り
+  - english: Hat
+    japanese: 帽子
+  - english: Stretch Toes
+    japanese: 足指伸
+  - english: Join Breasts
+    japanese: 胸よせる
+  - english: Open Vagina
+    japanese: (<i>)
+  - english: Butt Line
+    japanese: 尻の線
+  - english: Small Breasts
+    japanese: 乳縮
+  - english: Big Breasts
+    japanese: 乳巨
+  - english: Chubby
+    japanese: ぽちゃ
+  - english: Hair
+    japanese: ヘアー
+  - english: Top Swimsuit
+    japanese: 水着上
+  - english: Bottom Swimsuit
+    japanese: 水着下
+  - english: Raise Swimwear
+    japanese: 水着上げ
+  - english: Shoes
+    japanese: 靴
+  - english: Ring
+    japanese: リング
+  - english: Cat Ears
+    japanese: ねこみみ
+  - english: Shock 2
+    japanese: がーん2
+  - english: Nosebleed Left
+    japanese: 鼻血左
+  - english: Nosebleed Right
+    japanese: 鼻血右
+  - english: Nose→Mucus
+    japanese: 血→鼻水
+  - english: Thin Chin
+    japanese: あご細
+  - english: Wide Chin
+    japanese: あご太
+  - english: Eyes Position
+    japanese: 目位置調整
