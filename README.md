@@ -6,4 +6,4 @@ This was decompiled using AssetRipper: https://github.com/AssetRipper/AssetRippe
 
 Built on: Unity 2019.4.29f1
 
-I'm not gonna tell you how to build the game, nor will I fix anything, this is only here for reference.
+I'm not gonna tell you how to build the game, this is only here for reference.
