@@ -1,0 +1,165 @@
+\hypertarget{class_lua_1_1_morphs}{}\section{Lua.\+Morphs Class Reference}
+\label{class_lua_1_1_morphs}\index{Lua.Morphs@{Lua.Morphs}}
+
+
+Component to control the morphs for giantess entities.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_lua_1_1_morphs_ad8c500e4a1dafbc13c39b762b860d49b}{Get\+Morph\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets the amount of morphs this entity has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lua_1_1_morphs_aef69d4abbbf5f61ff1a2d4fe50737b4b}{Find\+Morph\+Index}} (string morph\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the index of a morph by name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_morphs_a1fc28aa3c4e3aa18fd044f2420d9a32b}{Reset\+Morphs}} ()
+\begin{DoxyCompactList}\small\item\em Reset this entity\textquotesingle{}s morphs. Please try not to use this method if you plan on releasing the script you use it in. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_morphs_a223235569f3712c33c6975f26ec83549}{Has\+Morph}} (string morph\+Name)
+\begin{DoxyCompactList}\small\item\em Checks if this entity has a morph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_morphs_aefc93668891557c3c980857b3ee6aa0b}{Set\+Morph\+Value}} (string morph\+Name, float weight)
+\begin{DoxyCompactList}\small\item\em Will set the morph to the weight if the entity is a Giantess. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_morphs_a55a34c72668e0bd4ec86865163a89bd0}{Set\+Morph\+Value}} (int index, float weight)
+\begin{DoxyCompactList}\small\item\em Will set the morph to the weight if the entity is a Giantess. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_morphs_aa2abe4bd241377c0589799e32bb6fe55}{Get\+Morph\+Value}} (string morph\+Name)
+\begin{DoxyCompactList}\small\item\em Returns the weight of the morph. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_morphs_a18a50bb7510eb2c33f285a0cccbee9a4}{Get\+Morph\+Value}} (int morph\+Index)
+\begin{DoxyCompactList}\small\item\em Returns the weight of the morph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Component to control the morphs for giantess entities. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_morphs_aef69d4abbbf5f61ff1a2d4fe50737b4b}\label{class_lua_1_1_morphs_aef69d4abbbf5f61ff1a2d4fe50737b4b}} 
+\index{Lua.Morphs@{Lua.Morphs}!FindMorphIndex@{FindMorphIndex}}
+\index{FindMorphIndex@{FindMorphIndex}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{FindMorphIndex()}{FindMorphIndex()}}
+{\footnotesize\ttfamily int Lua.\+Morphs.\+Find\+Morph\+Index (\begin{DoxyParamCaption}\item[{string}]{morph\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets the index of a morph by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em morph\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The morph index (or -\/1 if it could not find the morph)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_morphs_ad8c500e4a1dafbc13c39b762b860d49b}\label{class_lua_1_1_morphs_ad8c500e4a1dafbc13c39b762b860d49b}} 
+\index{Lua.Morphs@{Lua.Morphs}!GetMorphCount@{GetMorphCount}}
+\index{GetMorphCount@{GetMorphCount}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{GetMorphCount()}{GetMorphCount()}}
+{\footnotesize\ttfamily int Lua.\+Morphs.\+Get\+Morph\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the amount of morphs this entity has. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_morphs_aa2abe4bd241377c0589799e32bb6fe55}\label{class_lua_1_1_morphs_aa2abe4bd241377c0589799e32bb6fe55}} 
+\index{Lua.Morphs@{Lua.Morphs}!GetMorphValue@{GetMorphValue}}
+\index{GetMorphValue@{GetMorphValue}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{GetMorphValue()}{GetMorphValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Lua.\+Morphs.\+Get\+Morph\+Value (\begin{DoxyParamCaption}\item[{string}]{morph\+Name }\end{DoxyParamCaption})}
+
+
+
+Returns the weight of the morph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em morph\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The weight of the specified morph
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_morphs_a18a50bb7510eb2c33f285a0cccbee9a4}\label{class_lua_1_1_morphs_a18a50bb7510eb2c33f285a0cccbee9a4}} 
+\index{Lua.Morphs@{Lua.Morphs}!GetMorphValue@{GetMorphValue}}
+\index{GetMorphValue@{GetMorphValue}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{GetMorphValue()}{GetMorphValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Lua.\+Morphs.\+Get\+Morph\+Value (\begin{DoxyParamCaption}\item[{int}]{morph\+Index }\end{DoxyParamCaption})}
+
+
+
+Returns the weight of the morph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em morph\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The weight of the specified morph
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_morphs_a223235569f3712c33c6975f26ec83549}\label{class_lua_1_1_morphs_a223235569f3712c33c6975f26ec83549}} 
+\index{Lua.Morphs@{Lua.Morphs}!HasMorph@{HasMorph}}
+\index{HasMorph@{HasMorph}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{HasMorph()}{HasMorph()}}
+{\footnotesize\ttfamily bool Lua.\+Morphs.\+Has\+Morph (\begin{DoxyParamCaption}\item[{string}]{morph\+Name }\end{DoxyParamCaption})}
+
+
+
+Checks if this entity has a morph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em morph\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_morphs_a1fc28aa3c4e3aa18fd044f2420d9a32b}\label{class_lua_1_1_morphs_a1fc28aa3c4e3aa18fd044f2420d9a32b}} 
+\index{Lua.Morphs@{Lua.Morphs}!ResetMorphs@{ResetMorphs}}
+\index{ResetMorphs@{ResetMorphs}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{ResetMorphs()}{ResetMorphs()}}
+{\footnotesize\ttfamily void Lua.\+Morphs.\+Reset\+Morphs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset this entity\textquotesingle{}s morphs. Please try not to use this method if you plan on releasing the script you use it in. 
+
+\mbox{\Hypertarget{class_lua_1_1_morphs_aefc93668891557c3c980857b3ee6aa0b}\label{class_lua_1_1_morphs_aefc93668891557c3c980857b3ee6aa0b}} 
+\index{Lua.Morphs@{Lua.Morphs}!SetMorphValue@{SetMorphValue}}
+\index{SetMorphValue@{SetMorphValue}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{SetMorphValue()}{SetMorphValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Morphs.\+Set\+Morph\+Value (\begin{DoxyParamCaption}\item[{string}]{morph\+Name,  }\item[{float}]{weight }\end{DoxyParamCaption})}
+
+
+
+Will set the morph to the weight if the entity is a Giantess. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em morph\+Name} & \\
+\hline
+{\em weight} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_morphs_a55a34c72668e0bd4ec86865163a89bd0}\label{class_lua_1_1_morphs_a55a34c72668e0bd4ec86865163a89bd0}} 
+\index{Lua.Morphs@{Lua.Morphs}!SetMorphValue@{SetMorphValue}}
+\index{SetMorphValue@{SetMorphValue}!Lua.Morphs@{Lua.Morphs}}
+\subsubsection{\texorpdfstring{SetMorphValue()}{SetMorphValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Morphs.\+Set\+Morph\+Value (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{float}]{weight }\end{DoxyParamCaption})}
+
+
+
+Will set the morph to the weight if the entity is a Giantess. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em morph\+Index} & \\
+\hline
+{\em weight} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Morphs.\+cs\end{DoxyCompactItemize}

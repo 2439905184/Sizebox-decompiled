@@ -1,0 +1,576 @@
+\hypertarget{class_lua_1_1_vector3}{}\section{Lua.\+Vector3 Class Reference}
+\label{class_lua_1_1_vector3}\index{Lua.Vector3@{Lua.Vector3}}
+
+
+Representation of 3D vectors and points.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_lua_1_1_vector3_a63129be99b82f76bb94c8267b0dcd692}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em String representation of this vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_vector3_a5855d8e4953dffcb076b9e5949406203}{Normalize}} ()
+\begin{DoxyCompactList}\small\item\em Makes this vector have a length of 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_vector3_a5f40e6344654b7590958df867f1d5b03}{Set}} (float \mbox{\hyperlink{class_lua_1_1_vector3_af2367a6c9fb9484cd8703ef20bbe3e2b}{x}}, float \mbox{\hyperlink{class_lua_1_1_vector3_a93844cc4b95c4b4cc2152ecd3d6a69ed}{y}}, float \mbox{\hyperlink{class_lua_1_1_vector3_a80737d9f0e18357fd716e47a1b82ef6a}{z}})
+\begin{DoxyCompactList}\small\item\em Set x, y and z components of an existing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_ad6514c4819aa2dabb95253f9d6f5248c}{New}} (float \mbox{\hyperlink{class_lua_1_1_vector3_af2367a6c9fb9484cd8703ef20bbe3e2b}{x}}, float \mbox{\hyperlink{class_lua_1_1_vector3_a93844cc4b95c4b4cc2152ecd3d6a69ed}{y}}, float \mbox{\hyperlink{class_lua_1_1_vector3_a80737d9f0e18357fd716e47a1b82ef6a}{z}})
+\begin{DoxyCompactList}\small\item\em Creates a new vector with given x, y, z components. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_lua_1_1_vector3_a7a6a85bde6d3a1072d52ebf902f291e0}{Concat}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o, string v)
+\begin{DoxyCompactList}\small\item\em Concatenates a vector and a string. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_lua_1_1_vector3_a185d18054534f55a4ce5f951e157df96}{Concat}} (string v, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o)
+\begin{DoxyCompactList}\small\item\em Concatenates a string and a vector. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_lua_1_1_vector3_aa50462b9cd533a0b1216975d52940d5a}{Concat}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o2)
+\begin{DoxyCompactList}\small\item\em Concatenates 2 vectors. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_vector3_aaa648399828fb59c6ad750f2f3ad09d6}{Eq}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o2)
+\begin{DoxyCompactList}\small\item\em Tests 2 vectors for equality. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_ae40267fccb8c1e9d79d704776b07e949}{operator+}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o2)
+\begin{DoxyCompactList}\small\item\em Adds 2 vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a4acda611c59fd0012d1f2c3d1d5ef1ca}{operator -\/}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o2)
+\begin{DoxyCompactList}\small\item\em Subtracts 2 vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a9a7c5fab17a78a7eb42ee976ae6f3d5e}{operator -\/}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1)
+\begin{DoxyCompactList}\small\item\em Negates (inverts) a vector. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_aa66ef31f1ffe0fd4f7f5bc2f6f55ee5f}{operator $\ast$}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1, float f)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by a scalar (float). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a94992e368b015b3446d372df71c93d30}{operator $\ast$}} (float f, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector by a scalar (float). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a2e065e07d84200e5a9cec3270ef1d30f}{operator/}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} o1, float f)
+\begin{DoxyCompactList}\small\item\em Divides a vector by a scalar (float). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_vector3_ab278cbf1ea74ca78089e58c0a4313c6a}{Angle}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} from, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} to)
+\begin{DoxyCompactList}\small\item\em Returns the angle in degrees between from and to. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_ab4ac1349372b28a8e490a94e96d950aa}{Clamp\+Magnitude}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} vector, float max\+Length)
+\begin{DoxyCompactList}\small\item\em Returns a copy of vector with its magnitude clamped to max\+Length. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_aada99c9426a2253aed6e6a150efade76}{Cross}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} lhs, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} rhs)
+\begin{DoxyCompactList}\small\item\em Cross Product of two vectors. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_vector3_a8c4bd7e288f7857355aff2f159e86b83}{Distance}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} a, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} b)
+\begin{DoxyCompactList}\small\item\em Returns the distance between a and b. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_vector3_aee6533ff540a011a854efbbe29664fe4}{Dot}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} lhs, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} rhs)
+\begin{DoxyCompactList}\small\item\em Dot Product of two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a2ac180084d2490e519612ccba40da454}{Lerp}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} a, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} b, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolates between two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a63b62cb18ab91477aee5c9bd0d975400}{Lerp\+Unclamped}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} a, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} b, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolates between two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a3495c2bc3847d7ec201c1e4209359c25}{Max}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} lhs, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} rhs)
+\begin{DoxyCompactList}\small\item\em Returns a vector that is made from the largest components of two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a514e1f8b6c974e522e290ccf3f113a7e}{Min}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} lhs, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} rhs)
+\begin{DoxyCompactList}\small\item\em Returns a vector that is made from the smallest components of two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_aa4b2a5ff6af794cc8a83617227bee73b}{Move\+Towards}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} current, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} target, float max\+Distance\+Delta)
+\begin{DoxyCompactList}\small\item\em Moves a point current in a straight line towards a target point. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_aa9b7aad25b72d46c5e49e847bbc41353}{Project}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} vector, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} on\+Normal)
+\begin{DoxyCompactList}\small\item\em Projects a vector onto another vector. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_af4bc2b40c64c31d8ade94277052e46d1}{Project\+On\+Plane}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} vector, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} plane\+Normal)
+\begin{DoxyCompactList}\small\item\em Projects a vector onto a plane defined by a normal orthogonal to the plane. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a6973141d227d4b18eb09caaa3cb965b4}{Reflect}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} in\+Direction, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} in\+Normal)
+\begin{DoxyCompactList}\small\item\em Reflects a vector off the plane defined by a normal. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a938bc42ace148202da5445f245581927}{Rotate\+Towards}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} current, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} target, float max\+Radians\+Delta, float max\+Magnitude\+Delta)
+\begin{DoxyCompactList}\small\item\em Rotates a vector current towards target. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a1b7601ca79dfd9b6f3ab3636508c197a}{Scale}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} a, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} b)
+\begin{DoxyCompactList}\small\item\em Multiplies two vectors component-\/wise. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a952dff0d8cc76a32589c2020e957adbf}{Slerp}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} a, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} b, float t)
+\begin{DoxyCompactList}\small\item\em Spherically interpolates between two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a951d3fea17d487e6c7a27d842fcaf3f7}{Slerp\+Unclamped}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} a, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} b, float t)
+\begin{DoxyCompactList}\small\item\em Spherically interpolates between two vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_lua_1_1_vector3_af2367a6c9fb9484cd8703ef20bbe3e2b}{x}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X component of the vector. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_vector3_a93844cc4b95c4b4cc2152ecd3d6a69ed}{y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Y component of the vector. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_vector3_a80737d9f0e18357fd716e47a1b82ef6a}{z}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Z component of the vector. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_vector3_af7a889228914dff8226722de5c47a9b7}{magnitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the length of this vector (Read Only). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_vector3_a29cb25eb011222ce12a27338eb3aa0a2}{sqr\+Magnitude}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the squared length of this vector (Read Only). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a4e2f1c26b10b35c7a23108cfaa63320c}{normalized}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns this vector with a magnitude of 1 (Read Only). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a3742b113252e0163b006a17a76cb558c}{back}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}(0, 0, -\/1). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_adfb20fbfe1e5224b0b0fade3da0d4c8f}{down}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}(0, -\/1, 0). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_ad8be15240d9bfa336d926ab023f11ad4}{forward}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing Vector3(0, 0, 1). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a5a08c13ed00efb9fb6728fded1e8a472}{left}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}(-\/1, 0, 0). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a16592c4087c4d02cf1dd00a06d5baced}{one}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing Vector3(1, 1, 1). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_ae8a79f66fb993fb1ad05c81fd3bbb9e3}{right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing Vector3(1, 0, 0). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_a63cc0e06476f86bd603c0a56bfa09fae}{up}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing Vector3(0, 1, 0). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_vector3_aa45f0524375ebdaeb4244325ffb08210}{zero}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Shorthand for writing Vector3(0, 0, 0). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of 3D vectors and points. 
+
+This structure is used throughout Unity to pass 3D positions and directions around. It also contains functions for doing common vector operations. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_vector3_ab278cbf1ea74ca78089e58c0a4313c6a}\label{class_lua_1_1_vector3_ab278cbf1ea74ca78089e58c0a4313c6a}} 
+\index{Lua.Vector3@{Lua.Vector3}!Angle@{Angle}}
+\index{Angle@{Angle}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Angle()}{Angle()}}
+{\footnotesize\ttfamily static float Lua.\+Vector3.\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{from,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{to }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the angle in degrees between from and to. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_ab4ac1349372b28a8e490a94e96d950aa}\label{class_lua_1_1_vector3_ab4ac1349372b28a8e490a94e96d950aa}} 
+\index{Lua.Vector3@{Lua.Vector3}!ClampMagnitude@{ClampMagnitude}}
+\index{ClampMagnitude@{ClampMagnitude}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{ClampMagnitude()}{ClampMagnitude()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Clamp\+Magnitude (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{vector,  }\item[{float}]{max\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a copy of vector with its magnitude clamped to max\+Length. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a7a6a85bde6d3a1072d52ebf902f291e0}\label{class_lua_1_1_vector3_a7a6a85bde6d3a1072d52ebf902f291e0}} 
+\index{Lua.Vector3@{Lua.Vector3}!Concat@{Concat}}
+\index{Concat@{Concat}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Concat()}{Concat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static string Lua.\+Vector3.\+Concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o,  }\item[{string}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concatenates a vector and a string. 
+
+Syntax for this operation is {\ttfamily v .. s}. \mbox{\hyperlink{class_lua_1_1_vector3_a63129be99b82f76bb94c8267b0dcd692}{Vector3.\+To\+String}} is used to convert vector to string. \mbox{\Hypertarget{class_lua_1_1_vector3_a185d18054534f55a4ce5f951e157df96}\label{class_lua_1_1_vector3_a185d18054534f55a4ce5f951e157df96}} 
+\index{Lua.Vector3@{Lua.Vector3}!Concat@{Concat}}
+\index{Concat@{Concat}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Concat()}{Concat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static string Lua.\+Vector3.\+Concat (\begin{DoxyParamCaption}\item[{string}]{v,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concatenates a string and a vector. 
+
+Syntax for this operation is {\ttfamily s .. v}. \mbox{\hyperlink{class_lua_1_1_vector3_a63129be99b82f76bb94c8267b0dcd692}{Vector3.\+To\+String}} is used to convert vector to string. \mbox{\Hypertarget{class_lua_1_1_vector3_aa50462b9cd533a0b1216975d52940d5a}\label{class_lua_1_1_vector3_aa50462b9cd533a0b1216975d52940d5a}} 
+\index{Lua.Vector3@{Lua.Vector3}!Concat@{Concat}}
+\index{Concat@{Concat}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Concat()}{Concat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static string Lua.\+Vector3.\+Concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concatenates 2 vectors. 
+
+Syntax for this operation is {\ttfamily v1 .. v2}. \mbox{\hyperlink{class_lua_1_1_vector3_a63129be99b82f76bb94c8267b0dcd692}{Vector3.\+To\+String}} is used to convert vectors to strings. \mbox{\Hypertarget{class_lua_1_1_vector3_aada99c9426a2253aed6e6a150efade76}\label{class_lua_1_1_vector3_aada99c9426a2253aed6e6a150efade76}} 
+\index{Lua.Vector3@{Lua.Vector3}!Cross@{Cross}}
+\index{Cross@{Cross}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Cross()}{Cross()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Cross (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{lhs,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Cross Product of two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a8c4bd7e288f7857355aff2f159e86b83}\label{class_lua_1_1_vector3_a8c4bd7e288f7857355aff2f159e86b83}} 
+\index{Lua.Vector3@{Lua.Vector3}!Distance@{Distance}}
+\index{Distance@{Distance}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily static float Lua.\+Vector3.\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the distance between a and b. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_aee6533ff540a011a854efbbe29664fe4}\label{class_lua_1_1_vector3_aee6533ff540a011a854efbbe29664fe4}} 
+\index{Lua.Vector3@{Lua.Vector3}!Dot@{Dot}}
+\index{Dot@{Dot}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily static float Lua.\+Vector3.\+Dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{lhs,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Dot Product of two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_aaa648399828fb59c6ad750f2f3ad09d6}\label{class_lua_1_1_vector3_aaa648399828fb59c6ad750f2f3ad09d6}} 
+\index{Lua.Vector3@{Lua.Vector3}!Eq@{Eq}}
+\index{Eq@{Eq}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Eq()}{Eq()}}
+{\footnotesize\ttfamily static bool Lua.\+Vector3.\+Eq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tests 2 vectors for equality. 
+
+Syntax for this operation is {\ttfamily v1 == v2}. Returns true if two vectors are approximately equal. The inequality operator {\ttfamily v1 $\sim$= v2} also uses this function, but negated.
+
+To allow for floating point inaccuracies, the two vectors are considered equal if the magnitude of their difference is less than 1e-\/5. \mbox{\Hypertarget{class_lua_1_1_vector3_a2ac180084d2490e519612ccba40da454}\label{class_lua_1_1_vector3_a2ac180084d2490e519612ccba40da454}} 
+\index{Lua.Vector3@{Lua.Vector3}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Lerp()}{Lerp()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Lerp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Linearly interpolates between two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a63b62cb18ab91477aee5c9bd0d975400}\label{class_lua_1_1_vector3_a63b62cb18ab91477aee5c9bd0d975400}} 
+\index{Lua.Vector3@{Lua.Vector3}!LerpUnclamped@{LerpUnclamped}}
+\index{LerpUnclamped@{LerpUnclamped}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{LerpUnclamped()}{LerpUnclamped()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Lerp\+Unclamped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Linearly interpolates between two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a3495c2bc3847d7ec201c1e4209359c25}\label{class_lua_1_1_vector3_a3495c2bc3847d7ec201c1e4209359c25}} 
+\index{Lua.Vector3@{Lua.Vector3}!Max@{Max}}
+\index{Max@{Max}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Max()}{Max()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{lhs,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a vector that is made from the largest components of two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a514e1f8b6c974e522e290ccf3f113a7e}\label{class_lua_1_1_vector3_a514e1f8b6c974e522e290ccf3f113a7e}} 
+\index{Lua.Vector3@{Lua.Vector3}!Min@{Min}}
+\index{Min@{Min}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Min()}{Min()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{lhs,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a vector that is made from the smallest components of two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_aa4b2a5ff6af794cc8a83617227bee73b}\label{class_lua_1_1_vector3_aa4b2a5ff6af794cc8a83617227bee73b}} 
+\index{Lua.Vector3@{Lua.Vector3}!MoveTowards@{MoveTowards}}
+\index{MoveTowards@{MoveTowards}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{MoveTowards()}{MoveTowards()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Move\+Towards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{current,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{target,  }\item[{float}]{max\+Distance\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Moves a point current in a straight line towards a target point. 
+
+Similar to \mbox{\hyperlink{class_lua_1_1_vector3_a2ac180084d2490e519612ccba40da454}{Vector3.\+Lerp}}, but uses an absolute distance instead of relative percentage. \mbox{\Hypertarget{class_lua_1_1_vector3_ad6514c4819aa2dabb95253f9d6f5248c}\label{class_lua_1_1_vector3_ad6514c4819aa2dabb95253f9d6f5248c}} 
+\index{Lua.Vector3@{Lua.Vector3}!New@{New}}
+\index{New@{New}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+New (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new vector with given x, y, z components. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a5855d8e4953dffcb076b9e5949406203}\label{class_lua_1_1_vector3_a5855d8e4953dffcb076b9e5949406203}} 
+\index{Lua.Vector3@{Lua.Vector3}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily void Lua.\+Vector3.\+Normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Makes this vector have a length of 1. 
+
+When normalized, a vector keeps the same direction but its length is 1.\+0. Note that this function will change the current vector. If you want to keep the current vector unchanged, use normalized variable. If this vector is too small to be normalized it will be set to zero. \mbox{\Hypertarget{class_lua_1_1_vector3_aa66ef31f1ffe0fd4f7f5bc2f6f55ee5f}\label{class_lua_1_1_vector3_aa66ef31f1ffe0fd4f7f5bc2f6f55ee5f}} 
+\index{Lua.Vector3@{Lua.Vector3}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+operator $\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1,  }\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Multiplies a vector by a scalar (float). 
+
+Syntax for this operation is {\ttfamily v $\ast$ f}. Resulting vector is {\ttfamily (v.\+x $\ast$ f, v.\+y $\ast$ f, v.\+z $\ast$ f)}. \mbox{\Hypertarget{class_lua_1_1_vector3_a94992e368b015b3446d372df71c93d30}\label{class_lua_1_1_vector3_a94992e368b015b3446d372df71c93d30}} 
+\index{Lua.Vector3@{Lua.Vector3}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+operator $\ast$ (\begin{DoxyParamCaption}\item[{float}]{f,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Multiplies a vector by a scalar (float). 
+
+Syntax for this operation is {\ttfamily f $\ast$ v}. Resulting vector is {\ttfamily (v.\+x $\ast$ f, v.\+y $\ast$ f, v.\+z $\ast$ f)}. \mbox{\Hypertarget{class_lua_1_1_vector3_a4acda611c59fd0012d1f2c3d1d5ef1ca}\label{class_lua_1_1_vector3_a4acda611c59fd0012d1f2c3d1d5ef1ca}} 
+\index{Lua.Vector3@{Lua.Vector3}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+operator -\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Subtracts 2 vectors. 
+
+Syntax for this operation is {\ttfamily v1 -\/ v2}. Resulting vector is {\ttfamily (v1.\+x -\/ v2.\+x, v1.\+y -\/ v2.\+y, v1.\+z -\/ v2.\+z)}. \mbox{\Hypertarget{class_lua_1_1_vector3_a9a7c5fab17a78a7eb42ee976ae6f3d5e}\label{class_lua_1_1_vector3_a9a7c5fab17a78a7eb42ee976ae6f3d5e}} 
+\index{Lua.Vector3@{Lua.Vector3}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+operator -\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Negates (inverts) a vector. 
+
+Syntax for this operation is {\ttfamily -\/v}. Resulting vector is {\ttfamily (-\/v.\+x, -\/v.\+y, -\/v.\+z)}. \mbox{\Hypertarget{class_lua_1_1_vector3_ae40267fccb8c1e9d79d704776b07e949}\label{class_lua_1_1_vector3_ae40267fccb8c1e9d79d704776b07e949}} 
+\index{Lua.Vector3@{Lua.Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds 2 vectors. 
+
+Syntax for this operation is {\ttfamily v1 + v2}. Resulting vector is {\ttfamily (v1.\+x + v2.\+x, v1.\+y + v2.\+y, v1.\+z + v2.\+z)}. \mbox{\Hypertarget{class_lua_1_1_vector3_a2e065e07d84200e5a9cec3270ef1d30f}\label{class_lua_1_1_vector3_a2e065e07d84200e5a9cec3270ef1d30f}} 
+\index{Lua.Vector3@{Lua.Vector3}!operator/@{operator/}}
+\index{operator/@{operator/}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+operator/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{o1,  }\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Divides a vector by a scalar (float). 
+
+Syntax for this operation is {\ttfamily v / f}. Resulting vector is {\ttfamily (v.\+x / f, v.\+y / f, v.\+z / f)}. \mbox{\Hypertarget{class_lua_1_1_vector3_aa9b7aad25b72d46c5e49e847bbc41353}\label{class_lua_1_1_vector3_aa9b7aad25b72d46c5e49e847bbc41353}} 
+\index{Lua.Vector3@{Lua.Vector3}!Project@{Project}}
+\index{Project@{Project}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Project()}{Project()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Project (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{vector,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{on\+Normal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Projects a vector onto another vector. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_af4bc2b40c64c31d8ade94277052e46d1}\label{class_lua_1_1_vector3_af4bc2b40c64c31d8ade94277052e46d1}} 
+\index{Lua.Vector3@{Lua.Vector3}!ProjectOnPlane@{ProjectOnPlane}}
+\index{ProjectOnPlane@{ProjectOnPlane}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{ProjectOnPlane()}{ProjectOnPlane()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Project\+On\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{vector,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{plane\+Normal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Projects a vector onto a plane defined by a normal orthogonal to the plane. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a6973141d227d4b18eb09caaa3cb965b4}\label{class_lua_1_1_vector3_a6973141d227d4b18eb09caaa3cb965b4}} 
+\index{Lua.Vector3@{Lua.Vector3}!Reflect@{Reflect}}
+\index{Reflect@{Reflect}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Reflect()}{Reflect()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Reflect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{in\+Direction,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{in\+Normal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reflects a vector off the plane defined by a normal. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a938bc42ace148202da5445f245581927}\label{class_lua_1_1_vector3_a938bc42ace148202da5445f245581927}} 
+\index{Lua.Vector3@{Lua.Vector3}!RotateTowards@{RotateTowards}}
+\index{RotateTowards@{RotateTowards}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{RotateTowards()}{RotateTowards()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Rotate\+Towards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{current,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{target,  }\item[{float}]{max\+Radians\+Delta,  }\item[{float}]{max\+Magnitude\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rotates a vector current towards target. 
+
+This function is similar to \mbox{\hyperlink{class_lua_1_1_vector3_aa4b2a5ff6af794cc8a83617227bee73b}{Vector3.\+Move\+Towards}} except that the vector is treated as a direction rather than a position. The {\ttfamily current} vector will be rotated round toward the target direction by an angle of {\ttfamily max\+Radians\+Delta}, although it will land exactly on the target rather than overshoot. If the magnitudes of {\ttfamily current} and {\ttfamily target} are different then the magnitude of the result will be linearly interpolated during the rotation. If a negative value is used for {\ttfamily max\+Radians\+Delta}, the vector will rotate away from {\ttfamily target} until it is pointing in exactly the opposite direction, then stop.
+
+See also \mbox{\hyperlink{class_lua_1_1_quaternion_af6d179e922217cf36197ed89c6cff2a4}{Quaternion.\+operator$\ast$}}. \mbox{\Hypertarget{class_lua_1_1_vector3_a1b7601ca79dfd9b6f3ab3636508c197a}\label{class_lua_1_1_vector3_a1b7601ca79dfd9b6f3ab3636508c197a}} 
+\index{Lua.Vector3@{Lua.Vector3}!Scale@{Scale}}
+\index{Scale@{Scale}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Multiplies two vectors component-\/wise. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a5f40e6344654b7590958df867f1d5b03}\label{class_lua_1_1_vector3_a5f40e6344654b7590958df867f1d5b03}} 
+\index{Lua.Vector3@{Lua.Vector3}!Set@{Set}}
+\index{Set@{Set}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void Lua.\+Vector3.\+Set (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Set x, y and z components of an existing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a952dff0d8cc76a32589c2020e957adbf}\label{class_lua_1_1_vector3_a952dff0d8cc76a32589c2020e957adbf}} 
+\index{Lua.Vector3@{Lua.Vector3}!Slerp@{Slerp}}
+\index{Slerp@{Slerp}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{Slerp()}{Slerp()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Slerp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spherically interpolates between two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a951d3fea17d487e6c7a27d842fcaf3f7}\label{class_lua_1_1_vector3_a951d3fea17d487e6c7a27d842fcaf3f7}} 
+\index{Lua.Vector3@{Lua.Vector3}!SlerpUnclamped@{SlerpUnclamped}}
+\index{SlerpUnclamped@{SlerpUnclamped}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{SlerpUnclamped()}{SlerpUnclamped()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+Slerp\+Unclamped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spherically interpolates between two vectors. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a63129be99b82f76bb94c8267b0dcd692}\label{class_lua_1_1_vector3_a63129be99b82f76bb94c8267b0dcd692}} 
+\index{Lua.Vector3@{Lua.Vector3}!ToString@{ToString}}
+\index{ToString@{ToString}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Lua.\+Vector3.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+String representation of this vector. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_vector3_a3742b113252e0163b006a17a76cb558c}\label{class_lua_1_1_vector3_a3742b113252e0163b006a17a76cb558c}} 
+\index{Lua.Vector3@{Lua.Vector3}!back@{back}}
+\index{back@{back}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{back}{back}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+back\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}(0, 0, -\/1). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_adfb20fbfe1e5224b0b0fade3da0d4c8f}\label{class_lua_1_1_vector3_adfb20fbfe1e5224b0b0fade3da0d4c8f}} 
+\index{Lua.Vector3@{Lua.Vector3}!down@{down}}
+\index{down@{down}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{down}{down}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+down\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}(0, -\/1, 0). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_ad8be15240d9bfa336d926ab023f11ad4}\label{class_lua_1_1_vector3_ad8be15240d9bfa336d926ab023f11ad4}} 
+\index{Lua.Vector3@{Lua.Vector3}!forward@{forward}}
+\index{forward@{forward}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{forward}{forward}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+forward\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing Vector3(0, 0, 1). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a5a08c13ed00efb9fb6728fded1e8a472}\label{class_lua_1_1_vector3_a5a08c13ed00efb9fb6728fded1e8a472}} 
+\index{Lua.Vector3@{Lua.Vector3}!left@{left}}
+\index{left@{left}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+left\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}(-\/1, 0, 0). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_af7a889228914dff8226722de5c47a9b7}\label{class_lua_1_1_vector3_af7a889228914dff8226722de5c47a9b7}} 
+\index{Lua.Vector3@{Lua.Vector3}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{magnitude}{magnitude}}
+{\footnotesize\ttfamily float Lua.\+Vector3.\+magnitude\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the length of this vector (Read Only). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a4e2f1c26b10b35c7a23108cfaa63320c}\label{class_lua_1_1_vector3_a4e2f1c26b10b35c7a23108cfaa63320c}} 
+\index{Lua.Vector3@{Lua.Vector3}!normalized@{normalized}}
+\index{normalized@{normalized}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{normalized}{normalized}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+normalized\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns this vector with a magnitude of 1 (Read Only). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a16592c4087c4d02cf1dd00a06d5baced}\label{class_lua_1_1_vector3_a16592c4087c4d02cf1dd00a06d5baced}} 
+\index{Lua.Vector3@{Lua.Vector3}!one@{one}}
+\index{one@{one}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{one}{one}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+one\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing Vector3(1, 1, 1). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_ae8a79f66fb993fb1ad05c81fd3bbb9e3}\label{class_lua_1_1_vector3_ae8a79f66fb993fb1ad05c81fd3bbb9e3}} 
+\index{Lua.Vector3@{Lua.Vector3}!right@{right}}
+\index{right@{right}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+right\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing Vector3(1, 0, 0). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a29cb25eb011222ce12a27338eb3aa0a2}\label{class_lua_1_1_vector3_a29cb25eb011222ce12a27338eb3aa0a2}} 
+\index{Lua.Vector3@{Lua.Vector3}!sqrMagnitude@{sqrMagnitude}}
+\index{sqrMagnitude@{sqrMagnitude}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{sqrMagnitude}{sqrMagnitude}}
+{\footnotesize\ttfamily float Lua.\+Vector3.\+sqr\+Magnitude\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the squared length of this vector (Read Only). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a63cc0e06476f86bd603c0a56bfa09fae}\label{class_lua_1_1_vector3_a63cc0e06476f86bd603c0a56bfa09fae}} 
+\index{Lua.Vector3@{Lua.Vector3}!up@{up}}
+\index{up@{up}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+up\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing Vector3(0, 1, 0). 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_af2367a6c9fb9484cd8703ef20bbe3e2b}\label{class_lua_1_1_vector3_af2367a6c9fb9484cd8703ef20bbe3e2b}} 
+\index{Lua.Vector3@{Lua.Vector3}!x@{x}}
+\index{x@{x}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Lua.\+Vector3.\+x\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X component of the vector. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a93844cc4b95c4b4cc2152ecd3d6a69ed}\label{class_lua_1_1_vector3_a93844cc4b95c4b4cc2152ecd3d6a69ed}} 
+\index{Lua.Vector3@{Lua.Vector3}!y@{y}}
+\index{y@{y}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Lua.\+Vector3.\+y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Y component of the vector. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_a80737d9f0e18357fd716e47a1b82ef6a}\label{class_lua_1_1_vector3_a80737d9f0e18357fd716e47a1b82ef6a}} 
+\index{Lua.Vector3@{Lua.Vector3}!z@{z}}
+\index{z@{z}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily float Lua.\+Vector3.\+z\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Z component of the vector. 
+
+\mbox{\Hypertarget{class_lua_1_1_vector3_aa45f0524375ebdaeb4244325ffb08210}\label{class_lua_1_1_vector3_aa45f0524375ebdaeb4244325ffb08210}} 
+\index{Lua.Vector3@{Lua.Vector3}!zero@{zero}}
+\index{zero@{zero}!Lua.Vector3@{Lua.Vector3}}
+\subsubsection{\texorpdfstring{zero}{zero}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Vector3.\+zero\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Shorthand for writing Vector3(0, 0, 0). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Vector3.\+cs\end{DoxyCompactItemize}

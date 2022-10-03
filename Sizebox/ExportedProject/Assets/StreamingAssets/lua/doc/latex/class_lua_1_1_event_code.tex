@@ -1,0 +1,78 @@
+\hypertarget{class_lua_1_1_event_code}{}\section{Lua.\+Event\+Code Class Reference}
+\label{class_lua_1_1_event_code}\index{Lua.\+Event\+Code@{Lua.\+Event\+Code}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_lua_1_1_event_code_af0028cf602b24a1865397d0cf1df1623}{On\+Crush} = \char`\"{}On\+Crush\char`\"{}
+\begin{DoxyCompactList}\small\item\em Giantess crushing micro event. \end{DoxyCompactList}\item 
+static string \hyperlink{class_lua_1_1_event_code_adba8e0cdbec45f5694b0be4ea1fbfe7a}{On\+Step} = \char`\"{}On\+Step\char`\"{}
+\begin{DoxyCompactList}\small\item\em Giantess footstep event. \end{DoxyCompactList}\item 
+static string \hyperlink{class_lua_1_1_event_code_a30395eacc4a00fc49a4311b95d23727d}{On\+Spawn} = \char`\"{}On\+Spawn\char`\"{}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_lua_1_1_entity}{Entity} spawned event. \end{DoxyCompactList}\item 
+static string \hyperlink{class_lua_1_1_event_code_a48f2f42f01d3d763b55233e1e9c1047c}{On\+Action\+Complete} = \char`\"{}On\+Action\+Complete\char`\"{}
+\begin{DoxyCompactList}\small\item\em Action complete event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lua_1_1_event_code_a48f2f42f01d3d763b55233e1e9c1047c}\label{class_lua_1_1_event_code_a48f2f42f01d3d763b55233e1e9c1047c}} 
+\index{Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}!On\+Action\+Complete@{On\+Action\+Complete}}
+\index{On\+Action\+Complete@{On\+Action\+Complete}!Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}}
+\subsubsection{\texorpdfstring{On\+Action\+Complete}{OnActionComplete}}
+{\footnotesize\ttfamily string Lua.\+Event\+Code.\+On\+Action\+Complete = \char`\"{}On\+Action\+Complete\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Action complete event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily agent} -\/ action entity
+\item {\ttfamily action} -\/ action name 
+\end{DoxyItemize}\mbox{\Hypertarget{class_lua_1_1_event_code_af0028cf602b24a1865397d0cf1df1623}\label{class_lua_1_1_event_code_af0028cf602b24a1865397d0cf1df1623}} 
+\index{Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}!On\+Crush@{On\+Crush}}
+\index{On\+Crush@{On\+Crush}!Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}}
+\subsubsection{\texorpdfstring{On\+Crush}{OnCrush}}
+{\footnotesize\ttfamily string Lua.\+Event\+Code.\+On\+Crush = \char`\"{}On\+Crush\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Giantess crushing micro event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily victim} -\/ crushed micro entity
+\item {\ttfamily crusher} -\/ crushing giantess entity 
+\end{DoxyItemize}\mbox{\Hypertarget{class_lua_1_1_event_code_a30395eacc4a00fc49a4311b95d23727d}\label{class_lua_1_1_event_code_a30395eacc4a00fc49a4311b95d23727d}} 
+\index{Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}!On\+Spawn@{On\+Spawn}}
+\index{On\+Spawn@{On\+Spawn}!Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}}
+\subsubsection{\texorpdfstring{On\+Spawn}{OnSpawn}}
+{\footnotesize\ttfamily string Lua.\+Event\+Code.\+On\+Spawn = \char`\"{}On\+Spawn\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\hyperlink{class_lua_1_1_entity}{Entity} spawned event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily entity} -\/ spawned entity 
+\end{DoxyItemize}\mbox{\Hypertarget{class_lua_1_1_event_code_adba8e0cdbec45f5694b0be4ea1fbfe7a}\label{class_lua_1_1_event_code_adba8e0cdbec45f5694b0be4ea1fbfe7a}} 
+\index{Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}!On\+Step@{On\+Step}}
+\index{On\+Step@{On\+Step}!Lua\+::\+Event\+Code@{Lua\+::\+Event\+Code}}
+\subsubsection{\texorpdfstring{On\+Step}{OnStep}}
+{\footnotesize\ttfamily string Lua.\+Event\+Code.\+On\+Step = \char`\"{}On\+Step\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Giantess footstep event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily gts} -\/ giantess entity
+\item {\ttfamily position} -\/ position of the step epicenter (vector)
+\item {\ttfamily magnitude} -\/ force of the step (float)
+\item {\ttfamily foot} -\/ foot numer (0 -\/ left, 1 -\/ right) 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Event\+Code.\+cs\end{DoxyCompactItemize}

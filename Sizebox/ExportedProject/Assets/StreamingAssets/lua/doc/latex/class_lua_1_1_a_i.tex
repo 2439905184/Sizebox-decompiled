@@ -1,0 +1,262 @@
+\hypertarget{class_lua_1_1_a_i}{}\section{Lua.\+AI Class Reference}
+\label{class_lua_1_1_a_i}\index{Lua.AI@{Lua.AI}}
+
+
+Controls the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} of humanoid agent.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_ab29a427f16c210c0839771b2552b21ce}{Stop\+Action}} ()
+\begin{DoxyCompactList}\small\item\em Stop all actions, including the current one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_acae3b8822867d658c5dc7c409af76e11}{Cancel\+Queued\+Actions}} ()
+\begin{DoxyCompactList}\small\item\em Will cancel all future actions, except the current one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_a1c8effd2d78be1f69eb84e3db9b02b0f}{Cancel\+Queued\+Behaviors}} ()
+\begin{DoxyCompactList}\small\item\em Will cancel all future behaviors, except the current one. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_a_i_a7d2bab4d5dfc0389ab5eeabed6befad7}{Has\+Queued\+Actions}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the agent has queued future actions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_a_i_a51825e643d119b005db422ef6f51d353}{Has\+Queued\+Behaviors}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the agent has queued future behaviors. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_a_i_aa05b26304b734cfe6f5a220bb54d9bc7}{Is\+Action\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the agent is doing any action, or has queued future actions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_a_i_a2d682616c9d7a8fd7ea045906a716e02}{Is\+Behavior\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the entity is currently executing a main behavior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_aa30ed6fc0195cd828d3f5971b80ae053}{Stop\+Behavior}} ()
+\begin{DoxyCompactList}\small\item\em Will stop the current main behavior. It will trigger the Behavior\+:Exit() method. For stopping secondary behaviors use \mbox{\hyperlink{class_lua_1_1_a_i_a8c9a883b10e07fe120ff68d75391fe2b}{A\+I.\+Stop\+Secondary\+Behavior}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_a8c9a883b10e07fe120ff68d75391fe2b}{Stop\+Secondary\+Behavior}} (string flag)
+\begin{DoxyCompactList}\small\item\em Will stop a secondary behavior having a specified flag. It will trigger the Behavior\+:Exit() method. For stopping main behavior use \mbox{\hyperlink{class_lua_1_1_a_i_aa30ed6fc0195cd828d3f5971b80ae053}{A\+I.\+Stop\+Behavior}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_af829734ccdb97c9440ebabba2868ee05}{Disable\+AI}} ()
+\begin{DoxyCompactList}\small\item\em Disables the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker, the agent will only accept commands, by the menu, or by the other scrips. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_abdd5b0d3983359ec46851cd99bdd2cb2}{Enable\+AI}} ()
+\begin{DoxyCompactList}\small\item\em Enables the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker, the agent will automatically choose another behavior once the current one finishes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_a_i_afbbbf8be061465aba93a7b1c73402ae4}{Is\+A\+I\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker is enabled. The \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker will automatically choose another behavior for the agent once the current one finishes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_a2ab87c868530bf4f91fb44374cd58337}{Set\+Behavior}} (string name)
+\begin{DoxyCompactList}\small\item\em Change the current behavior for another one. The name must the string passed to Register\+Behavior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_a9555e89507ac0b07384beab7238dc419}{Set\+Behavior}} (string name, \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em Change the current behavior for another one. The name must the string passed to Register\+Behavior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_a7e50aee44b076aa5c37535dcc55b2c55}{Set\+Behavior}} (string name, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} position)
+\begin{DoxyCompactList}\small\item\em Change the current behavior for another one. The position will act as the cursor.\+position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_a60b9147746afd2cbbdf7e6ee5f7c6aff}{Queue\+Behavior}} (string name)
+\begin{DoxyCompactList}\small\item\em Add a behavior to behavior queue. The name must the string passed to Register\+Behavior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_af74652cc45af0d8a62bcd75caa595ea5}{Queue\+Behavior}} (string name, \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em Add a behavior to behavior queue. The name must the string passed to Register\+Behavior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_a_i_ad04e867b1b20eefaa0f4d60af5a9422c}{Queue\+Behavior}} (string name, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} position)
+\begin{DoxyCompactList}\small\item\em Add a behavior to behavior queue. The position will act as the cursor.\+position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controls the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} of humanoid agent. 
+
+This component will only exists if the current entity is the type humanoid and is controllable for the computer.
+
+The internal \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} of characters in divided into 3 levels.
+
+Actions\+: is the most simple, and is composed of a single action like \mbox{\hyperlink{class_lua_1_1_entity_a0a8058c8b504215e492471b4e7d557d4}{Entity.\+Stomp}}, \mbox{\hyperlink{class_lua_1_1_entity_a5d6cfb68967adf948db2b6c09d7dfd38}{Entity.\+Move\+To}}, \mbox{\hyperlink{class_lua_1_1_entity_a92feb21c4219c60a7e5935733302083f}{Entity.\+Grow}}. They are added to a queue that manages the sequences of actions.
+
+Behaviors\+: Those are sequences of actions, but also can include custom scripting as well. Those are scripted in .lua files. One agent can do only one behavior at the time. There is the possibilty to queue multiple behaviors.
+
+Decision\+Maker\+: This is internal to the engine. Their function is to choose between multiple behaviors depending in some conditions. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_a_i_acae3b8822867d658c5dc7c409af76e11}\label{class_lua_1_1_a_i_acae3b8822867d658c5dc7c409af76e11}} 
+\index{Lua.AI@{Lua.AI}!CancelQueuedActions@{CancelQueuedActions}}
+\index{CancelQueuedActions@{CancelQueuedActions}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{CancelQueuedActions()}{CancelQueuedActions()}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Cancel\+Queued\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Will cancel all future actions, except the current one. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_a1c8effd2d78be1f69eb84e3db9b02b0f}\label{class_lua_1_1_a_i_a1c8effd2d78be1f69eb84e3db9b02b0f}} 
+\index{Lua.AI@{Lua.AI}!CancelQueuedBehaviors@{CancelQueuedBehaviors}}
+\index{CancelQueuedBehaviors@{CancelQueuedBehaviors}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{CancelQueuedBehaviors()}{CancelQueuedBehaviors()}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Cancel\+Queued\+Behaviors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Will cancel all future behaviors, except the current one. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_af829734ccdb97c9440ebabba2868ee05}\label{class_lua_1_1_a_i_af829734ccdb97c9440ebabba2868ee05}} 
+\index{Lua.AI@{Lua.AI}!DisableAI@{DisableAI}}
+\index{DisableAI@{DisableAI}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{DisableAI()}{DisableAI()}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Disable\+AI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disables the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker, the agent will only accept commands, by the menu, or by the other scrips. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_abdd5b0d3983359ec46851cd99bdd2cb2}\label{class_lua_1_1_a_i_abdd5b0d3983359ec46851cd99bdd2cb2}} 
+\index{Lua.AI@{Lua.AI}!EnableAI@{EnableAI}}
+\index{EnableAI@{EnableAI}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{EnableAI()}{EnableAI()}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Enable\+AI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker, the agent will automatically choose another behavior once the current one finishes. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_a7d2bab4d5dfc0389ab5eeabed6befad7}\label{class_lua_1_1_a_i_a7d2bab4d5dfc0389ab5eeabed6befad7}} 
+\index{Lua.AI@{Lua.AI}!HasQueuedActions@{HasQueuedActions}}
+\index{HasQueuedActions@{HasQueuedActions}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{HasQueuedActions()}{HasQueuedActions()}}
+{\footnotesize\ttfamily bool Lua.\+A\+I.\+Has\+Queued\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the agent has queued future actions. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_a_i_a51825e643d119b005db422ef6f51d353}\label{class_lua_1_1_a_i_a51825e643d119b005db422ef6f51d353}} 
+\index{Lua.AI@{Lua.AI}!HasQueuedBehaviors@{HasQueuedBehaviors}}
+\index{HasQueuedBehaviors@{HasQueuedBehaviors}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{HasQueuedBehaviors()}{HasQueuedBehaviors()}}
+{\footnotesize\ttfamily bool Lua.\+A\+I.\+Has\+Queued\+Behaviors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the agent has queued future behaviors. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_a_i_aa05b26304b734cfe6f5a220bb54d9bc7}\label{class_lua_1_1_a_i_aa05b26304b734cfe6f5a220bb54d9bc7}} 
+\index{Lua.AI@{Lua.AI}!IsActionActive@{IsActionActive}}
+\index{IsActionActive@{IsActionActive}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{IsActionActive()}{IsActionActive()}}
+{\footnotesize\ttfamily bool Lua.\+A\+I.\+Is\+Action\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the agent is doing any action, or has queued future actions. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_a_i_afbbbf8be061465aba93a7b1c73402ae4}\label{class_lua_1_1_a_i_afbbbf8be061465aba93a7b1c73402ae4}} 
+\index{Lua.AI@{Lua.AI}!IsAIEnabled@{IsAIEnabled}}
+\index{IsAIEnabled@{IsAIEnabled}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{IsAIEnabled()}{IsAIEnabled()}}
+{\footnotesize\ttfamily bool Lua.\+A\+I.\+Is\+A\+I\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker is enabled. The \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Decision Maker will automatically choose another behavior for the agent once the current one finishes. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_a_i_a2d682616c9d7a8fd7ea045906a716e02}\label{class_lua_1_1_a_i_a2d682616c9d7a8fd7ea045906a716e02}} 
+\index{Lua.AI@{Lua.AI}!IsBehaviorActive@{IsBehaviorActive}}
+\index{IsBehaviorActive@{IsBehaviorActive}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{IsBehaviorActive()}{IsBehaviorActive()}}
+{\footnotesize\ttfamily bool Lua.\+A\+I.\+Is\+Behavior\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the entity is currently executing a main behavior. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_a_i_a60b9147746afd2cbbdf7e6ee5f7c6aff}\label{class_lua_1_1_a_i_a60b9147746afd2cbbdf7e6ee5f7c6aff}} 
+\index{Lua.AI@{Lua.AI}!QueueBehavior@{QueueBehavior}}
+\index{QueueBehavior@{QueueBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{QueueBehavior()}{QueueBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Queue\+Behavior (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Add a behavior to behavior queue. The name must the string passed to Register\+Behavior. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_af74652cc45af0d8a62bcd75caa595ea5}\label{class_lua_1_1_a_i_af74652cc45af0d8a62bcd75caa595ea5}} 
+\index{Lua.AI@{Lua.AI}!QueueBehavior@{QueueBehavior}}
+\index{QueueBehavior@{QueueBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{QueueBehavior()}{QueueBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Queue\+Behavior (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Add a behavior to behavior queue. The name must the string passed to Register\+Behavior. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_ad04e867b1b20eefaa0f4d60af5a9422c}\label{class_lua_1_1_a_i_ad04e867b1b20eefaa0f4d60af5a9422c}} 
+\index{Lua.AI@{Lua.AI}!QueueBehavior@{QueueBehavior}}
+\index{QueueBehavior@{QueueBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{QueueBehavior()}{QueueBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Queue\+Behavior (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Add a behavior to behavior queue. The position will act as the cursor.\+position. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_a2ab87c868530bf4f91fb44374cd58337}\label{class_lua_1_1_a_i_a2ab87c868530bf4f91fb44374cd58337}} 
+\index{Lua.AI@{Lua.AI}!SetBehavior@{SetBehavior}}
+\index{SetBehavior@{SetBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{SetBehavior()}{SetBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Set\+Behavior (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Change the current behavior for another one. The name must the string passed to Register\+Behavior. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_a9555e89507ac0b07384beab7238dc419}\label{class_lua_1_1_a_i_a9555e89507ac0b07384beab7238dc419}} 
+\index{Lua.AI@{Lua.AI}!SetBehavior@{SetBehavior}}
+\index{SetBehavior@{SetBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{SetBehavior()}{SetBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Set\+Behavior (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Change the current behavior for another one. The name must the string passed to Register\+Behavior. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_a7e50aee44b076aa5c37535dcc55b2c55}\label{class_lua_1_1_a_i_a7e50aee44b076aa5c37535dcc55b2c55}} 
+\index{Lua.AI@{Lua.AI}!SetBehavior@{SetBehavior}}
+\index{SetBehavior@{SetBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{SetBehavior()}{SetBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Set\+Behavior (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Change the current behavior for another one. The position will act as the cursor.\+position. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_ab29a427f16c210c0839771b2552b21ce}\label{class_lua_1_1_a_i_ab29a427f16c210c0839771b2552b21ce}} 
+\index{Lua.AI@{Lua.AI}!StopAction@{StopAction}}
+\index{StopAction@{StopAction}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{StopAction()}{StopAction()}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Stop\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop all actions, including the current one. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_aa30ed6fc0195cd828d3f5971b80ae053}\label{class_lua_1_1_a_i_aa30ed6fc0195cd828d3f5971b80ae053}} 
+\index{Lua.AI@{Lua.AI}!StopBehavior@{StopBehavior}}
+\index{StopBehavior@{StopBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{StopBehavior()}{StopBehavior()}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Stop\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Will stop the current main behavior. It will trigger the Behavior\+:Exit() method. For stopping secondary behaviors use \mbox{\hyperlink{class_lua_1_1_a_i_a8c9a883b10e07fe120ff68d75391fe2b}{A\+I.\+Stop\+Secondary\+Behavior}}. 
+
+\mbox{\Hypertarget{class_lua_1_1_a_i_a8c9a883b10e07fe120ff68d75391fe2b}\label{class_lua_1_1_a_i_a8c9a883b10e07fe120ff68d75391fe2b}} 
+\index{Lua.AI@{Lua.AI}!StopSecondaryBehavior@{StopSecondaryBehavior}}
+\index{StopSecondaryBehavior@{StopSecondaryBehavior}!Lua.AI@{Lua.AI}}
+\subsubsection{\texorpdfstring{StopSecondaryBehavior()}{StopSecondaryBehavior()}}
+{\footnotesize\ttfamily void Lua.\+A\+I.\+Stop\+Secondary\+Behavior (\begin{DoxyParamCaption}\item[{string}]{flag }\end{DoxyParamCaption})}
+
+
+
+Will stop a secondary behavior having a specified flag. It will trigger the Behavior\+:Exit() method. For stopping main behavior use \mbox{\hyperlink{class_lua_1_1_a_i_aa30ed6fc0195cd828d3f5971b80ae053}{A\+I.\+Stop\+Behavior}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+A\+I.\+cs\end{DoxyCompactItemize}

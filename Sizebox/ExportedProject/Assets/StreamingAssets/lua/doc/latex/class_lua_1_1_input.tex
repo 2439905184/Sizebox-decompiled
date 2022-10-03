@@ -1,0 +1,313 @@
+\hypertarget{class_lua_1_1_input}{}\section{Lua.\+Input Class Reference}
+\label{class_lua_1_1_input}\index{Lua.Input@{Lua.Input}}
+
+
+Interface into the \mbox{\hyperlink{class_lua_1_1_input}{Input}} system.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Get\+Axis}} (string axis\+Name)
+\begin{DoxyCompactList}\small\item\em Returns the value of the virtual axis identified by axis\+Name. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_input_aa25e7d2e0c828c4661e8a77db269e5b3}{Get\+Axis\+Raw}} (string axis\+Name)
+\begin{DoxyCompactList}\small\item\em Returns the value of the virtual axis identified by axis\+Name with no smoothing filtering applied. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_ac45bfbc1aaa71822f9dd32ee446e3e26}{Get\+Button}} (string button\+Name)
+\begin{DoxyCompactList}\small\item\em Returns true while the virtual button identified by button\+Name is held down. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a59b2338d29a39f0694aebef890598b7c}{Get\+Button\+Down}} (string button\+Name)
+\begin{DoxyCompactList}\small\item\em Returns true during the frame the user pressed down the virtual button identified by button\+Name. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a74cdd1903a2b531d575a20ea9cbb0ec0}{Get\+Button\+Up}} (string button\+Name)
+\begin{DoxyCompactList}\small\item\em Returns true the first frame the user releases the virtual button identified by button\+Name. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_abf392b3cf9d208f67a6ea02c0288206a}{Get\+Key}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns true while the user holds down the key identified by name. Think auto fire. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a8701b16492ad5e1ec79c019d74f7b051}{Get\+Key\+Down}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns true during the frame the user starts pressing down the key identified by name. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a7c9f4df5dcb4bc4d194da55be31fb0ea}{Get\+Key\+Up}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns true during the frame the user releases the key identified by name. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a40addbec8d9b18f0dc0cb101edc38b8d}{Get\+Mouse\+Button}} (int button)
+\begin{DoxyCompactList}\small\item\em Returns whether the given mouse button is held down. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a1a6498f2fab91a72642ac064359edef7}{Get\+Mouse\+Button\+Down}} (int button)
+\begin{DoxyCompactList}\small\item\em Returns true during the frame the user pressed the given mouse button. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_ac9d47356c504c74bfcbee5fff1e9939b}{Get\+Mouse\+Button\+Up}} (int button)
+\begin{DoxyCompactList}\small\item\em Returns true during the frame the user releases the given mouse button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a624c63ec2127ae1a70da0e8ac2a5742d}{any\+Key}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is any key or mouse button currently held down? (Read Only) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_input_a2587110e95d4dff8d00d112fcade9631}{any\+Key\+Down}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true the first frame the user hits any key or mouse button. (Read Only) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_input_ab5d4bcb7c637ec0760fc8ca8033ecec7}{mouse\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current mouse position in pixel coordinates. (Read Only) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_input_ac508b474e85e336be67f2ad7ef94f751}{mouse\+Scroll\+Delta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current mouse scroll delta. (Read Only) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface into the \mbox{\hyperlink{class_lua_1_1_input}{Input}} system. 
+
+To read an axis use \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}} with one of the following default axes\+: \char`\"{}\+Horizontal\char`\"{} and \char`\"{}\+Vertical\char`\"{} are mapped to joystick, A, W, S, D and the arrow keys. \char`\"{}\+Mouse X\char`\"{} and \char`\"{}\+Mouse Y\char`\"{} are mapped to the mouse delta. \char`\"{}\+Fire1\char`\"{}, \char`\"{}\+Fire2\char`\"{} \char`\"{}\+Fire3\char`\"{} are mapped to Ctrl, Alt, Cmd keys and three mouse or joystick buttons. 
+
+If you are using input for any kind of movement behaviour use \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}}. It gives you smoothed and configurable input that can be mapped to keyboard, joystick or mouse. Use \mbox{\hyperlink{class_lua_1_1_input_ac45bfbc1aaa71822f9dd32ee446e3e26}{Input.\+Get\+Button}} for action like events only. Don\textquotesingle{}t use it for movement, \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}} will make the script code smaller and simpler. 
+
+Note also that the \mbox{\hyperlink{class_lua_1_1_input}{Input}} flags are not reset until \char`\"{}\+Update()\char`\"{}, so its suggested you make all the \mbox{\hyperlink{class_lua_1_1_input}{Input}} Calls in the Update Loop. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}\label{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}} 
+\index{Lua.Input@{Lua.Input}!GetAxis@{GetAxis}}
+\index{GetAxis@{GetAxis}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetAxis()}{GetAxis()}}
+{\footnotesize\ttfamily static float Lua.\+Input.\+Get\+Axis (\begin{DoxyParamCaption}\item[{string}]{axis\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the value of the virtual axis identified by axis\+Name. 
+
+The value will be in the range -\/1...1 for keyboard and joystick input. If the axis is setup to be delta mouse movement, the mouse delta is multiplied by the axis sensitivity and the range is not -\/1...1. This is frame-\/rate independent; you do not need to be concerned about varying frame-\/rates when using this value. 
+\begin{DoxyParams}{Parameters}
+{\em axis\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_aa25e7d2e0c828c4661e8a77db269e5b3}\label{class_lua_1_1_input_aa25e7d2e0c828c4661e8a77db269e5b3}} 
+\index{Lua.Input@{Lua.Input}!GetAxisRaw@{GetAxisRaw}}
+\index{GetAxisRaw@{GetAxisRaw}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetAxisRaw()}{GetAxisRaw()}}
+{\footnotesize\ttfamily static float Lua.\+Input.\+Get\+Axis\+Raw (\begin{DoxyParamCaption}\item[{string}]{axis\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the value of the virtual axis identified by axis\+Name with no smoothing filtering applied. 
+
+The value will be in the range -\/1...1 for keyboard and joystick input. Since input is not smoothed, keyboard input will always be either -\/1, 0 or 1. This is useful if you want to do all smoothing of keyboard input processing yourself. 
+\begin{DoxyParams}{Parameters}
+{\em axis\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_ac45bfbc1aaa71822f9dd32ee446e3e26}\label{class_lua_1_1_input_ac45bfbc1aaa71822f9dd32ee446e3e26}} 
+\index{Lua.Input@{Lua.Input}!GetButton@{GetButton}}
+\index{GetButton@{GetButton}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetButton()}{GetButton()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Button (\begin{DoxyParamCaption}\item[{string}]{button\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true while the virtual button identified by button\+Name is held down. 
+
+Think auto fire -\/ this will return true as long as the button is held down. Use this only when implementing events that trigger an action, eg, shooting a weapon. Use Get\+Axis for input that controls continuous movement. 
+\begin{DoxyParams}{Parameters}
+{\em button\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_a59b2338d29a39f0694aebef890598b7c}\label{class_lua_1_1_input_a59b2338d29a39f0694aebef890598b7c}} 
+\index{Lua.Input@{Lua.Input}!GetButtonDown@{GetButtonDown}}
+\index{GetButtonDown@{GetButtonDown}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetButtonDown()}{GetButtonDown()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Button\+Down (\begin{DoxyParamCaption}\item[{string}]{button\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true during the frame the user pressed down the virtual button identified by button\+Name. 
+
+You need to call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the key and pressed it again. Use this only when implementing action like events IE\+: shooting a weapon. Use \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}} for any kind of movement behaviour. 
+\begin{DoxyParams}{Parameters}
+{\em button\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_a74cdd1903a2b531d575a20ea9cbb0ec0}\label{class_lua_1_1_input_a74cdd1903a2b531d575a20ea9cbb0ec0}} 
+\index{Lua.Input@{Lua.Input}!GetButtonUp@{GetButtonUp}}
+\index{GetButtonUp@{GetButtonUp}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetButtonUp()}{GetButtonUp()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Button\+Up (\begin{DoxyParamCaption}\item[{string}]{button\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true the first frame the user releases the virtual button identified by button\+Name. 
+
+You need to call this function from the Update function, since the state gets reset each frame. It will not return true until the user has pressed the button and released it again. 
+\begin{DoxyParams}{Parameters}
+{\em button\+Name} & \\
+\hline
+\end{DoxyParams}
+Use this only when implementing action like events IE\+: shooting a weapon. Use \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}} for any kind of movement behaviour. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_abf392b3cf9d208f67a6ea02c0288206a}\label{class_lua_1_1_input_abf392b3cf9d208f67a6ea02c0288206a}} 
+\index{Lua.Input@{Lua.Input}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Key (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true while the user holds down the key identified by name. Think auto fire. 
+
+When dealing with input it is recommended to use \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}} and \mbox{\hyperlink{class_lua_1_1_input_ac45bfbc1aaa71822f9dd32ee446e3e26}{Input.\+Get\+Button}} instead since it allows end-\/users to configure the keys. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_a8701b16492ad5e1ec79c019d74f7b051}\label{class_lua_1_1_input_a8701b16492ad5e1ec79c019d74f7b051}} 
+\index{Lua.Input@{Lua.Input}!GetKeyDown@{GetKeyDown}}
+\index{GetKeyDown@{GetKeyDown}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetKeyDown()}{GetKeyDown()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Key\+Down (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true during the frame the user starts pressing down the key identified by name. 
+
+You need to call this function from the Update function, since the state gets reset each frame. It will not return true until the user has pressed the key and released it again. When dealing with input it is recommended to use \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}} and \mbox{\hyperlink{class_lua_1_1_input_ac45bfbc1aaa71822f9dd32ee446e3e26}{Input.\+Get\+Button}} instead since it allows end-\/users to configure the keys. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_a7c9f4df5dcb4bc4d194da55be31fb0ea}\label{class_lua_1_1_input_a7c9f4df5dcb4bc4d194da55be31fb0ea}} 
+\index{Lua.Input@{Lua.Input}!GetKeyUp@{GetKeyUp}}
+\index{GetKeyUp@{GetKeyUp}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetKeyUp()}{GetKeyUp()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Key\+Up (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true during the frame the user releases the key identified by name. 
+
+You need to call this function from the Update function, since the state gets reset each frame. It will not return true until the user has pressed the key and released it again. When dealing with input it is recommended to use \mbox{\hyperlink{class_lua_1_1_input_a616e22e4f3b9c973c9763c10dc495395}{Input.\+Get\+Axis}} and \mbox{\hyperlink{class_lua_1_1_input_ac45bfbc1aaa71822f9dd32ee446e3e26}{Input.\+Get\+Button}} instead since it allows end-\/users to configure the keys. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_a40addbec8d9b18f0dc0cb101edc38b8d}\label{class_lua_1_1_input_a40addbec8d9b18f0dc0cb101edc38b8d}} 
+\index{Lua.Input@{Lua.Input}!GetMouseButton@{GetMouseButton}}
+\index{GetMouseButton@{GetMouseButton}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetMouseButton()}{GetMouseButton()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Mouse\+Button (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns whether the given mouse button is held down. 
+
+button values are 0 for left button, 1 for right button, 2 for the middle button. 
+\begin{DoxyParams}{Parameters}
+{\em button} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_a1a6498f2fab91a72642ac064359edef7}\label{class_lua_1_1_input_a1a6498f2fab91a72642ac064359edef7}} 
+\index{Lua.Input@{Lua.Input}!GetMouseButtonDown@{GetMouseButtonDown}}
+\index{GetMouseButtonDown@{GetMouseButtonDown}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetMouseButtonDown()}{GetMouseButtonDown()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Mouse\+Button\+Down (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true during the frame the user pressed the given mouse button. 
+
+You need to call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the mouse button and pressed it again. button values are 0 for left button, 1 for right button, 2 for the middle button. 
+\begin{DoxyParams}{Parameters}
+{\em button} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_ac9d47356c504c74bfcbee5fff1e9939b}\label{class_lua_1_1_input_ac9d47356c504c74bfcbee5fff1e9939b}} 
+\index{Lua.Input@{Lua.Input}!GetMouseButtonUp@{GetMouseButtonUp}}
+\index{GetMouseButtonUp@{GetMouseButtonUp}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{GetMouseButtonUp()}{GetMouseButtonUp()}}
+{\footnotesize\ttfamily static bool Lua.\+Input.\+Get\+Mouse\+Button\+Up (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true during the frame the user releases the given mouse button. 
+
+You need to call this function from the Update function, since the state gets reset each frame. It will not return true until the user has released the mouse button and pressed it again. button values are 0 for left button, 1 for right button, 2 for the middle button. 
+\begin{DoxyParams}{Parameters}
+{\em button} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_input_a624c63ec2127ae1a70da0e8ac2a5742d}\label{class_lua_1_1_input_a624c63ec2127ae1a70da0e8ac2a5742d}} 
+\index{Lua.Input@{Lua.Input}!anyKey@{anyKey}}
+\index{anyKey@{anyKey}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{anyKey}{anyKey}}
+{\footnotesize\ttfamily bool Lua.\+Input.\+any\+Key\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Is any key or mouse button currently held down? (Read Only) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_a2587110e95d4dff8d00d112fcade9631}\label{class_lua_1_1_input_a2587110e95d4dff8d00d112fcade9631}} 
+\index{Lua.Input@{Lua.Input}!anyKeyDown@{anyKeyDown}}
+\index{anyKeyDown@{anyKeyDown}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{anyKeyDown}{anyKeyDown}}
+{\footnotesize\ttfamily bool Lua.\+Input.\+any\+Key\+Down\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns true the first frame the user hits any key or mouse button. (Read Only) 
+
+You should be polling this variable from the Update function, since the state gets reset each frame. It will not return true until the user has released all keys / buttons and pressed any key / buttons again. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_ab5d4bcb7c637ec0760fc8ca8033ecec7}\label{class_lua_1_1_input_ab5d4bcb7c637ec0760fc8ca8033ecec7}} 
+\index{Lua.Input@{Lua.Input}!mousePosition@{mousePosition}}
+\index{mousePosition@{mousePosition}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{mousePosition}{mousePosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Input.\+mouse\+Position\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The current mouse position in pixel coordinates. (Read Only) 
+
+The bottom-\/left of the screen or window is at (0, 0). The top-\/right of the screen or window is at (\mbox{\hyperlink{class_lua_1_1_screen_ae44386bf8759e8f85e04358297f3dd95}{Screen.\+width}}, \mbox{\hyperlink{class_lua_1_1_screen_a7e3459d0ccc2641709d1bad599092fdc}{Screen.\+height}}). \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_input_ac508b474e85e336be67f2ad7ef94f751}\label{class_lua_1_1_input_ac508b474e85e336be67f2ad7ef94f751}} 
+\index{Lua.Input@{Lua.Input}!mouseScrollDelta@{mouseScrollDelta}}
+\index{mouseScrollDelta@{mouseScrollDelta}!Lua.Input@{Lua.Input}}
+\subsubsection{\texorpdfstring{mouseScrollDelta}{mouseScrollDelta}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Input.\+mouse\+Scroll\+Delta\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The current mouse scroll delta. (Read Only) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Input.\+cs\end{DoxyCompactItemize}

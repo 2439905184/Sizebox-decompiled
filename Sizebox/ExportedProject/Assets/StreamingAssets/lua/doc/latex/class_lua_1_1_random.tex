@@ -1,0 +1,180 @@
+\hypertarget{class_lua_1_1_random}{}\section{Lua.\+Random Class Reference}
+\label{class_lua_1_1_random}\index{Lua.Random@{Lua.Random}}
+
+
+Class for generating random data.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_lua_1_1_random_ac69b6f407406ae02a7595403097ec8a8}{Init\+State}} (int seed)
+\begin{DoxyCompactList}\small\item\em Initializes the random number generator state with a seed. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_random_ab17e85e47aeaa3f719b649e51bb49d28}{Range}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Returns a random float number between and min \mbox{[}inclusive\mbox{]} and max \mbox{[}inclusive\mbox{]} (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_random_a5afbf9cff5e196e2fd7e5ab917b64a8b}{Range}} (float min, float max)
+\begin{DoxyCompactList}\small\item\em Returns a random float number between and min \mbox{[}inclusive\mbox{]} and max \mbox{[}inclusive\mbox{]} (Read Only). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_random_a2e9c7e49b4362f7ab3335f0a46778b70}{inside\+Unit\+Circle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a random point inside a circle with radius 1 (Read Only). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_random_a1c3fa5f6de20e35af1e85564ef928137}{inside\+Unit\+Sphere}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a random point inside a sphere with radius 1 (Read Only). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_random_a558a1a73871855fb64ba923ebc7353c4}{on\+Unit\+Sphere}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a random point on the surface of a sphere with radius 1 (Read Only). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_random_a2705c860d3280bb5e5d0593d59fad8e3}{rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a random rotation (Read Only). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_random_a99f73343c5e319aff692abcca2ca51a1}{rotation\+Uniform}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a random rotation with uniform distribution (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_random_a058b72bbd12cd2d665b14d0479b52ad7}{value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns a random number between 0.\+0 \mbox{[}inclusive\mbox{]} and 1.\+0 \mbox{[}inclusive\mbox{]} (Read Only). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for generating random data. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_random_ac69b6f407406ae02a7595403097ec8a8}\label{class_lua_1_1_random_ac69b6f407406ae02a7595403097ec8a8}} 
+\index{Lua.Random@{Lua.Random}!InitState@{InitState}}
+\index{InitState@{InitState}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{InitState()}{InitState()}}
+{\footnotesize\ttfamily static void Lua.\+Random.\+Init\+State (\begin{DoxyParamCaption}\item[{int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initializes the random number generator state with a seed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_random_ab17e85e47aeaa3f719b649e51bb49d28}\label{class_lua_1_1_random_ab17e85e47aeaa3f719b649e51bb49d28}} 
+\index{Lua.Random@{Lua.Random}!Range@{Range}}
+\index{Range@{Range}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float Lua.\+Random.\+Range (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a random float number between and min \mbox{[}inclusive\mbox{]} and max \mbox{[}inclusive\mbox{]} (Read Only). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_random_a5afbf9cff5e196e2fd7e5ab917b64a8b}\label{class_lua_1_1_random_a5afbf9cff5e196e2fd7e5ab917b64a8b}} 
+\index{Lua.Random@{Lua.Random}!Range@{Range}}
+\index{Range@{Range}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float Lua.\+Random.\+Range (\begin{DoxyParamCaption}\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a random float number between and min \mbox{[}inclusive\mbox{]} and max \mbox{[}inclusive\mbox{]} (Read Only). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_random_a2e9c7e49b4362f7ab3335f0a46778b70}\label{class_lua_1_1_random_a2e9c7e49b4362f7ab3335f0a46778b70}} 
+\index{Lua.Random@{Lua.Random}!insideUnitCircle@{insideUnitCircle}}
+\index{insideUnitCircle@{insideUnitCircle}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{insideUnitCircle}{insideUnitCircle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Random.\+inside\+Unit\+Circle\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a random point inside a circle with radius 1 (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_random_a1c3fa5f6de20e35af1e85564ef928137}\label{class_lua_1_1_random_a1c3fa5f6de20e35af1e85564ef928137}} 
+\index{Lua.Random@{Lua.Random}!insideUnitSphere@{insideUnitSphere}}
+\index{insideUnitSphere@{insideUnitSphere}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{insideUnitSphere}{insideUnitSphere}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Random.\+inside\+Unit\+Sphere\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a random point inside a sphere with radius 1 (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_random_a558a1a73871855fb64ba923ebc7353c4}\label{class_lua_1_1_random_a558a1a73871855fb64ba923ebc7353c4}} 
+\index{Lua.Random@{Lua.Random}!onUnitSphere@{onUnitSphere}}
+\index{onUnitSphere@{onUnitSphere}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{onUnitSphere}{onUnitSphere}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Random.\+on\+Unit\+Sphere\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a random point on the surface of a sphere with radius 1 (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_random_a2705c860d3280bb5e5d0593d59fad8e3}\label{class_lua_1_1_random_a2705c860d3280bb5e5d0593d59fad8e3}} 
+\index{Lua.Random@{Lua.Random}!rotation@{rotation}}
+\index{rotation@{rotation}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Random.\+rotation\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a random rotation (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_random_a99f73343c5e319aff692abcca2ca51a1}\label{class_lua_1_1_random_a99f73343c5e319aff692abcca2ca51a1}} 
+\index{Lua.Random@{Lua.Random}!rotationUniform@{rotationUniform}}
+\index{rotationUniform@{rotationUniform}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{rotationUniform}{rotationUniform}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Random.\+rotation\+Uniform\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a random rotation with uniform distribution (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_random_a058b72bbd12cd2d665b14d0479b52ad7}\label{class_lua_1_1_random_a058b72bbd12cd2d665b14d0479b52ad7}} 
+\index{Lua.Random@{Lua.Random}!value@{value}}
+\index{value@{value}!Lua.Random@{Lua.Random}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily float Lua.\+Random.\+value\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Returns a random number between 0.\+0 \mbox{[}inclusive\mbox{]} and 1.\+0 \mbox{[}inclusive\mbox{]} (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Random.\+cs\end{DoxyCompactItemize}

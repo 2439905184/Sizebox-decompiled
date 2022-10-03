@@ -1,0 +1,98 @@
+\hypertarget{class_lua_1_1_time}{}\section{Lua.\+Time Class Reference}
+\label{class_lua_1_1_time}\index{Lua.Time@{Lua.Time}}
+
+
+The interface to get time information from Unity.  
+
+
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_lua_1_1_time_a0c34615f0ecde357e396cab65ecd4428}{delta\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time in seconds it took to complete the last frame (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_time_a8b9eb6a7ddf143242c72e6e9378604c6}{fixed\+Delta\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time in seconds it took to complete the last fixed frame (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_time_ae821e279218bd2e418f6bafc2e66cc4f}{frame\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The total number of frames that have passed (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_time_a6a7753473015073c35d5ae5bc4edfdf3}{time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time at the beginning of this frame (Read Only). This is the time in seconds since the start of the game. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_time_af1a087ea59af5ee339aa26ae49c13370}{time\+Since\+Level\+Load}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time this frame has started (Read Only). This is the time in seconds since the last level has been loaded. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface to get time information from Unity. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_time_a0c34615f0ecde357e396cab65ecd4428}\label{class_lua_1_1_time_a0c34615f0ecde357e396cab65ecd4428}} 
+\index{Lua.Time@{Lua.Time}!deltaTime@{deltaTime}}
+\index{deltaTime@{deltaTime}!Lua.Time@{Lua.Time}}
+\subsubsection{\texorpdfstring{deltaTime}{deltaTime}}
+{\footnotesize\ttfamily float Lua.\+Time.\+delta\+Time\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The time in seconds it took to complete the last frame (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Use this function to make your game frame rate independent. If you add or subtract to a value every frame chances are you should multiply with \mbox{\hyperlink{class_lua_1_1_time_a0c34615f0ecde357e396cab65ecd4428}{Time.\+delta\+Time}}. When you multiply with \mbox{\hyperlink{class_lua_1_1_time_a0c34615f0ecde357e396cab65ecd4428}{Time.\+delta\+Time}} you essentially express\+: I want to move this object 10 meters per second instead of 10 meters per frame. \mbox{\Hypertarget{class_lua_1_1_time_a8b9eb6a7ddf143242c72e6e9378604c6}\label{class_lua_1_1_time_a8b9eb6a7ddf143242c72e6e9378604c6}} 
+\index{Lua.Time@{Lua.Time}!fixedDeltaTime@{fixedDeltaTime}}
+\index{fixedDeltaTime@{fixedDeltaTime}!Lua.Time@{Lua.Time}}
+\subsubsection{\texorpdfstring{fixedDeltaTime}{fixedDeltaTime}}
+{\footnotesize\ttfamily float Lua.\+Time.\+fixed\+Delta\+Time\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The time in seconds it took to complete the last fixed frame (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_time_ae821e279218bd2e418f6bafc2e66cc4f}\label{class_lua_1_1_time_ae821e279218bd2e418f6bafc2e66cc4f}} 
+\index{Lua.Time@{Lua.Time}!frameCount@{frameCount}}
+\index{frameCount@{frameCount}!Lua.Time@{Lua.Time}}
+\subsubsection{\texorpdfstring{frameCount}{frameCount}}
+{\footnotesize\ttfamily float Lua.\+Time.\+frame\+Count\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The total number of frames that have passed (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_time_a6a7753473015073c35d5ae5bc4edfdf3}\label{class_lua_1_1_time_a6a7753473015073c35d5ae5bc4edfdf3}} 
+\index{Lua.Time@{Lua.Time}!time@{time}}
+\index{time@{time}!Lua.Time@{Lua.Time}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily float Lua.\+Time.\+time\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The time at the beginning of this frame (Read Only). This is the time in seconds since the start of the game. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Returns the same value if called multiple times in a single frame. When called from inside Mono\+Behaviour\textquotesingle{}s Fixed\+Update, returns fixed\+Time property. \mbox{\Hypertarget{class_lua_1_1_time_af1a087ea59af5ee339aa26ae49c13370}\label{class_lua_1_1_time_af1a087ea59af5ee339aa26ae49c13370}} 
+\index{Lua.Time@{Lua.Time}!timeSinceLevelLoad@{timeSinceLevelLoad}}
+\index{timeSinceLevelLoad@{timeSinceLevelLoad}!Lua.Time@{Lua.Time}}
+\subsubsection{\texorpdfstring{timeSinceLevelLoad}{timeSinceLevelLoad}}
+{\footnotesize\ttfamily float Lua.\+Time.\+time\+Since\+Level\+Load\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The time this frame has started (Read Only). This is the time in seconds since the last level has been loaded. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Time.\+cs\end{DoxyCompactItemize}

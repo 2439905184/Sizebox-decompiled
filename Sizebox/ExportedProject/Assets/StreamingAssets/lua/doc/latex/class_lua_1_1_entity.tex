@@ -1,0 +1,1228 @@
+\hypertarget{class_lua_1_1_entity}{}\section{Lua.\+Entity Class Reference}
+\label{class_lua_1_1_entity}\index{Lua.Entity@{Lua.Entity}}
+
+
+A \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} represents Characters and Objects  
+
+
+Inheritance diagram for Lua.\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lua_1_1_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a422af2c756caecc01bad49a14ba5da7f}{Delete}} ()
+\begin{DoxyCompactList}\small\item\em Safely deletes the entity (don\textquotesingle{}t deletes the player). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_entity_a4ec9fe7962ad6a301c33253c735aedae}{Distance\+To}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em Calculate the relative distance to a target. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_entity_ad341a3f8e110857d06111b8b6f29d646}{Distance\+To}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} point)
+\begin{DoxyCompactList}\small\item\em Calculate the relative distance to a point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_a2e06bf904c49f705ac361e1538365e2e}{Find\+Closest\+Micro}} ()
+\begin{DoxyCompactList}\small\item\em Returns the closes Micro \mbox{\hyperlink{class_lua_1_1_entity}{Entity}}. It can also return the player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_ac7eac4ebcb1fe784ab5c06eed7885cf7}{Find\+Closest\+Giantess}} ()
+\begin{DoxyCompactList}\small\item\em Returns the closes Giantess \mbox{\hyperlink{class_lua_1_1_entity}{Entity}}. It can also return the player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_a27a8d5461e9d6890e085b06e2d00f6bd}{is\+Humanoid}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the entity is a humanoid character. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_af72e042e1fd05c66abceebb49ec2caf4}{is\+Giantess}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the entity is a giantess (.gts). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_af7b9099c16b719f42e4fdfd82661d259}{is\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if this entity is player controlled (micro or giantess). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_a5eaa128b6b8cf4aeb7f219edd030d61e}{is\+Micro}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the entity is a micro (.micro) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_lua_1_1_entity_a1bf50f8db78480e10f40a71e44480e21}{BE}} (float speed)
+\begin{DoxyCompactList}\small\item\em Adds a Breast Expansion action at the end of the action queue. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_lua_1_1_entity_ac8dfc303d378e4e805c5ba3f38f49c59}{BE}} (float speed, float time)
+\begin{DoxyCompactList}\small\item\em Adds a Breast Expansion action at the end of the action queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a92feb21c4219c60a7e5935733302083f}{Grow}} (float factor)
+\begin{DoxyCompactList}\small\item\em Adds a {\bfseries{priority}} Grow action at the {\bfseries{beginning}} of the action queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_ac574fce9abb6f90e7f7675be74838964}{Grow}} (float factor, float time)
+\begin{DoxyCompactList}\small\item\em Adds a {\bfseries{priority}} Grow action at the {\bfseries{beginning}} of the action queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a0007133219ff5ec24e9eecf6a9d2dd50}{Grow\+And\+Wait}} (float factor, float time)
+\begin{DoxyCompactList}\small\item\em Adds a regular Grow action at the end of the action queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a5d6cfb68967adf948db2b6c09d7dfd38}{Move\+To}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} destination)
+\begin{DoxyCompactList}\small\item\em The entity will walk to a designed point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a307f39e2316f0c4246604ba5ce5b749e}{Move\+To}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target\+Entity)
+\begin{DoxyCompactList}\small\item\em The entity will walk towards another target entity, and stop when it reaches it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_ab4f0e1c31b16110cdadb7479ba008423}{Chase}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em Chase the target entity while evading objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a442bfc9dcbb33b4fa3922a59357a8723}{Face}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em Face the target. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a32545d25ff6935a006bdb6b5ad45ad9a}{Seek}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target, float duration=0, float separation=-\/1)
+\begin{DoxyCompactList}\small\item\em The entity will seek toward another target until the time runs out or it is close enough. Used in the \char`\"{}\+Follow\char`\"{} command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a1a0205dc1d6ab6ac54679970885490f9}{Seek}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}{position}}, float duration=0, float separation=-\/1)
+\begin{DoxyCompactList}\small\item\em The entity will seek toward a position for the specified amount of time (in seconds). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_aa4d1d044edd1f9b9dfb4b310c49b8761}{Wander}} ()
+\begin{DoxyCompactList}\small\item\em The entity will wander without stopping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a9858a940de17a0405da24bff1d834970}{Wander}} (float time)
+\begin{DoxyCompactList}\small\item\em The entity will wander during the specified amount of time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a58a5bb200f7182dea5e622f036f05bf3}{Wait}} (float time)
+\begin{DoxyCompactList}\small\item\em The entity will wait for the specified amount of time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_af1290dfaf8e3da8c2adb7279359bf036}{Flee}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target, float time)
+\begin{DoxyCompactList}\small\item\em The entity will flee from the target during the specified amount of time. A time of 0 will make it unlimited. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a334e63b56e1c78e6dbebd4dd9c48a69e}{Flee}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}{position}}, float time)
+\begin{DoxyCompactList}\small\item\em The entity will flee from the position during the specified amount of time. A time of 0 will make it unlimited. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_a72e0a626a062ba116cf62cfeb77f87f8}{Find\+Random\+Building}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} self)
+\begin{DoxyCompactList}\small\item\em This function a random location of a structure close to the gts \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a5690c11c287139f6d5b5171f5d4189e9}{Wreck}} ()
+\begin{DoxyCompactList}\small\item\em The enitity will aggressively stomp in an attempt to wreck everything \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_af93c20b6cca387d60a5368c079ae65ef}{Stand\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Orders a crushed micro to stand up. Note that entities stop all behaviors when crushed. So this method is only useful when called from other entity\textquotesingle{}s behavior or a global script. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a0a8058c8b504215e492471b4e7d557d4}{Stomp}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em If the entity is a giantess, she will stomp a target entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_ad6c8d1dc736aeea69e734d3c1e884343}{Stomp}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} target)
+\begin{DoxyCompactList}\small\item\em If the entity is a giantess, she will stomp a target point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a6ddff7e7a95c85ba34bee6b8b5c4ee93}{Grab}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em If the entity is a giantess will grab a target. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Look\+At}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em Not to be confused with \mbox{\hyperlink{class_lua_1_1_transform_a1e722de9c3eacff82477ab7684a67553}{Transform.\+Look\+At}} If the entity is a giantess it will look towards a target. If the target is nil the giantess will return to default looking behaviour \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a23180e62c487b6c3923e39b3be84b291}{Equip\+Raygun}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro, will equip raygun if it is currently unequipped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_aaa24b31446f5c0087faa4030f91e80ac}{Equip\+S\+MG}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro, will equip S\+MG if it is currently unequipped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a1a4cc3d2425ef3527ab0692f4c2a9ca3}{Unequip\+Gun}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro, will unequip gun if it currently has one equipped. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_ac47475b1b0342f1e6ce52aca2eec7f38}{Aim}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro, will aim at target. If target is null, will stop aiming \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_aadc969ba1387cf03d80b8432705f0750}{Stop\+Aiming}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro, will stop aiming \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a3a5c197d31f8834f8ed67f71c6157719}{Start\+Firing}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro will start firing, and aiming if not doing so already, if there it has an aim target. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a4d7809fc03b618624a6d7640674fe646}{Stop\+Firing}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro will stop firing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_af23f0b36c1b4c778fc7f328490223852}{Engage}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target=null)
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro will start chasing and firing (and aiming) at designated target if not doing so already. If no target is provided, will attempt to engage the currently assigned aim target. Sort of an all-\/in-\/one command where the entity will reposition themselves if too close to or too far from the target. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a9ead5c7d5e821fa285ab065b9cc3185f}{Stop\+Engaging}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro will stop chasing and firing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a17d117771166d30924da118c1fed9968}{Fire\+Once}} ()
+\begin{DoxyCompactList}\small\item\em If the entity is an N\+PC micro will fire once, and aiming if not doing so already \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_a6357c0a54e9aa79beb928d079b42aa76}{Is\+Dead}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the entity is dead. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_ab25d357d357ab0cf7ff9a2e81aa9cb08}{Is\+Stuck}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the entity is stuck to giantess. Only applicable to micros. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_aa8688dacb32db168b780597d8f11622b}{Is\+Targettable}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the entity be targeted for crushing. To be targettable it must be a living micro that is not stuck. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_a4b4bb9870796b854c0d5666c9cba9375}{Is\+Crushed}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the entity is crushed. Only applicable to micros. It doesn\textquotesingle{}t matter whether it survived the crush or not. Returns false for deleted entities, even if they were crushed prior to deleting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_a6be24874965a4015e7fd8244fa345220}{Update\+Mesh\+Collider}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{[}Slow operation\mbox{]} Forces the update of the collider. This is a slow operacion, don\textquotesingle{}t update the mesh every frame, don\textquotesingle{}t use inside a loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_ac2bbfd97ccf17d7cd96fb1cf3b3c51e4}{Show\+Breast\+Physics\+Options}} ()
+\begin{DoxyCompactList}\small\item\em Shows a UI menu to the user that can be used to alter the breasts physics \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_entity_aa3ec8ca2693205f43b8e1e620b209018}{Play\+As}} ()
+\begin{DoxyCompactList}\small\item\em Transfers player control to this entity, only if it\textquotesingle{}s a playable character. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_aad0651348795eb39acee39055e0b7638}{Get\+Random\+Micro}} ()
+\begin{DoxyCompactList}\small\item\em Returns a random micro in the scene. Can return null if there are no micros in the scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_aa9df9f39762cb24b89449e8b61aab43c}{Get\+Random\+Giantess}} ()
+\begin{DoxyCompactList}\small\item\em Returns a random giantess in the scene. Can return null if there are no giantesses in the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_af3f7aae31ecb691380a6f18f053fb907}{Get\+Selected\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Returns the currently selected entity in the Editor. \end{DoxyCompactList}\item 
+static I\+List$<$ string $>$ \mbox{\hyperlink{class_lua_1_1_entity_abf1acc0c0ad6baa7224c8f3e088caf0f}{Get\+Player\+Model\+List}} ()
+\begin{DoxyCompactList}\small\item\em A list of all available player models. \end{DoxyCompactList}\item 
+static I\+List$<$ string $>$ \mbox{\hyperlink{class_lua_1_1_entity_a8abff3f32d1cbaa6355d4d217ab558e1}{Get\+Gts\+Model\+List}} ()
+\begin{DoxyCompactList}\small\item\em A list of all available giantess models. \end{DoxyCompactList}\item 
+static I\+List$<$ string $>$ \mbox{\hyperlink{class_lua_1_1_entity_a42f84cbad068689f4308f5e4b1c7a981}{Get\+Female\+Micro\+List}} ()
+\begin{DoxyCompactList}\small\item\em A list of all available female micro models. \end{DoxyCompactList}\item 
+static I\+List$<$ string $>$ \mbox{\hyperlink{class_lua_1_1_entity_a7d49be266385d4155691a2349d964b81}{Get\+Male\+Micro\+List}} ()
+\begin{DoxyCompactList}\small\item\em A list of all available male micro models. \end{DoxyCompactList}\item 
+static I\+List$<$ string $>$ \mbox{\hyperlink{class_lua_1_1_entity_aacd0f73c8377462b354deb3bc73c6b40}{Get\+Object\+List}} ()
+\begin{DoxyCompactList}\small\item\em A list of all available object models. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_a582caed51f918e3d7642a7ec8a227fd1}{Spawn\+Giantess}} (string \mbox{\hyperlink{class_lua_1_1_entity_a8155b6c6ef0f0630ec7e818dd4cdaec4}{name}}, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}{position}}, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rotation, float \mbox{\hyperlink{class_lua_1_1_entity_a784673c0e6fbf29381a309a5df0ee10e}{scale}})
+\begin{DoxyCompactList}\small\item\em Spawns a giantess from a given model name. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_a347a27b3fea83b83461600b3b80ce5d8}{Spawn\+Female\+Micro}} (string \mbox{\hyperlink{class_lua_1_1_entity_a8155b6c6ef0f0630ec7e818dd4cdaec4}{name}}, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}{position}}, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rotation, float \mbox{\hyperlink{class_lua_1_1_entity_a784673c0e6fbf29381a309a5df0ee10e}{scale}})
+\begin{DoxyCompactList}\small\item\em Spawns a female micro from a given model name. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_ad8f4dd9eec83d4df5d28efa120210ef6}{Spawn\+Male\+Micro}} (string \mbox{\hyperlink{class_lua_1_1_entity_a8155b6c6ef0f0630ec7e818dd4cdaec4}{name}}, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}{position}}, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rotation, float \mbox{\hyperlink{class_lua_1_1_entity_a784673c0e6fbf29381a309a5df0ee10e}{scale}})
+\begin{DoxyCompactList}\small\item\em Spawns a male micro from a given model name. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_entity_a5bb33d1afcfac1b1452d362cb5d8bb94}{Spawn\+Object}} (string \mbox{\hyperlink{class_lua_1_1_entity_a8155b6c6ef0f0630ec7e818dd4cdaec4}{name}}, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}{position}}, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rotation, float \mbox{\hyperlink{class_lua_1_1_entity_a784673c0e6fbf29381a309a5df0ee10e}{scale}})
+\begin{DoxyCompactList}\small\item\em Spawns an object from a given model name. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_entity_ac55e7536a3bdc7a6b9a3fa6a759db9ee}{Equals}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} a, \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} b)
+\begin{DoxyCompactList}\small\item\em Tests 2 entities for equality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Table \mbox{\hyperlink{class_lua_1_1_entity_ae0c707512eed832f2211ace61d3be75d}{dict}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A dictionary associated to this entity. It can be used to store and exchange arbitrary data between scripts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} \mbox{\hyperlink{class_lua_1_1_entity_a51edf8c42bd2acb730ae73d045341320}{transform}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The transform component associated to this entity. It contains data about the position, rotation and scale used by the Unity Engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}} \mbox{\hyperlink{class_lua_1_1_entity_a56d48f666679b251eefa10e6f65bbb60}{rigidbody}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Control the physics of the \mbox{\hyperlink{class_lua_1_1_entity}{Entity}}. Normal objects don\textquotesingle{}t come with physics by default, but player and npc they have it for movement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_a_i}{AI}} \mbox{\hyperlink{class_lua_1_1_entity_a13c1350817e444010fcbaff8d224039e}{ai}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The ai component controls the ai behaviors of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_animation}{Animation}} \mbox{\hyperlink{class_lua_1_1_entity_acf080bfbeeb3a6308c2fdd4cc4993e81}{animation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Component for controling the animation of humanoid entities. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_bones}{Bones}} \mbox{\hyperlink{class_lua_1_1_entity_a8d4bdecb96c327395e5ddbde88608cf4}{bones}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Access the bone transforms of the model (head, hands, feet, etc). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_i_k}{IK}} \mbox{\hyperlink{class_lua_1_1_entity_a42cd1e5e507a1e79eb1161799564da88}{ik}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Inverse Kinematics for the model \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_senses}{Senses}} \mbox{\hyperlink{class_lua_1_1_entity_a9a5a67b2da9b9d95e31c766aa68760ee}{senses}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Manages the senses of the entity such as the vision. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_morphs}{Morphs}} \mbox{\hyperlink{class_lua_1_1_entity_aa9723210eb2494461ff12c55b52e8844}{morphs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Control the morphs of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_movement}{Movement}} \mbox{\hyperlink{class_lua_1_1_entity_a2845d63d6164b33ee49f760211fa4116}{movement}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Manages the movement of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_shooting}{Shooting}} \mbox{\hyperlink{class_lua_1_1_entity_af00214fc6ff19d22818d8d0810630cea}{shooting}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Manages the shooting of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}{position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get the current position on world space of this entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_entity_a7dfc341caa3b11cc42ef45226689741c}{Can\+Look\+At\+Player}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether or not a Giantess entity can look at the player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lua_1_1_entity_a7776e8422e86d2ab5670ca314a65aab5}{id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get the id associated to this entity. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lua_1_1_entity_a8155b6c6ef0f0630ec7e818dd4cdaec4}{name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of this entity. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lua_1_1_entity_acd67b39a7c95e3cb87171073c2877de1}{model\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Name the model of this entity. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_lua_1_1_entity_a784673c0e6fbf29381a309a5df0ee10e}{scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The scale of this entity. Use this instead of the transform when possible. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_lua_1_1_entity_a1873494f26c8f90c79254b43d25d47f7}{base\+Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Base model height of this entity. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_lua_1_1_entity_a6b6baf8292fe2447ad0620722bc24526}{height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The height of this entity. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_lua_1_1_entity_a133133afe701b7ca4f0e2d6632beae33}{max\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The max scale for this entity. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{class_lua_1_1_entity_a642603e2952e4fcea70979837049f813}{min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The min scale for this entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} represents Characters and Objects 
+
+Entities are things that can be spawned in game, like Objects, Giantesses, Micros, and Even the player is considered and \mbox{\hyperlink{class_lua_1_1_entity}{Entity}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_entity_ac47475b1b0342f1e6ce52aca2eec7f38}\label{class_lua_1_1_entity_ac47475b1b0342f1e6ce52aca2eec7f38}} 
+\index{Lua.Entity@{Lua.Entity}!Aim@{Aim}}
+\index{Aim@{Aim}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Aim()}{Aim()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Aim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro, will aim at target. If target is null, will stop aiming 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & target to aim at. Only works with humanoids.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a1bf50f8db78480e10f40a71e44480e21}\label{class_lua_1_1_entity_a1bf50f8db78480e10f40a71e44480e21}} 
+\index{Lua.Entity@{Lua.Entity}!BE@{BE}}
+\index{BE@{BE}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{BE()}{BE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Lua.\+Entity.\+BE (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a Breast Expansion action at the end of the action queue. 
+
+The breasts of the giantess will grow at a constant speed relative to their size (i.\+e. 0.\+1 = 10\% per second). Negative values will make it shrink. \mbox{\Hypertarget{class_lua_1_1_entity_ac8dfc303d378e4e805c5ba3f38f49c59}\label{class_lua_1_1_entity_ac8dfc303d378e4e805c5ba3f38f49c59}} 
+\index{Lua.Entity@{Lua.Entity}!BE@{BE}}
+\index{BE@{BE}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{BE()}{BE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Lua.\+Entity.\+BE (\begin{DoxyParamCaption}\item[{float}]{speed,  }\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a Breast Expansion action at the end of the action queue. 
+
+The breasts of the giantess grow at a constant speed during a specified amount of time, relative to their size (i.\+e. 0.\+1 = 10\% per second). Negative values will make it shrink. \mbox{\Hypertarget{class_lua_1_1_entity_ab4f0e1c31b16110cdadb7479ba008423}\label{class_lua_1_1_entity_ab4f0e1c31b16110cdadb7479ba008423}} 
+\index{Lua.Entity@{Lua.Entity}!Chase@{Chase}}
+\index{Chase@{Chase}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Chase()}{Chase()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Chase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Chase the target entity while evading objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & target to chase down\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a422af2c756caecc01bad49a14ba5da7f}\label{class_lua_1_1_entity_a422af2c756caecc01bad49a14ba5da7f}} 
+\index{Lua.Entity@{Lua.Entity}!Delete@{Delete}}
+\index{Delete@{Delete}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safely deletes the entity (don\textquotesingle{}t deletes the player). 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a4ec9fe7962ad6a301c33253c735aedae}\label{class_lua_1_1_entity_a4ec9fe7962ad6a301c33253c735aedae}} 
+\index{Lua.Entity@{Lua.Entity}!DistanceTo@{DistanceTo}}
+\index{DistanceTo@{DistanceTo}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{DistanceTo()}{DistanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Lua.\+Entity.\+Distance\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Calculate the relative distance to a target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_ad341a3f8e110857d06111b8b6f29d646}\label{class_lua_1_1_entity_ad341a3f8e110857d06111b8b6f29d646}} 
+\index{Lua.Entity@{Lua.Entity}!DistanceTo@{DistanceTo}}
+\index{DistanceTo@{DistanceTo}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{DistanceTo()}{DistanceTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Lua.\+Entity.\+Distance\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{point }\end{DoxyParamCaption})}
+
+
+
+Calculate the relative distance to a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_af23f0b36c1b4c778fc7f328490223852}\label{class_lua_1_1_entity_af23f0b36c1b4c778fc7f328490223852}} 
+\index{Lua.Entity@{Lua.Entity}!Engage@{Engage}}
+\index{Engage@{Engage}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Engage()}{Engage()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Engage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro will start chasing and firing (and aiming) at designated target if not doing so already. If no target is provided, will attempt to engage the currently assigned aim target. Sort of an all-\/in-\/one command where the entity will reposition themselves if too close to or too far from the target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & target to engage. Doesn\textquotesingle{}t need to be supplied if shooter already has an aim target.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_ac55e7536a3bdc7a6b9a3fa6a759db9ee}\label{class_lua_1_1_entity_ac55e7536a3bdc7a6b9a3fa6a759db9ee}} 
+\index{Lua.Entity@{Lua.Entity}!Equals@{Equals}}
+\index{Equals@{Equals}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily static bool Lua.\+Entity.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tests 2 entities for equality. 
+
+Syntax for this operation is {\ttfamily entity1 == entity2}. Returns true if two variables point to the same entity. The inequality operator {\ttfamily entity1 $\sim$= entity2} also uses this function, but negated. \mbox{\Hypertarget{class_lua_1_1_entity_a23180e62c487b6c3923e39b3be84b291}\label{class_lua_1_1_entity_a23180e62c487b6c3923e39b3be84b291}} 
+\index{Lua.Entity@{Lua.Entity}!EquipRaygun@{EquipRaygun}}
+\index{EquipRaygun@{EquipRaygun}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{EquipRaygun()}{EquipRaygun()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Equip\+Raygun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro, will equip raygun if it is currently unequipped. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_aaa24b31446f5c0087faa4030f91e80ac}\label{class_lua_1_1_entity_aaa24b31446f5c0087faa4030f91e80ac}} 
+\index{Lua.Entity@{Lua.Entity}!EquipSMG@{EquipSMG}}
+\index{EquipSMG@{EquipSMG}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{EquipSMG()}{EquipSMG()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Equip\+S\+MG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro, will equip S\+MG if it is currently unequipped. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a442bfc9dcbb33b4fa3922a59357a8723}\label{class_lua_1_1_entity_a442bfc9dcbb33b4fa3922a59357a8723}} 
+\index{Lua.Entity@{Lua.Entity}!Face@{Face}}
+\index{Face@{Face}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Face()}{Face()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Face the target. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_ac7eac4ebcb1fe784ab5c06eed7885cf7}\label{class_lua_1_1_entity_ac7eac4ebcb1fe784ab5c06eed7885cf7}} 
+\index{Lua.Entity@{Lua.Entity}!FindClosestGiantess@{FindClosestGiantess}}
+\index{FindClosestGiantess@{FindClosestGiantess}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{FindClosestGiantess()}{FindClosestGiantess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Find\+Closest\+Giantess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the closes Giantess \mbox{\hyperlink{class_lua_1_1_entity}{Entity}}. It can also return the player. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a2e06bf904c49f705ac361e1538365e2e}\label{class_lua_1_1_entity_a2e06bf904c49f705ac361e1538365e2e}} 
+\index{Lua.Entity@{Lua.Entity}!FindClosestMicro@{FindClosestMicro}}
+\index{FindClosestMicro@{FindClosestMicro}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{FindClosestMicro()}{FindClosestMicro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Find\+Closest\+Micro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the closes Micro \mbox{\hyperlink{class_lua_1_1_entity}{Entity}}. It can also return the player. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a72e0a626a062ba116cf62cfeb77f87f8}\label{class_lua_1_1_entity_a72e0a626a062ba116cf62cfeb77f87f8}} 
+\index{Lua.Entity@{Lua.Entity}!FindRandomBuilding@{FindRandomBuilding}}
+\index{FindRandomBuilding@{FindRandomBuilding}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{FindRandomBuilding()}{FindRandomBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Entity.\+Find\+Random\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{self }\end{DoxyParamCaption})}
+
+
+
+This function a random location of a structure close to the gts 
+
+\begin{DoxyReturn}{Returns}
+A position, or null if no building is within 1000 units
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a17d117771166d30924da118c1fed9968}\label{class_lua_1_1_entity_a17d117771166d30924da118c1fed9968}} 
+\index{Lua.Entity@{Lua.Entity}!FireOnce@{FireOnce}}
+\index{FireOnce@{FireOnce}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{FireOnce()}{FireOnce()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Fire\+Once (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro will fire once, and aiming if not doing so already 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_af1290dfaf8e3da8c2adb7279359bf036}\label{class_lua_1_1_entity_af1290dfaf8e3da8c2adb7279359bf036}} 
+\index{Lua.Entity@{Lua.Entity}!Flee@{Flee}}
+\index{Flee@{Flee}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Flee()}{Flee()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Flee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target,  }\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+The entity will flee from the target during the specified amount of time. A time of 0 will make it unlimited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a334e63b56e1c78e6dbebd4dd9c48a69e}\label{class_lua_1_1_entity_a334e63b56e1c78e6dbebd4dd9c48a69e}} 
+\index{Lua.Entity@{Lua.Entity}!Flee@{Flee}}
+\index{Flee@{Flee}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Flee()}{Flee()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Flee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position,  }\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+The entity will flee from the position during the specified amount of time. A time of 0 will make it unlimited. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a42f84cbad068689f4308f5e4b1c7a981}\label{class_lua_1_1_entity_a42f84cbad068689f4308f5e4b1c7a981}} 
+\index{Lua.Entity@{Lua.Entity}!GetFemaleMicroList@{GetFemaleMicroList}}
+\index{GetFemaleMicroList@{GetFemaleMicroList}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetFemaleMicroList()}{GetFemaleMicroList()}}
+{\footnotesize\ttfamily static I\+List$<$string$>$ Lua.\+Entity.\+Get\+Female\+Micro\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A list of all available female micro models. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a8abff3f32d1cbaa6355d4d217ab558e1}\label{class_lua_1_1_entity_a8abff3f32d1cbaa6355d4d217ab558e1}} 
+\index{Lua.Entity@{Lua.Entity}!GetGtsModelList@{GetGtsModelList}}
+\index{GetGtsModelList@{GetGtsModelList}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetGtsModelList()}{GetGtsModelList()}}
+{\footnotesize\ttfamily static I\+List$<$string$>$ Lua.\+Entity.\+Get\+Gts\+Model\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A list of all available giantess models. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a7d49be266385d4155691a2349d964b81}\label{class_lua_1_1_entity_a7d49be266385d4155691a2349d964b81}} 
+\index{Lua.Entity@{Lua.Entity}!GetMaleMicroList@{GetMaleMicroList}}
+\index{GetMaleMicroList@{GetMaleMicroList}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetMaleMicroList()}{GetMaleMicroList()}}
+{\footnotesize\ttfamily static I\+List$<$string$>$ Lua.\+Entity.\+Get\+Male\+Micro\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A list of all available male micro models. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_aacd0f73c8377462b354deb3bc73c6b40}\label{class_lua_1_1_entity_aacd0f73c8377462b354deb3bc73c6b40}} 
+\index{Lua.Entity@{Lua.Entity}!GetObjectList@{GetObjectList}}
+\index{GetObjectList@{GetObjectList}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetObjectList()}{GetObjectList()}}
+{\footnotesize\ttfamily static I\+List$<$string$>$ Lua.\+Entity.\+Get\+Object\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A list of all available object models. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_abf1acc0c0ad6baa7224c8f3e088caf0f}\label{class_lua_1_1_entity_abf1acc0c0ad6baa7224c8f3e088caf0f}} 
+\index{Lua.Entity@{Lua.Entity}!GetPlayerModelList@{GetPlayerModelList}}
+\index{GetPlayerModelList@{GetPlayerModelList}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetPlayerModelList()}{GetPlayerModelList()}}
+{\footnotesize\ttfamily static I\+List$<$string$>$ Lua.\+Entity.\+Get\+Player\+Model\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A list of all available player models. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_aa9df9f39762cb24b89449e8b61aab43c}\label{class_lua_1_1_entity_aa9df9f39762cb24b89449e8b61aab43c}} 
+\index{Lua.Entity@{Lua.Entity}!GetRandomGiantess@{GetRandomGiantess}}
+\index{GetRandomGiantess@{GetRandomGiantess}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetRandomGiantess()}{GetRandomGiantess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Get\+Random\+Giantess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a random giantess in the scene. Can return null if there are no giantesses in the scene. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_aad0651348795eb39acee39055e0b7638}\label{class_lua_1_1_entity_aad0651348795eb39acee39055e0b7638}} 
+\index{Lua.Entity@{Lua.Entity}!GetRandomMicro@{GetRandomMicro}}
+\index{GetRandomMicro@{GetRandomMicro}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetRandomMicro()}{GetRandomMicro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Get\+Random\+Micro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a random micro in the scene. Can return null if there are no micros in the scene. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_af3f7aae31ecb691380a6f18f053fb907}\label{class_lua_1_1_entity_af3f7aae31ecb691380a6f18f053fb907}} 
+\index{Lua.Entity@{Lua.Entity}!GetSelectedEntity@{GetSelectedEntity}}
+\index{GetSelectedEntity@{GetSelectedEntity}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GetSelectedEntity()}{GetSelectedEntity()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Get\+Selected\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the currently selected entity in the Editor. 
+
+It can return nil if there is no entity currently selected. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a6ddff7e7a95c85ba34bee6b8b5c4ee93}\label{class_lua_1_1_entity_a6ddff7e7a95c85ba34bee6b8b5c4ee93}} 
+\index{Lua.Entity@{Lua.Entity}!Grab@{Grab}}
+\index{Grab@{Grab}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Grab()}{Grab()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Grab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+If the entity is a giantess will grab a target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a92feb21c4219c60a7e5935733302083f}\label{class_lua_1_1_entity_a92feb21c4219c60a7e5935733302083f}} 
+\index{Lua.Entity@{Lua.Entity}!Grow@{Grow}}
+\index{Grow@{Grow}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Grow()}{Grow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Grow (\begin{DoxyParamCaption}\item[{float}]{factor }\end{DoxyParamCaption})}
+
+
+
+Adds a {\bfseries{priority}} Grow action at the {\bfseries{beginning}} of the action queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & a percentage to grow by every second, relative to current size. A factor of 1 results in growing by 100\% (doubling in size) every second. Negative values will make it shrink.\\
+\hline
+\end{DoxyParams}
+The entity will indefinitely grow exponentially by a given factor relative to their size (e.\+g. 0.\+1 = 10\% per second).
+
+This action can be performed simultaneously with other actions. \mbox{\Hypertarget{class_lua_1_1_entity_ac574fce9abb6f90e7f7675be74838964}\label{class_lua_1_1_entity_ac574fce9abb6f90e7f7675be74838964}} 
+\index{Lua.Entity@{Lua.Entity}!Grow@{Grow}}
+\index{Grow@{Grow}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Grow()}{Grow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Grow (\begin{DoxyParamCaption}\item[{float}]{factor,  }\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Adds a {\bfseries{priority}} Grow action at the {\bfseries{beginning}} of the action queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & a percentage of the original size to grow by. Negative values will make it shrink.\\
+\hline
+{\em time} & a time over which the growth will be spread. Does not affect the final size, only how long will it take to achieve it.\\
+\hline
+\end{DoxyParams}
+The entity will grow linearly by a given factor relative to their size, over the given time (e.\+g. growing by 10\% over 10s would grow every second by 1\% of the original size).
+
+This action can be performed simultaneously with other actions. \mbox{\Hypertarget{class_lua_1_1_entity_a0007133219ff5ec24e9eecf6a9d2dd50}\label{class_lua_1_1_entity_a0007133219ff5ec24e9eecf6a9d2dd50}} 
+\index{Lua.Entity@{Lua.Entity}!GrowAndWait@{GrowAndWait}}
+\index{GrowAndWait@{GrowAndWait}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{GrowAndWait()}{GrowAndWait()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Grow\+And\+Wait (\begin{DoxyParamCaption}\item[{float}]{factor,  }\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+Adds a regular Grow action at the end of the action queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & a percentage of the original size to grow by. Negative values will make it shrink.\\
+\hline
+{\em time} & a time over which the growth will be spread. Does not affect the final size, only how long will it take to achieve it\\
+\hline
+\end{DoxyParams}
+The entity will grow linearly by a given factor relative to their size, over the given time (e.\+g. growing by 10\% over 10s would grow every second by 1\% of the original size).
+
+This action {\bfseries{cannot}} be performed simultaneously with other actions. \mbox{\Hypertarget{class_lua_1_1_entity_a4b4bb9870796b854c0d5666c9cba9375}\label{class_lua_1_1_entity_a4b4bb9870796b854c0d5666c9cba9375}} 
+\index{Lua.Entity@{Lua.Entity}!IsCrushed@{IsCrushed}}
+\index{IsCrushed@{IsCrushed}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{IsCrushed()}{IsCrushed()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+Is\+Crushed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the entity is crushed. Only applicable to micros. It doesn\textquotesingle{}t matter whether it survived the crush or not. Returns false for deleted entities, even if they were crushed prior to deleting. 
+
+\begin{DoxyReturn}{Returns}
+true if the entity is crushed
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a6357c0a54e9aa79beb928d079b42aa76}\label{class_lua_1_1_entity_a6357c0a54e9aa79beb928d079b42aa76}} 
+\index{Lua.Entity@{Lua.Entity}!IsDead@{IsDead}}
+\index{IsDead@{IsDead}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{IsDead()}{IsDead()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+Is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the entity is dead. 
+
+\begin{DoxyReturn}{Returns}
+true if the entity is dead
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_af72e042e1fd05c66abceebb49ec2caf4}\label{class_lua_1_1_entity_af72e042e1fd05c66abceebb49ec2caf4}} 
+\index{Lua.Entity@{Lua.Entity}!isGiantess@{isGiantess}}
+\index{isGiantess@{isGiantess}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{isGiantess()}{isGiantess()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+is\+Giantess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the entity is a giantess (.gts). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a27a8d5461e9d6890e085b06e2d00f6bd}\label{class_lua_1_1_entity_a27a8d5461e9d6890e085b06e2d00f6bd}} 
+\index{Lua.Entity@{Lua.Entity}!isHumanoid@{isHumanoid}}
+\index{isHumanoid@{isHumanoid}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{isHumanoid()}{isHumanoid()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+is\+Humanoid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the entity is a humanoid character. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a5eaa128b6b8cf4aeb7f219edd030d61e}\label{class_lua_1_1_entity_a5eaa128b6b8cf4aeb7f219edd030d61e}} 
+\index{Lua.Entity@{Lua.Entity}!isMicro@{isMicro}}
+\index{isMicro@{isMicro}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{isMicro()}{isMicro()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+is\+Micro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the entity is a micro (.micro) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_af7b9099c16b719f42e4fdfd82661d259}\label{class_lua_1_1_entity_af7b9099c16b719f42e4fdfd82661d259}} 
+\index{Lua.Entity@{Lua.Entity}!isPlayer@{isPlayer}}
+\index{isPlayer@{isPlayer}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{isPlayer()}{isPlayer()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+is\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if this entity is player controlled (micro or giantess). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_ab25d357d357ab0cf7ff9a2e81aa9cb08}\label{class_lua_1_1_entity_ab25d357d357ab0cf7ff9a2e81aa9cb08}} 
+\index{Lua.Entity@{Lua.Entity}!IsStuck@{IsStuck}}
+\index{IsStuck@{IsStuck}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{IsStuck()}{IsStuck()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+Is\+Stuck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the entity is stuck to giantess. Only applicable to micros. 
+
+\begin{DoxyReturn}{Returns}
+true if the entity is stuck
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_aa8688dacb32db168b780597d8f11622b}\label{class_lua_1_1_entity_aa8688dacb32db168b780597d8f11622b}} 
+\index{Lua.Entity@{Lua.Entity}!IsTargettable@{IsTargettable}}
+\index{IsTargettable@{IsTargettable}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{IsTargettable()}{IsTargettable()}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+Is\+Targettable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the entity be targeted for crushing. To be targettable it must be a living micro that is not stuck. 
+
+\begin{DoxyReturn}{Returns}
+true if the entity can be targeted
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}\label{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}} 
+\index{Lua.Entity@{Lua.Entity}!LookAt@{LookAt}}
+\index{LookAt@{LookAt}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{LookAt()}{LookAt()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Look\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Not to be confused with \mbox{\hyperlink{class_lua_1_1_transform_a1e722de9c3eacff82477ab7684a67553}{Transform.\+Look\+At}} If the entity is a giantess it will look towards a target. If the target is nil the giantess will return to default looking behaviour 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a5d6cfb68967adf948db2b6c09d7dfd38}\label{class_lua_1_1_entity_a5d6cfb68967adf948db2b6c09d7dfd38}} 
+\index{Lua.Entity@{Lua.Entity}!MoveTo@{MoveTo}}
+\index{MoveTo@{MoveTo}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{MoveTo()}{MoveTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Move\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{destination }\end{DoxyParamCaption})}
+
+
+
+The entity will walk to a designed point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} that cointains the destination point in world coordinates\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a307f39e2316f0c4246604ba5ce5b749e}\label{class_lua_1_1_entity_a307f39e2316f0c4246604ba5ce5b749e}} 
+\index{Lua.Entity@{Lua.Entity}!MoveTo@{MoveTo}}
+\index{MoveTo@{MoveTo}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{MoveTo()}{MoveTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Move\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target\+Entity }\end{DoxyParamCaption})}
+
+
+
+The entity will walk towards another target entity, and stop when it reaches it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Entity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_aa3ec8ca2693205f43b8e1e620b209018}\label{class_lua_1_1_entity_aa3ec8ca2693205f43b8e1e620b209018}} 
+\index{Lua.Entity@{Lua.Entity}!PlayAs@{PlayAs}}
+\index{PlayAs@{PlayAs}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{PlayAs()}{PlayAs()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Play\+As (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Transfers player control to this entity, only if it\textquotesingle{}s a playable character. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a32545d25ff6935a006bdb6b5ad45ad9a}\label{class_lua_1_1_entity_a32545d25ff6935a006bdb6b5ad45ad9a}} 
+\index{Lua.Entity@{Lua.Entity}!Seek@{Seek}}
+\index{Seek@{Seek}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Seek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target,  }\item[{float}]{duration = {\ttfamily 0},  }\item[{float}]{separation = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+The entity will seek toward another target until the time runs out or it is close enough. Used in the \char`\"{}\+Follow\char`\"{} command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & entity to follow\\
+\hline
+{\em duration} & how long to go. 0 means forever\\
+\hline
+{\em separation} & how close to get, measured in radiuses of the bigger entity. 0 means touching, -\/1 means standing in the same spot (not possible)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a1a0205dc1d6ab6ac54679970885490f9}\label{class_lua_1_1_entity_a1a0205dc1d6ab6ac54679970885490f9}} 
+\index{Lua.Entity@{Lua.Entity}!Seek@{Seek}}
+\index{Seek@{Seek}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Seek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position,  }\item[{float}]{duration = {\ttfamily 0},  }\item[{float}]{separation = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+The entity will seek toward a position for the specified amount of time (in seconds). 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_ac2bbfd97ccf17d7cd96fb1cf3b3c51e4}\label{class_lua_1_1_entity_ac2bbfd97ccf17d7cd96fb1cf3b3c51e4}} 
+\index{Lua.Entity@{Lua.Entity}!ShowBreastPhysicsOptions@{ShowBreastPhysicsOptions}}
+\index{ShowBreastPhysicsOptions@{ShowBreastPhysicsOptions}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{ShowBreastPhysicsOptions()}{ShowBreastPhysicsOptions()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Show\+Breast\+Physics\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows a UI menu to the user that can be used to alter the breasts physics 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a347a27b3fea83b83461600b3b80ce5d8}\label{class_lua_1_1_entity_a347a27b3fea83b83461600b3b80ce5d8}} 
+\index{Lua.Entity@{Lua.Entity}!SpawnFemaleMicro@{SpawnFemaleMicro}}
+\index{SpawnFemaleMicro@{SpawnFemaleMicro}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{SpawnFemaleMicro()}{SpawnFemaleMicro()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Spawn\+Female\+Micro (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rotation,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spawns a female micro from a given model name. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a582caed51f918e3d7642a7ec8a227fd1}\label{class_lua_1_1_entity_a582caed51f918e3d7642a7ec8a227fd1}} 
+\index{Lua.Entity@{Lua.Entity}!SpawnGiantess@{SpawnGiantess}}
+\index{SpawnGiantess@{SpawnGiantess}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{SpawnGiantess()}{SpawnGiantess()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Spawn\+Giantess (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rotation,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spawns a giantess from a given model name. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_ad8f4dd9eec83d4df5d28efa120210ef6}\label{class_lua_1_1_entity_ad8f4dd9eec83d4df5d28efa120210ef6}} 
+\index{Lua.Entity@{Lua.Entity}!SpawnMaleMicro@{SpawnMaleMicro}}
+\index{SpawnMaleMicro@{SpawnMaleMicro}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{SpawnMaleMicro()}{SpawnMaleMicro()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Spawn\+Male\+Micro (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rotation,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spawns a male micro from a given model name. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a5bb33d1afcfac1b1452d362cb5d8bb94}\label{class_lua_1_1_entity_a5bb33d1afcfac1b1452d362cb5d8bb94}} 
+\index{Lua.Entity@{Lua.Entity}!SpawnObject@{SpawnObject}}
+\index{SpawnObject@{SpawnObject}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{SpawnObject()}{SpawnObject()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Entity.\+Spawn\+Object (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rotation,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spawns an object from a given model name. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_af93c20b6cca387d60a5368c079ae65ef}\label{class_lua_1_1_entity_af93c20b6cca387d60a5368c079ae65ef}} 
+\index{Lua.Entity@{Lua.Entity}!StandUp@{StandUp}}
+\index{StandUp@{StandUp}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{StandUp()}{StandUp()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Stand\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Orders a crushed micro to stand up. Note that entities stop all behaviors when crushed. So this method is only useful when called from other entity\textquotesingle{}s behavior or a global script. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a3a5c197d31f8834f8ed67f71c6157719}\label{class_lua_1_1_entity_a3a5c197d31f8834f8ed67f71c6157719}} 
+\index{Lua.Entity@{Lua.Entity}!StartFiring@{StartFiring}}
+\index{StartFiring@{StartFiring}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{StartFiring()}{StartFiring()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Start\+Firing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro will start firing, and aiming if not doing so already, if there it has an aim target. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a0a8058c8b504215e492471b4e7d557d4}\label{class_lua_1_1_entity_a0a8058c8b504215e492471b4e7d557d4}} 
+\index{Lua.Entity@{Lua.Entity}!Stomp@{Stomp}}
+\index{Stomp@{Stomp}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Stomp()}{Stomp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Stomp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+If the entity is a giantess, she will stomp a target entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_ad6c8d1dc736aeea69e734d3c1e884343}\label{class_lua_1_1_entity_ad6c8d1dc736aeea69e734d3c1e884343}} 
+\index{Lua.Entity@{Lua.Entity}!Stomp@{Stomp}}
+\index{Stomp@{Stomp}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Stomp()}{Stomp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Stomp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{target }\end{DoxyParamCaption})}
+
+
+
+If the entity is a giantess, she will stomp a target point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_aadc969ba1387cf03d80b8432705f0750}\label{class_lua_1_1_entity_aadc969ba1387cf03d80b8432705f0750}} 
+\index{Lua.Entity@{Lua.Entity}!StopAiming@{StopAiming}}
+\index{StopAiming@{StopAiming}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{StopAiming()}{StopAiming()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Stop\+Aiming (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro, will stop aiming 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a9ead5c7d5e821fa285ab065b9cc3185f}\label{class_lua_1_1_entity_a9ead5c7d5e821fa285ab065b9cc3185f}} 
+\index{Lua.Entity@{Lua.Entity}!StopEngaging@{StopEngaging}}
+\index{StopEngaging@{StopEngaging}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{StopEngaging()}{StopEngaging()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Stop\+Engaging (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro will stop chasing and firing 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a4d7809fc03b618624a6d7640674fe646}\label{class_lua_1_1_entity_a4d7809fc03b618624a6d7640674fe646}} 
+\index{Lua.Entity@{Lua.Entity}!StopFiring@{StopFiring}}
+\index{StopFiring@{StopFiring}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{StopFiring()}{StopFiring()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Stop\+Firing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro will stop firing 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a1a4cc3d2425ef3527ab0692f4c2a9ca3}\label{class_lua_1_1_entity_a1a4cc3d2425ef3527ab0692f4c2a9ca3}} 
+\index{Lua.Entity@{Lua.Entity}!UnequipGun@{UnequipGun}}
+\index{UnequipGun@{UnequipGun}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{UnequipGun()}{UnequipGun()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Unequip\+Gun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If the entity is an N\+PC micro, will unequip gun if it currently has one equipped. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a6be24874965a4015e7fd8244fa345220}\label{class_lua_1_1_entity_a6be24874965a4015e7fd8244fa345220}} 
+\index{Lua.Entity@{Lua.Entity}!UpdateMeshCollider@{UpdateMeshCollider}}
+\index{UpdateMeshCollider@{UpdateMeshCollider}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{UpdateMeshCollider()}{UpdateMeshCollider()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Update\+Mesh\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{[}Slow operation\mbox{]} Forces the update of the collider. This is a slow operacion, don\textquotesingle{}t update the mesh every frame, don\textquotesingle{}t use inside a loop. 
+
+It updates the mesh collider of a giantess by copying all the vertices, splitting them into each bone, and the baking a new mesh for each collider. It may be a O(n$^\wedge$2) operation depending in the number of vertices the model. \mbox{\Hypertarget{class_lua_1_1_entity_a58a5bb200f7182dea5e622f036f05bf3}\label{class_lua_1_1_entity_a58a5bb200f7182dea5e622f036f05bf3}} 
+\index{Lua.Entity@{Lua.Entity}!Wait@{Wait}}
+\index{Wait@{Wait}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Wait (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+The entity will wait for the specified amount of time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_aa4d1d044edd1f9b9dfb4b310c49b8761}\label{class_lua_1_1_entity_aa4d1d044edd1f9b9dfb4b310c49b8761}} 
+\index{Lua.Entity@{Lua.Entity}!Wander@{Wander}}
+\index{Wander@{Wander}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Wander()}{Wander()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Wander (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The entity will wander without stopping. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a9858a940de17a0405da24bff1d834970}\label{class_lua_1_1_entity_a9858a940de17a0405da24bff1d834970}} 
+\index{Lua.Entity@{Lua.Entity}!Wander@{Wander}}
+\index{Wander@{Wander}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Wander()}{Wander()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Wander (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+
+
+The entity will wander during the specified amount of time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_entity_a5690c11c287139f6d5b5171f5d4189e9}\label{class_lua_1_1_entity_a5690c11c287139f6d5b5171f5d4189e9}} 
+\index{Lua.Entity@{Lua.Entity}!Wreck@{Wreck}}
+\index{Wreck@{Wreck}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{Wreck()}{Wreck()}}
+{\footnotesize\ttfamily void Lua.\+Entity.\+Wreck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The enitity will aggressively stomp in an attempt to wreck everything 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_entity_a13c1350817e444010fcbaff8d224039e}\label{class_lua_1_1_entity_a13c1350817e444010fcbaff8d224039e}} 
+\index{Lua.Entity@{Lua.Entity}!ai@{ai}}
+\index{ai@{ai}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{ai}{ai}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_a_i}{AI}} Lua.\+Entity.\+ai\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The ai component controls the ai behaviors of the entity. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_acf080bfbeeb3a6308c2fdd4cc4993e81}\label{class_lua_1_1_entity_acf080bfbeeb3a6308c2fdd4cc4993e81}} 
+\index{Lua.Entity@{Lua.Entity}!animation@{animation}}
+\index{animation@{animation}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_animation}{Animation}} Lua.\+Entity.\+animation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Component for controling the animation of humanoid entities. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a1873494f26c8f90c79254b43d25d47f7}\label{class_lua_1_1_entity_a1873494f26c8f90c79254b43d25d47f7}} 
+\index{Lua.Entity@{Lua.Entity}!baseHeight@{baseHeight}}
+\index{baseHeight@{baseHeight}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{baseHeight}{baseHeight}}
+{\footnotesize\ttfamily virtual float Lua.\+Entity.\+base\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Base model height of this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a8d4bdecb96c327395e5ddbde88608cf4}\label{class_lua_1_1_entity_a8d4bdecb96c327395e5ddbde88608cf4}} 
+\index{Lua.Entity@{Lua.Entity}!bones@{bones}}
+\index{bones@{bones}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{bones}{bones}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_bones}{Bones}} Lua.\+Entity.\+bones\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Access the bone transforms of the model (head, hands, feet, etc). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a7dfc341caa3b11cc42ef45226689741c}\label{class_lua_1_1_entity_a7dfc341caa3b11cc42ef45226689741c}} 
+\index{Lua.Entity@{Lua.Entity}!CanLookAtPlayer@{CanLookAtPlayer}}
+\index{CanLookAtPlayer@{CanLookAtPlayer}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{CanLookAtPlayer}{CanLookAtPlayer}}
+{\footnotesize\ttfamily bool Lua.\+Entity.\+Can\+Look\+At\+Player\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Whether or not a Giantess entity can look at the player. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_ae0c707512eed832f2211ace61d3be75d}\label{class_lua_1_1_entity_ae0c707512eed832f2211ace61d3be75d}} 
+\index{Lua.Entity@{Lua.Entity}!dict@{dict}}
+\index{dict@{dict}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{dict}{dict}}
+{\footnotesize\ttfamily Table Lua.\+Entity.\+dict\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A dictionary associated to this entity. It can be used to store and exchange arbitrary data between scripts. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a6b6baf8292fe2447ad0620722bc24526}\label{class_lua_1_1_entity_a6b6baf8292fe2447ad0620722bc24526}} 
+\index{Lua.Entity@{Lua.Entity}!height@{height}}
+\index{height@{height}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily virtual float Lua.\+Entity.\+height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The height of this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a7776e8422e86d2ab5670ca314a65aab5}\label{class_lua_1_1_entity_a7776e8422e86d2ab5670ca314a65aab5}} 
+\index{Lua.Entity@{Lua.Entity}!id@{id}}
+\index{id@{id}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Lua.\+Entity.\+id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Get the id associated to this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a42cd1e5e507a1e79eb1161799564da88}\label{class_lua_1_1_entity_a42cd1e5e507a1e79eb1161799564da88}} 
+\index{Lua.Entity@{Lua.Entity}!ik@{ik}}
+\index{ik@{ik}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{ik}{ik}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_i_k}{IK}} Lua.\+Entity.\+ik\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Inverse Kinematics for the model 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a133133afe701b7ca4f0e2d6632beae33}\label{class_lua_1_1_entity_a133133afe701b7ca4f0e2d6632beae33}} 
+\index{Lua.Entity@{Lua.Entity}!maxSize@{maxSize}}
+\index{maxSize@{maxSize}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{maxSize}{maxSize}}
+{\footnotesize\ttfamily virtual float Lua.\+Entity.\+max\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The max scale for this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a642603e2952e4fcea70979837049f813}\label{class_lua_1_1_entity_a642603e2952e4fcea70979837049f813}} 
+\index{Lua.Entity@{Lua.Entity}!minSize@{minSize}}
+\index{minSize@{minSize}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{minSize}{minSize}}
+{\footnotesize\ttfamily virtual float Lua.\+Entity.\+min\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The min scale for this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_acd67b39a7c95e3cb87171073c2877de1}\label{class_lua_1_1_entity_acd67b39a7c95e3cb87171073c2877de1}} 
+\index{Lua.Entity@{Lua.Entity}!modelName@{modelName}}
+\index{modelName@{modelName}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{modelName}{modelName}}
+{\footnotesize\ttfamily string Lua.\+Entity.\+model\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Name the model of this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_aa9723210eb2494461ff12c55b52e8844}\label{class_lua_1_1_entity_aa9723210eb2494461ff12c55b52e8844}} 
+\index{Lua.Entity@{Lua.Entity}!morphs@{morphs}}
+\index{morphs@{morphs}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{morphs}{morphs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_morphs}{Morphs}} Lua.\+Entity.\+morphs\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Control the morphs of the entity. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a2845d63d6164b33ee49f760211fa4116}\label{class_lua_1_1_entity_a2845d63d6164b33ee49f760211fa4116}} 
+\index{Lua.Entity@{Lua.Entity}!movement@{movement}}
+\index{movement@{movement}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{movement}{movement}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_movement}{Movement}} Lua.\+Entity.\+movement\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Manages the movement of the entity. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a8155b6c6ef0f0630ec7e818dd4cdaec4}\label{class_lua_1_1_entity_a8155b6c6ef0f0630ec7e818dd4cdaec4}} 
+\index{Lua.Entity@{Lua.Entity}!name@{name}}
+\index{name@{name}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Lua.\+Entity.\+name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The name of this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}\label{class_lua_1_1_entity_ad8bd97d98fddc9b89f8410512b502c3f}} 
+\index{Lua.Entity@{Lua.Entity}!position@{position}}
+\index{position@{position}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Entity.\+position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Get the current position on world space of this entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a56d48f666679b251eefa10e6f65bbb60}\label{class_lua_1_1_entity_a56d48f666679b251eefa10e6f65bbb60}} 
+\index{Lua.Entity@{Lua.Entity}!rigidbody@{rigidbody}}
+\index{rigidbody@{rigidbody}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{rigidbody}{rigidbody}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}} Lua.\+Entity.\+rigidbody\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Control the physics of the \mbox{\hyperlink{class_lua_1_1_entity}{Entity}}. Normal objects don\textquotesingle{}t come with physics by default, but player and npc they have it for movement. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a784673c0e6fbf29381a309a5df0ee10e}\label{class_lua_1_1_entity_a784673c0e6fbf29381a309a5df0ee10e}} 
+\index{Lua.Entity@{Lua.Entity}!scale@{scale}}
+\index{scale@{scale}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily virtual float Lua.\+Entity.\+scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The scale of this entity. Use this instead of the transform when possible. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_entity_a9a5a67b2da9b9d95e31c766aa68760ee}\label{class_lua_1_1_entity_a9a5a67b2da9b9d95e31c766aa68760ee}} 
+\index{Lua.Entity@{Lua.Entity}!senses@{senses}}
+\index{senses@{senses}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{senses}{senses}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_senses}{Senses}} Lua.\+Entity.\+senses\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Manages the senses of the entity such as the vision. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_af00214fc6ff19d22818d8d0810630cea}\label{class_lua_1_1_entity_af00214fc6ff19d22818d8d0810630cea}} 
+\index{Lua.Entity@{Lua.Entity}!shooting@{shooting}}
+\index{shooting@{shooting}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{shooting}{shooting}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_shooting}{Shooting}} Lua.\+Entity.\+shooting\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Manages the shooting of the entity. 
+
+\mbox{\Hypertarget{class_lua_1_1_entity_a51edf8c42bd2acb730ae73d045341320}\label{class_lua_1_1_entity_a51edf8c42bd2acb730ae73d045341320}} 
+\index{Lua.Entity@{Lua.Entity}!transform@{transform}}
+\index{transform@{transform}!Lua.Entity@{Lua.Entity}}
+\subsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} Lua.\+Entity.\+transform\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The transform component associated to this entity. It contains data about the position, rotation and scale used by the Unity Engine. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Entity.\+cs\end{DoxyCompactItemize}

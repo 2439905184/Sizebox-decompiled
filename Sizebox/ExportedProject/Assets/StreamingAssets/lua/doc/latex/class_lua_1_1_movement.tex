@@ -1,0 +1,94 @@
+\hypertarget{class_lua_1_1_movement}{}\section{Lua.\+Movement Class Reference}
+\label{class_lua_1_1_movement}\index{Lua.Movement@{Lua.Movement}}
+
+
+Use this component to control the movement of agents.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_movement_a6e9301bc7326c56f23fbb2eac2ad2f54}{Move\+Towards}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} point)
+\begin{DoxyCompactList}\small\item\em Move the character towards a point in worlds space, during one frame (to be used in Update()) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_movement_ab1a73835885dca908bb6e5d23509ce40}{Move\+Direction}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} direction)
+\begin{DoxyCompactList}\small\item\em Moves to a direction relative to the player position during one frame (to be used in update). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_movement_a26e7ee9591b48c6ddf74becf73ebe078}{Turn}} (float degrees)
+\begin{DoxyCompactList}\small\item\em Turns the player the specified amount of degrees. Positive degree is right, and negative is left. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_lua_1_1_movement_a72e61b8d3a308361d8bb6d80367af2df}{speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximal movement speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use this component to control the movement of agents. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_movement_ab1a73835885dca908bb6e5d23509ce40}\label{class_lua_1_1_movement_ab1a73835885dca908bb6e5d23509ce40}} 
+\index{Lua.Movement@{Lua.Movement}!MoveDirection@{MoveDirection}}
+\index{MoveDirection@{MoveDirection}!Lua.Movement@{Lua.Movement}}
+\subsubsection{\texorpdfstring{MoveDirection()}{MoveDirection()}}
+{\footnotesize\ttfamily void Lua.\+Movement.\+Move\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Moves to a direction relative to the player position during one frame (to be used in update). 
+
+\mbox{\hyperlink{class_lua_1_1_vector3_ad8be15240d9bfa336d926ab023f11ad4}{Vector3.\+forward}} (0,0,1) will move the player forward. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & Direction relative to the player point of view.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_movement_a6e9301bc7326c56f23fbb2eac2ad2f54}\label{class_lua_1_1_movement_a6e9301bc7326c56f23fbb2eac2ad2f54}} 
+\index{Lua.Movement@{Lua.Movement}!MoveTowards@{MoveTowards}}
+\index{MoveTowards@{MoveTowards}!Lua.Movement@{Lua.Movement}}
+\subsubsection{\texorpdfstring{MoveTowards()}{MoveTowards()}}
+{\footnotesize\ttfamily void Lua.\+Movement.\+Move\+Towards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{point }\end{DoxyParamCaption})}
+
+
+
+Move the character towards a point in worlds space, during one frame (to be used in Update()) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point where the character will be heading\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_movement_a26e7ee9591b48c6ddf74becf73ebe078}\label{class_lua_1_1_movement_a26e7ee9591b48c6ddf74becf73ebe078}} 
+\index{Lua.Movement@{Lua.Movement}!Turn@{Turn}}
+\index{Turn@{Turn}!Lua.Movement@{Lua.Movement}}
+\subsubsection{\texorpdfstring{Turn()}{Turn()}}
+{\footnotesize\ttfamily void Lua.\+Movement.\+Turn (\begin{DoxyParamCaption}\item[{float}]{degrees }\end{DoxyParamCaption})}
+
+
+
+Turns the player the specified amount of degrees. Positive degree is right, and negative is left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_movement_a72e61b8d3a308361d8bb6d80367af2df}\label{class_lua_1_1_movement_a72e61b8d3a308361d8bb6d80367af2df}} 
+\index{Lua.Movement@{Lua.Movement}!speed@{speed}}
+\index{speed@{speed}!Lua.Movement@{Lua.Movement}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Lua.\+Movement.\+speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Maximal movement speed. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Movement.\+cs\end{DoxyCompactItemize}

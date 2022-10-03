@@ -1,0 +1,255 @@
+\hypertarget{class_lua_1_1_shooting}{}\section{Lua.\+Shooting Class Reference}
+\label{class_lua_1_1_shooting}\index{Lua.Shooting@{Lua.Shooting}}
+
+
+Use this component to control the shooting-\/related and gun properties of agents.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_shooting_af0e7769dd39d32787d3197ebee1a3247}{Set\+Burst\+Fire}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Sets/unsets the gun to burst-\/fire mode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_shooting_adbbd67fdfd65fd5d754e66c44907c974}{Set\+Projectile\+Color}} (int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em Set the color for the projectiles that will be fired by this N\+PC\textquotesingle{}s gun. R\+GB values (0-\/255) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_shooting_a916d6868d5ab051898ea2f7d676587aa}{Set\+Projectile\+Speed}} (float speed\+Mult)
+\begin{DoxyCompactList}\small\item\em Set the speed multiplier for the projectiles that will be fired by this N\+PC\textquotesingle{}s gun. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_shooting_a376edd82b6c42daab355831d5ecbc340}{Set\+Projectile\+Scale}} (float scale\+Mult)
+\begin{DoxyCompactList}\small\item\em Set the scale/size multiplier for the projectiles that will be fired by this N\+PC\textquotesingle{}s gun. Default\+: 1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_shooting_af28162d50b374775ee7618d1cc6c2063}{Set\+Firing\+S\+FX}} (string clip)
+\begin{DoxyCompactList}\small\item\em Set a custom sound clip for this specific N\+P\+Cs/\+A\+Is gun\textquotesingle{}s projectile firing sound effect. Pass a nil/null to reset to its original sound effect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_shooting_aa89af0a3474a9f2ac09e3305986df10d}{Set\+Projectile\+Impact\+S\+FX}} (string clip)
+\begin{DoxyCompactList}\small\item\em Set a custom sound clip for this specific N\+P\+Cs/\+A\+Is gun\textquotesingle{}s projectile impact sound effect. Pass a nil/null to reset to its original sound effect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_shooting_a8bd9055060bba675e803483c5a1f71d2}{Fix\+Gun\+Aiming\+Orientation}} ()
+\begin{DoxyCompactList}\small\item\em In case the gun wasn\textquotesingle{}t positioned correctly at aiming start-\/up, use this manual function to attempt to fix it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_lua_1_1_shooting_a0c512eac7dea63f8594bbfcb0976a34a}{is\+Aiming}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the micro is currently aiming \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_shooting_a0b4d9622c4a1888f424ebdc13db498d1}{is\+Firing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the micro is currently firing \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_shooting_af30c3a5b6caca44684fcd88ac7f7f4a7}{accurate\+Firing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the micro\textquotesingle{}s firing is 100\% accurate or not \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_shooting_a7f8c04173b4649a5b6134344e67dc10a}{inaccuracy\+Factor}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How intense the inaccuracy of the firing is (Recommended\+: 5-\/20) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_shooting_adc410fd560cfdc7bdbd5b870a7adedbf}{predictive\+Aiming}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the micro should try to predict where a moving target is going to be. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_shooting_aece1867c834c0c4fc31af53c55c8040e}{firing\+Interval}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of time (in seconds) between each shot or burst fire period. Default\+: 4 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_shooting_a6ddbbd79abebeb560511e7c00093fb1a}{burst\+Fire}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the gun is in burst-\/fire mode or single-\/fire \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lua_1_1_shooting_a41ac94c6ba5c407bd0fcbf0f6e938fd1}{burst\+Fire\+Rounds}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of shots in a single burst fire. Default\+: 3 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_shooting_a51b27960d8f74262edb79dc173f75670}{burst\+Fire\+Interval}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Amount of time (in seconds) between each shot in a burst fire. Default\+: 0.\+75 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use this component to control the shooting-\/related and gun properties of agents. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_shooting_a8bd9055060bba675e803483c5a1f71d2}\label{class_lua_1_1_shooting_a8bd9055060bba675e803483c5a1f71d2}} 
+\index{Lua.Shooting@{Lua.Shooting}!FixGunAimingOrientation@{FixGunAimingOrientation}}
+\index{FixGunAimingOrientation@{FixGunAimingOrientation}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{FixGunAimingOrientation()}{FixGunAimingOrientation()}}
+{\footnotesize\ttfamily void Lua.\+Shooting.\+Fix\+Gun\+Aiming\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+In case the gun wasn\textquotesingle{}t positioned correctly at aiming start-\/up, use this manual function to attempt to fix it. 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_af0e7769dd39d32787d3197ebee1a3247}\label{class_lua_1_1_shooting_af0e7769dd39d32787d3197ebee1a3247}} 
+\index{Lua.Shooting@{Lua.Shooting}!SetBurstFire@{SetBurstFire}}
+\index{SetBurstFire@{SetBurstFire}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{SetBurstFire()}{SetBurstFire()}}
+{\footnotesize\ttfamily void Lua.\+Shooting.\+Set\+Burst\+Fire (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+
+
+Sets/unsets the gun to burst-\/fire mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_shooting_af28162d50b374775ee7618d1cc6c2063}\label{class_lua_1_1_shooting_af28162d50b374775ee7618d1cc6c2063}} 
+\index{Lua.Shooting@{Lua.Shooting}!SetFiringSFX@{SetFiringSFX}}
+\index{SetFiringSFX@{SetFiringSFX}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{SetFiringSFX()}{SetFiringSFX()}}
+{\footnotesize\ttfamily void Lua.\+Shooting.\+Set\+Firing\+S\+FX (\begin{DoxyParamCaption}\item[{string}]{clip }\end{DoxyParamCaption})}
+
+
+
+Set a custom sound clip for this specific N\+P\+Cs/\+A\+Is gun\textquotesingle{}s projectile firing sound effect. Pass a nil/null to reset to its original sound effect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & the sound clip file name\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_shooting_adbbd67fdfd65fd5d754e66c44907c974}\label{class_lua_1_1_shooting_adbbd67fdfd65fd5d754e66c44907c974}} 
+\index{Lua.Shooting@{Lua.Shooting}!SetProjectileColor@{SetProjectileColor}}
+\index{SetProjectileColor@{SetProjectileColor}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{SetProjectileColor()}{SetProjectileColor()}}
+{\footnotesize\ttfamily void Lua.\+Shooting.\+Set\+Projectile\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Set the color for the projectiles that will be fired by this N\+PC\textquotesingle{}s gun. R\+GB values (0-\/255) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & red color value (0-\/255)\\
+\hline
+{\em g} & green color value (0-\/255)\\
+\hline
+{\em b} & blue color value (0-\/255)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_shooting_aa89af0a3474a9f2ac09e3305986df10d}\label{class_lua_1_1_shooting_aa89af0a3474a9f2ac09e3305986df10d}} 
+\index{Lua.Shooting@{Lua.Shooting}!SetProjectileImpactSFX@{SetProjectileImpactSFX}}
+\index{SetProjectileImpactSFX@{SetProjectileImpactSFX}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{SetProjectileImpactSFX()}{SetProjectileImpactSFX()}}
+{\footnotesize\ttfamily void Lua.\+Shooting.\+Set\+Projectile\+Impact\+S\+FX (\begin{DoxyParamCaption}\item[{string}]{clip }\end{DoxyParamCaption})}
+
+
+
+Set a custom sound clip for this specific N\+P\+Cs/\+A\+Is gun\textquotesingle{}s projectile impact sound effect. Pass a nil/null to reset to its original sound effect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & the sound clip file name\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_shooting_a376edd82b6c42daab355831d5ecbc340}\label{class_lua_1_1_shooting_a376edd82b6c42daab355831d5ecbc340}} 
+\index{Lua.Shooting@{Lua.Shooting}!SetProjectileScale@{SetProjectileScale}}
+\index{SetProjectileScale@{SetProjectileScale}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{SetProjectileScale()}{SetProjectileScale()}}
+{\footnotesize\ttfamily void Lua.\+Shooting.\+Set\+Projectile\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale\+Mult }\end{DoxyParamCaption})}
+
+
+
+Set the scale/size multiplier for the projectiles that will be fired by this N\+PC\textquotesingle{}s gun. Default\+: 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale\+Mult} & default\+: 1\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_shooting_a916d6868d5ab051898ea2f7d676587aa}\label{class_lua_1_1_shooting_a916d6868d5ab051898ea2f7d676587aa}} 
+\index{Lua.Shooting@{Lua.Shooting}!SetProjectileSpeed@{SetProjectileSpeed}}
+\index{SetProjectileSpeed@{SetProjectileSpeed}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{SetProjectileSpeed()}{SetProjectileSpeed()}}
+{\footnotesize\ttfamily void Lua.\+Shooting.\+Set\+Projectile\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed\+Mult }\end{DoxyParamCaption})}
+
+
+
+Set the speed multiplier for the projectiles that will be fired by this N\+PC\textquotesingle{}s gun. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+Mult} & default\+: 1\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_shooting_af30c3a5b6caca44684fcd88ac7f7f4a7}\label{class_lua_1_1_shooting_af30c3a5b6caca44684fcd88ac7f7f4a7}} 
+\index{Lua.Shooting@{Lua.Shooting}!accurateFiring@{accurateFiring}}
+\index{accurateFiring@{accurateFiring}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{accurateFiring}{accurateFiring}}
+{\footnotesize\ttfamily bool Lua.\+Shooting.\+accurate\+Firing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Whether the micro\textquotesingle{}s firing is 100\% accurate or not 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_a6ddbbd79abebeb560511e7c00093fb1a}\label{class_lua_1_1_shooting_a6ddbbd79abebeb560511e7c00093fb1a}} 
+\index{Lua.Shooting@{Lua.Shooting}!burstFire@{burstFire}}
+\index{burstFire@{burstFire}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{burstFire}{burstFire}}
+{\footnotesize\ttfamily bool Lua.\+Shooting.\+burst\+Fire\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Whether the gun is in burst-\/fire mode or single-\/fire 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_a51b27960d8f74262edb79dc173f75670}\label{class_lua_1_1_shooting_a51b27960d8f74262edb79dc173f75670}} 
+\index{Lua.Shooting@{Lua.Shooting}!burstFireInterval@{burstFireInterval}}
+\index{burstFireInterval@{burstFireInterval}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{burstFireInterval}{burstFireInterval}}
+{\footnotesize\ttfamily float Lua.\+Shooting.\+burst\+Fire\+Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Amount of time (in seconds) between each shot in a burst fire. Default\+: 0.\+75 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_a41ac94c6ba5c407bd0fcbf0f6e938fd1}\label{class_lua_1_1_shooting_a41ac94c6ba5c407bd0fcbf0f6e938fd1}} 
+\index{Lua.Shooting@{Lua.Shooting}!burstFireRounds@{burstFireRounds}}
+\index{burstFireRounds@{burstFireRounds}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{burstFireRounds}{burstFireRounds}}
+{\footnotesize\ttfamily int Lua.\+Shooting.\+burst\+Fire\+Rounds\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Number of shots in a single burst fire. Default\+: 3 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_aece1867c834c0c4fc31af53c55c8040e}\label{class_lua_1_1_shooting_aece1867c834c0c4fc31af53c55c8040e}} 
+\index{Lua.Shooting@{Lua.Shooting}!firingInterval@{firingInterval}}
+\index{firingInterval@{firingInterval}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{firingInterval}{firingInterval}}
+{\footnotesize\ttfamily float Lua.\+Shooting.\+firing\+Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Amount of time (in seconds) between each shot or burst fire period. Default\+: 4 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_a7f8c04173b4649a5b6134344e67dc10a}\label{class_lua_1_1_shooting_a7f8c04173b4649a5b6134344e67dc10a}} 
+\index{Lua.Shooting@{Lua.Shooting}!inaccuracyFactor@{inaccuracyFactor}}
+\index{inaccuracyFactor@{inaccuracyFactor}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{inaccuracyFactor}{inaccuracyFactor}}
+{\footnotesize\ttfamily float Lua.\+Shooting.\+inaccuracy\+Factor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How intense the inaccuracy of the firing is (Recommended\+: 5-\/20) 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_a0c512eac7dea63f8594bbfcb0976a34a}\label{class_lua_1_1_shooting_a0c512eac7dea63f8594bbfcb0976a34a}} 
+\index{Lua.Shooting@{Lua.Shooting}!isAiming@{isAiming}}
+\index{isAiming@{isAiming}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{isAiming}{isAiming}}
+{\footnotesize\ttfamily bool Lua.\+Shooting.\+is\+Aiming\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Whether the micro is currently aiming 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_a0b4d9622c4a1888f424ebdc13db498d1}\label{class_lua_1_1_shooting_a0b4d9622c4a1888f424ebdc13db498d1}} 
+\index{Lua.Shooting@{Lua.Shooting}!isFiring@{isFiring}}
+\index{isFiring@{isFiring}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{isFiring}{isFiring}}
+{\footnotesize\ttfamily bool Lua.\+Shooting.\+is\+Firing\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Whether the micro is currently firing 
+
+\mbox{\Hypertarget{class_lua_1_1_shooting_adc410fd560cfdc7bdbd5b870a7adedbf}\label{class_lua_1_1_shooting_adc410fd560cfdc7bdbd5b870a7adedbf}} 
+\index{Lua.Shooting@{Lua.Shooting}!predictiveAiming@{predictiveAiming}}
+\index{predictiveAiming@{predictiveAiming}!Lua.Shooting@{Lua.Shooting}}
+\subsubsection{\texorpdfstring{predictiveAiming}{predictiveAiming}}
+{\footnotesize\ttfamily bool Lua.\+Shooting.\+predictive\+Aiming\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Whether the micro should try to predict where a moving target is going to be. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Shooting.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,901 @@
+\hypertarget{class_lua_1_1_transform}{}\section{Lua.\+Transform Class Reference}
+\label{class_lua_1_1_transform}\index{Lua.Transform@{Lua.Transform}}
+
+
+Position, rotation and scale of an object.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a13e71ef2426543323d6f74d05d9904d0}{Detach\+Children}} ()
+\begin{DoxyCompactList}\small\item\em Unparents all children. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} \mbox{\hyperlink{class_lua_1_1_transform_a79476caab32d323b7fee1955fda8d808}{Find}} (string \mbox{\hyperlink{class_lua_1_1_transform_af1ca076a9406c3865fef9cbf8393e484}{name}})
+\begin{DoxyCompactList}\small\item\em Finds a child by name and returns it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} \mbox{\hyperlink{class_lua_1_1_transform_a2535f3bade200a7f2c2c59debaeed41a}{Get\+Child}} (int index)
+\begin{DoxyCompactList}\small\item\em Returns a transform child by index. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lua_1_1_transform_a839d8eeda6ca8e0ea2a2e7b50643b0ca}{Get\+Sibling\+Index}} ()
+\begin{DoxyCompactList}\small\item\em Gets the sibling index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a7bf8b1d272b1d893a606c5f38770c433}{Inverse\+Transform\+Direction}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} direction)
+\begin{DoxyCompactList}\small\item\em Transforms a direction from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a14270ac6dbade453decf26513f533b66}{Transform.\+Transform\+Direction}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a4983e88de730e650bb632f63d043035f}{Inverse\+Transform\+Direction}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Transforms a direction from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a14270ac6dbade453decf26513f533b66}{Transform.\+Transform\+Direction}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_aa32269bd79e72646057908fee2cb7f9e}{Inverse\+Transform\+Point}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} direction)
+\begin{DoxyCompactList}\small\item\em Transforms position from world space to local space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_af07e05c728e517c260e6cf8c1b442adc}{Inverse\+Transform\+Point}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Transforms position from world space to local space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_ae6bb74c5b90a6f8db4c436a56f24f8eb}{Inverse\+Transform\+Vector}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} direction)
+\begin{DoxyCompactList}\small\item\em Transforms a vector from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a8a4bb1f1feb42a0d3be3577e4463f5f4}{Transform.\+Transform\+Vector}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a8922d01029a19d826eeb4d6f8f22ce06}{Inverse\+Transform\+Vector}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Transforms a vector from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a8a4bb1f1feb42a0d3be3577e4463f5f4}{Transform.\+Transform\+Vector}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_transform_ad11ff475738f907fdbdc4009c81ee09e}{Is\+Child\+Of}} (\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} \mbox{\hyperlink{class_lua_1_1_transform_a8b6f784d7b29fbff37daec2e2001d991}{parent}})
+\begin{DoxyCompactList}\small\item\em Is this transform a child of parent? \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a1e722de9c3eacff82477ab7684a67553}{Look\+At}} (\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} target)
+\begin{DoxyCompactList}\small\item\em Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_acab4e79308fc20ffa13f6048b7cb3184}{Look\+At}} (\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} target, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} world\+Up)
+\begin{DoxyCompactList}\small\item\em Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_aa8630c1feef1c89cf7a201f6c92005ee}{Look\+At}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} world\+Position)
+\begin{DoxyCompactList}\small\item\em Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a9364734c07f954378c167f7f5258fa18}{Look\+At}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} world\+Position, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} world\+Up)
+\begin{DoxyCompactList}\small\item\em Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_af5d67d5940a08bc18d105c884e53be84}{Rotate}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_ad9a5f0534a08dc2d6cb9ad32b6581b8d}{euler\+Angles}})
+\begin{DoxyCompactList}\small\item\em Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a44f0216f90d0df765efc719bdfbccde2}{Rotate}} (float x\+Angle, float y\+Angle, float z\+Angle)
+\begin{DoxyCompactList}\small\item\em Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a7f9437d0324777be34be4722a9dc52a1}{Rotate}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} axis, float angle)
+\begin{DoxyCompactList}\small\item\em Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_ad62f95fde354155f59cf1cf334cf3fec}{Rotate}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} point, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} axis, float angle)
+\begin{DoxyCompactList}\small\item\em Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a44299747664c0a77b5f03f69f032a86f}{Set\+Parent}} (\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} \mbox{\hyperlink{class_lua_1_1_transform_a8b6f784d7b29fbff37daec2e2001d991}{parent}})
+\begin{DoxyCompactList}\small\item\em Set the parent of the transform. If parent is nil the transform will be detached from its parent if it has one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_afcf05788f6ff8a51e7bc012ffe087727}{Set\+Parent}} (\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} \mbox{\hyperlink{class_lua_1_1_transform_a8b6f784d7b29fbff37daec2e2001d991}{parent}}, bool world\+Position\+Stays)
+\begin{DoxyCompactList}\small\item\em Set the parent of the transform. If parent is nil the transform will be detached from its parent if it has one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a14270ac6dbade453decf26513f533b66}{Transform\+Direction}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} direction)
+\begin{DoxyCompactList}\small\item\em Transforms direction from local space to world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_ac828e92537ee4ca71ef3525f3f19511a}{Transform\+Direction}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Transforms direction from local space to world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a77c8ed5338803453798fbfe848ed02e5}{Transform\+Point}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} direction)
+\begin{DoxyCompactList}\small\item\em Transforms position from local space to world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a77910db0422ec17545d411c1aeaec50b}{Transform\+Point}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Transforms position from local space to world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a8a4bb1f1feb42a0d3be3577e4463f5f4}{Transform\+Vector}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} direction)
+\begin{DoxyCompactList}\small\item\em Transforms vector from local space to world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a79647850468bc87259dda4bc0b70e0ea}{Transform\+Vector}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Transforms vector from local space to world space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a1a2933390110217890785619c897df7f}{Translate}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} translation)
+\begin{DoxyCompactList}\small\item\em Moves the transform in the direction and distance of translation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a2edcc9870e4706eff9bd0fe5143ca179}{Translate}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Moves the transform by x along the x axis, y along the y axis, and z along the z axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_afa326b1db7b8629826fa763669888dd5}{Translate}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} translation, \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} relative\+To)
+\begin{DoxyCompactList}\small\item\em Moves the transform in the direction and distance of translation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_transform_a69bc98e214a973ff53dcb49b48ba06c7}{Translate}} (float x, float y, float z, \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} relative\+To)
+\begin{DoxyCompactList}\small\item\em Moves the transform in the direction and distance of translation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_lua_1_1_transform_a17093d64239d0605cfdd83d9154fcf08}{Equals}} (\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} a, \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} b)
+\begin{DoxyCompactList}\small\item\em Tests 2 transforms for equality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_lua_1_1_transform_a9d77f87171bcb8090f086ae405c4f89e}{child\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of children the \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} has. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_ad9a5f0534a08dc2d6cb9ad32b6581b8d}{euler\+Angles}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The rotation as Euler angles in degrees. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_ad07cf6c2802bfbab50272030379f1826}{forward}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The blue axis of the transform in world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a7923f3c584b87b8e56de6b32acbfba99}{local\+Euler\+Angles}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The rotation as Euler angles in degrees relative to the parent transform\textquotesingle{}s rotation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_ab081c482002c1e4fedbcfa090b19b90e}{local\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Position of the transform relative to the parent transform. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_transform_a2397fd50baf04311df6a50e4dcc302bd}{local\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The rotation of the transform relative to the parent transform\textquotesingle{}s rotation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a40e2891bff5d714d77449aeee6d84492}{local\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The scale of the transform relative to the parent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a55680638b6e6ae6b1bd4b5095b1822f1}{lossy\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The global scale of the object (Read Only). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lua_1_1_transform_af1ca076a9406c3865fef9cbf8393e484}{name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}? \mbox{\hyperlink{class_lua_1_1_transform_a8b6f784d7b29fbff37daec2e2001d991}{parent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The parent of the transform. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \mbox{\hyperlink{class_lua_1_1_transform_a1a4480b448b89a7e1f392af4c842cc28}{entity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets owner entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a789b6abed611a7576ca2262bb9c5e6c3}{position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The position of the transform in world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_afa7cbcc49408b1a75564f5d379c877ac}{right}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The red axis of the transform in world space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} \mbox{\hyperlink{class_lua_1_1_transform_ac54361eab00110ecfa6d6c53ffb78533}{root}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the topmost transform in the hierarchy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_transform_ab0b5488416c3d0f6e3de7b426227198c}{rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The rotation of the transform in world space stored as a \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_transform_a98b72263be2f13a2917369c22b8539f3}{up}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The green axis of the transform in world space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Position, rotation and scale of an object. 
+
+Every object in a scene has a \mbox{\hyperlink{class_lua_1_1_transform}{Transform}}. It\textquotesingle{}s used to store and manipulate the position, rotation and scale of the object. Every \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} can have a parent, which allows you to apply position, rotation and scale hierarchically. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_transform_a13e71ef2426543323d6f74d05d9904d0}\label{class_lua_1_1_transform_a13e71ef2426543323d6f74d05d9904d0}} 
+\index{Lua.Transform@{Lua.Transform}!DetachChildren@{DetachChildren}}
+\index{DetachChildren@{DetachChildren}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{DetachChildren()}{DetachChildren()}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Detach\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unparents all children. 
+
+\mbox{\Hypertarget{class_lua_1_1_transform_a17093d64239d0605cfdd83d9154fcf08}\label{class_lua_1_1_transform_a17093d64239d0605cfdd83d9154fcf08}} 
+\index{Lua.Transform@{Lua.Transform}!Equals@{Equals}}
+\index{Equals@{Equals}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily static bool Lua.\+Transform.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tests 2 transforms for equality. 
+
+Syntax for this operation is {\ttfamily transform1 == transform2}. Returns true if two variables point to the same transform. The inequality operator {\ttfamily transform1 $\sim$= transform2} also uses this function, but negated. \mbox{\Hypertarget{class_lua_1_1_transform_a79476caab32d323b7fee1955fda8d808}\label{class_lua_1_1_transform_a79476caab32d323b7fee1955fda8d808}} 
+\index{Lua.Transform@{Lua.Transform}!Find@{Find}}
+\index{Find@{Find}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} Lua.\+Transform.\+Find (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Finds a child by name and returns it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a2535f3bade200a7f2c2c59debaeed41a}\label{class_lua_1_1_transform_a2535f3bade200a7f2c2c59debaeed41a}} 
+\index{Lua.Transform@{Lua.Transform}!GetChild@{GetChild}}
+\index{GetChild@{GetChild}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{GetChild()}{GetChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} Lua.\+Transform.\+Get\+Child (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Returns a transform child by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a839d8eeda6ca8e0ea2a2e7b50643b0ca}\label{class_lua_1_1_transform_a839d8eeda6ca8e0ea2a2e7b50643b0ca}} 
+\index{Lua.Transform@{Lua.Transform}!GetSiblingIndex@{GetSiblingIndex}}
+\index{GetSiblingIndex@{GetSiblingIndex}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{GetSiblingIndex()}{GetSiblingIndex()}}
+{\footnotesize\ttfamily int Lua.\+Transform.\+Get\+Sibling\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the sibling index. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a7bf8b1d272b1d893a606c5f38770c433}\label{class_lua_1_1_transform_a7bf8b1d272b1d893a606c5f38770c433}} 
+\index{Lua.Transform@{Lua.Transform}!InverseTransformDirection@{InverseTransformDirection}}
+\index{InverseTransformDirection@{InverseTransformDirection}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{InverseTransformDirection()}{InverseTransformDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Inverse\+Transform\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Transforms a direction from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a14270ac6dbade453decf26513f533b66}{Transform.\+Transform\+Direction}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a4983e88de730e650bb632f63d043035f}\label{class_lua_1_1_transform_a4983e88de730e650bb632f63d043035f}} 
+\index{Lua.Transform@{Lua.Transform}!InverseTransformDirection@{InverseTransformDirection}}
+\index{InverseTransformDirection@{InverseTransformDirection}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{InverseTransformDirection()}{InverseTransformDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Inverse\+Transform\+Direction (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Transforms a direction from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a14270ac6dbade453decf26513f533b66}{Transform.\+Transform\+Direction}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_aa32269bd79e72646057908fee2cb7f9e}\label{class_lua_1_1_transform_aa32269bd79e72646057908fee2cb7f9e}} 
+\index{Lua.Transform@{Lua.Transform}!InverseTransformPoint@{InverseTransformPoint}}
+\index{InverseTransformPoint@{InverseTransformPoint}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{InverseTransformPoint()}{InverseTransformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Inverse\+Transform\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Transforms position from world space to local space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_af07e05c728e517c260e6cf8c1b442adc}\label{class_lua_1_1_transform_af07e05c728e517c260e6cf8c1b442adc}} 
+\index{Lua.Transform@{Lua.Transform}!InverseTransformPoint@{InverseTransformPoint}}
+\index{InverseTransformPoint@{InverseTransformPoint}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{InverseTransformPoint()}{InverseTransformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Inverse\+Transform\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Transforms position from world space to local space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ae6bb74c5b90a6f8db4c436a56f24f8eb}\label{class_lua_1_1_transform_ae6bb74c5b90a6f8db4c436a56f24f8eb}} 
+\index{Lua.Transform@{Lua.Transform}!InverseTransformVector@{InverseTransformVector}}
+\index{InverseTransformVector@{InverseTransformVector}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{InverseTransformVector()}{InverseTransformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Inverse\+Transform\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Transforms a vector from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a8a4bb1f1feb42a0d3be3577e4463f5f4}{Transform.\+Transform\+Vector}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a8922d01029a19d826eeb4d6f8f22ce06}\label{class_lua_1_1_transform_a8922d01029a19d826eeb4d6f8f22ce06}} 
+\index{Lua.Transform@{Lua.Transform}!InverseTransformVector@{InverseTransformVector}}
+\index{InverseTransformVector@{InverseTransformVector}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{InverseTransformVector()}{InverseTransformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Inverse\+Transform\+Vector (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Transforms a vector from world space to local space. The opposite of \mbox{\hyperlink{class_lua_1_1_transform_a8a4bb1f1feb42a0d3be3577e4463f5f4}{Transform.\+Transform\+Vector}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ad11ff475738f907fdbdc4009c81ee09e}\label{class_lua_1_1_transform_ad11ff475738f907fdbdc4009c81ee09e}} 
+\index{Lua.Transform@{Lua.Transform}!IsChildOf@{IsChildOf}}
+\index{IsChildOf@{IsChildOf}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{IsChildOf()}{IsChildOf()}}
+{\footnotesize\ttfamily bool Lua.\+Transform.\+Is\+Child\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{parent }\end{DoxyParamCaption})}
+
+
+
+Is this transform a child of parent? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a1e722de9c3eacff82477ab7684a67553}\label{class_lua_1_1_transform_a1e722de9c3eacff82477ab7684a67553}} 
+\index{Lua.Transform@{Lua.Transform}!LookAt@{LookAt}}
+\index{LookAt@{LookAt}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{LookAt()}{LookAt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Look\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_acab4e79308fc20ffa13f6048b7cb3184}\label{class_lua_1_1_transform_acab4e79308fc20ffa13f6048b7cb3184}} 
+\index{Lua.Transform@{Lua.Transform}!LookAt@{LookAt}}
+\index{LookAt@{LookAt}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{LookAt()}{LookAt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Look\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{target,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{world\+Up }\end{DoxyParamCaption})}
+
+
+
+Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+{\em world\+Up} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_aa8630c1feef1c89cf7a201f6c92005ee}\label{class_lua_1_1_transform_aa8630c1feef1c89cf7a201f6c92005ee}} 
+\index{Lua.Transform@{Lua.Transform}!LookAt@{LookAt}}
+\index{LookAt@{LookAt}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{LookAt()}{LookAt()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Look\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{world\+Position }\end{DoxyParamCaption})}
+
+
+
+Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+Position} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_a9364734c07f954378c167f7f5258fa18}\label{class_lua_1_1_transform_a9364734c07f954378c167f7f5258fa18}} 
+\index{Lua.Transform@{Lua.Transform}!LookAt@{LookAt}}
+\index{LookAt@{LookAt}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{LookAt()}{LookAt()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Look\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{world\+Position,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{world\+Up }\end{DoxyParamCaption})}
+
+
+
+Not to be confused with \mbox{\hyperlink{class_lua_1_1_entity_a29cdb052c5422873a708c8080039cb4b}{Entity.\+Look\+At}} Rotates the transform so the forward vector points at /target/\textquotesingle{}s current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world\+Position} & \\
+\hline
+{\em world\+Up} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_af5d67d5940a08bc18d105c884e53be84}\label{class_lua_1_1_transform_af5d67d5940a08bc18d105c884e53be84}} 
+\index{Lua.Transform@{Lua.Transform}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{euler\+Angles }\end{DoxyParamCaption})}
+
+
+
+Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em euler\+Angles} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_a44f0216f90d0df765efc719bdfbccde2}\label{class_lua_1_1_transform_a44f0216f90d0df765efc719bdfbccde2}} 
+\index{Lua.Transform@{Lua.Transform}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Rotate (\begin{DoxyParamCaption}\item[{float}]{x\+Angle,  }\item[{float}]{y\+Angle,  }\item[{float}]{z\+Angle }\end{DoxyParamCaption})}
+
+
+
+Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Angle} & \\
+\hline
+{\em y\+Angle} & \\
+\hline
+{\em z\+Angle} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_a7f9437d0324777be34be4722a9dc52a1}\label{class_lua_1_1_transform_a7f9437d0324777be34be4722a9dc52a1}} 
+\index{Lua.Transform@{Lua.Transform}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & \\
+\hline
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_ad62f95fde354155f59cf1cf334cf3fec}\label{class_lua_1_1_transform_ad62f95fde354155f59cf1cf334cf3fec}} 
+\index{Lua.Transform@{Lua.Transform}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{point,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{axis,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Applies a rotation of euler\+Angles.\+z degrees around the z axis, euler\+Angles.\+x degrees around the x axis, and euler\+Angles.\+y degrees around the y axis (in that order). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+{\em axis} & \\
+\hline
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_a44299747664c0a77b5f03f69f032a86f}\label{class_lua_1_1_transform_a44299747664c0a77b5f03f69f032a86f}} 
+\index{Lua.Transform@{Lua.Transform}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{SetParent()}{SetParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{parent }\end{DoxyParamCaption})}
+
+
+
+Set the parent of the transform. If parent is nil the transform will be detached from its parent if it has one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_afcf05788f6ff8a51e7bc012ffe087727}\label{class_lua_1_1_transform_afcf05788f6ff8a51e7bc012ffe087727}} 
+\index{Lua.Transform@{Lua.Transform}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{SetParent()}{SetParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{parent,  }\item[{bool}]{world\+Position\+Stays }\end{DoxyParamCaption})}
+
+
+
+Set the parent of the transform. If parent is nil the transform will be detached from its parent if it has one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+{\em world\+Position\+Stays} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_a14270ac6dbade453decf26513f533b66}\label{class_lua_1_1_transform_a14270ac6dbade453decf26513f533b66}} 
+\index{Lua.Transform@{Lua.Transform}!TransformDirection@{TransformDirection}}
+\index{TransformDirection@{TransformDirection}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{TransformDirection()}{TransformDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Transform\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Transforms direction from local space to world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ac828e92537ee4ca71ef3525f3f19511a}\label{class_lua_1_1_transform_ac828e92537ee4ca71ef3525f3f19511a}} 
+\index{Lua.Transform@{Lua.Transform}!TransformDirection@{TransformDirection}}
+\index{TransformDirection@{TransformDirection}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{TransformDirection()}{TransformDirection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Transform\+Direction (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Transforms direction from local space to world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a77c8ed5338803453798fbfe848ed02e5}\label{class_lua_1_1_transform_a77c8ed5338803453798fbfe848ed02e5}} 
+\index{Lua.Transform@{Lua.Transform}!TransformPoint@{TransformPoint}}
+\index{TransformPoint@{TransformPoint}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{TransformPoint()}{TransformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Transform\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Transforms position from local space to world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a77910db0422ec17545d411c1aeaec50b}\label{class_lua_1_1_transform_a77910db0422ec17545d411c1aeaec50b}} 
+\index{Lua.Transform@{Lua.Transform}!TransformPoint@{TransformPoint}}
+\index{TransformPoint@{TransformPoint}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{TransformPoint()}{TransformPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Transform\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Transforms position from local space to world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a8a4bb1f1feb42a0d3be3577e4463f5f4}\label{class_lua_1_1_transform_a8a4bb1f1feb42a0d3be3577e4463f5f4}} 
+\index{Lua.Transform@{Lua.Transform}!TransformVector@{TransformVector}}
+\index{TransformVector@{TransformVector}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{TransformVector()}{TransformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Transform\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Transforms vector from local space to world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a79647850468bc87259dda4bc0b70e0ea}\label{class_lua_1_1_transform_a79647850468bc87259dda4bc0b70e0ea}} 
+\index{Lua.Transform@{Lua.Transform}!TransformVector@{TransformVector}}
+\index{TransformVector@{TransformVector}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{TransformVector()}{TransformVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+Transform\+Vector (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Transforms vector from local space to world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a1a2933390110217890785619c897df7f}\label{class_lua_1_1_transform_a1a2933390110217890785619c897df7f}} 
+\index{Lua.Transform@{Lua.Transform}!Translate@{Translate}}
+\index{Translate@{Translate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{translation }\end{DoxyParamCaption})}
+
+
+
+Moves the transform in the direction and distance of translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_a2edcc9870e4706eff9bd0fe5143ca179}\label{class_lua_1_1_transform_a2edcc9870e4706eff9bd0fe5143ca179}} 
+\index{Lua.Transform@{Lua.Transform}!Translate@{Translate}}
+\index{Translate@{Translate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Translate (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Moves the transform by x along the x axis, y along the y axis, and z along the z axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_transform_afa326b1db7b8629826fa763669888dd5}\label{class_lua_1_1_transform_afa326b1db7b8629826fa763669888dd5}} 
+\index{Lua.Transform@{Lua.Transform}!Translate@{Translate}}
+\index{Translate@{Translate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{translation,  }\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{relative\+To }\end{DoxyParamCaption})}
+
+
+
+Moves the transform in the direction and distance of translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & \\
+\hline
+{\em relative\+To} & \\
+\hline
+\end{DoxyParams}
+The movement is applied relative to relative\+To\textquotesingle{}s local coordinate system. If relative\+To is null, the movement is applied relative to the world coordinate system. \mbox{\Hypertarget{class_lua_1_1_transform_a69bc98e214a973ff53dcb49b48ba06c7}\label{class_lua_1_1_transform_a69bc98e214a973ff53dcb49b48ba06c7}} 
+\index{Lua.Transform@{Lua.Transform}!Translate@{Translate}}
+\index{Translate@{Translate}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{Translate()}{Translate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Lua.\+Transform.\+Translate (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{relative\+To }\end{DoxyParamCaption})}
+
+
+
+Moves the transform in the direction and distance of translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em z} & \\
+\hline
+{\em relative\+To} & \\
+\hline
+\end{DoxyParams}
+The movement is applied relative to relative\+To\textquotesingle{}s local coordinate system. If relative\+To is null, the movement is applied relative to the world coordinate system. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_transform_a9d77f87171bcb8090f086ae405c4f89e}\label{class_lua_1_1_transform_a9d77f87171bcb8090f086ae405c4f89e}} 
+\index{Lua.Transform@{Lua.Transform}!childCount@{childCount}}
+\index{childCount@{childCount}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{childCount}{childCount}}
+{\footnotesize\ttfamily int Lua.\+Transform.\+child\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The number of children the \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} has. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a1a4480b448b89a7e1f392af4c842cc28}\label{class_lua_1_1_transform_a1a4480b448b89a7e1f392af4c842cc28}} 
+\index{Lua.Transform@{Lua.Transform}!entity@{entity}}
+\index{entity@{entity}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{entity}{entity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} Lua.\+Transform.\+entity\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets owner entity. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ad9a5f0534a08dc2d6cb9ad32b6581b8d}\label{class_lua_1_1_transform_ad9a5f0534a08dc2d6cb9ad32b6581b8d}} 
+\index{Lua.Transform@{Lua.Transform}!eulerAngles@{eulerAngles}}
+\index{eulerAngles@{eulerAngles}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{eulerAngles}{eulerAngles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+euler\+Angles\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The rotation as Euler angles in degrees. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ad07cf6c2802bfbab50272030379f1826}\label{class_lua_1_1_transform_ad07cf6c2802bfbab50272030379f1826}} 
+\index{Lua.Transform@{Lua.Transform}!forward@{forward}}
+\index{forward@{forward}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{forward}{forward}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+forward\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The blue axis of the transform in world space. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a7923f3c584b87b8e56de6b32acbfba99}\label{class_lua_1_1_transform_a7923f3c584b87b8e56de6b32acbfba99}} 
+\index{Lua.Transform@{Lua.Transform}!localEulerAngles@{localEulerAngles}}
+\index{localEulerAngles@{localEulerAngles}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{localEulerAngles}{localEulerAngles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+local\+Euler\+Angles\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The rotation as Euler angles in degrees relative to the parent transform\textquotesingle{}s rotation. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ab081c482002c1e4fedbcfa090b19b90e}\label{class_lua_1_1_transform_ab081c482002c1e4fedbcfa090b19b90e}} 
+\index{Lua.Transform@{Lua.Transform}!localPosition@{localPosition}}
+\index{localPosition@{localPosition}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{localPosition}{localPosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+local\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Position of the transform relative to the parent transform. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a2397fd50baf04311df6a50e4dcc302bd}\label{class_lua_1_1_transform_a2397fd50baf04311df6a50e4dcc302bd}} 
+\index{Lua.Transform@{Lua.Transform}!localRotation@{localRotation}}
+\index{localRotation@{localRotation}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{localRotation}{localRotation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Transform.\+local\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The rotation of the transform relative to the parent transform\textquotesingle{}s rotation. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a40e2891bff5d714d77449aeee6d84492}\label{class_lua_1_1_transform_a40e2891bff5d714d77449aeee6d84492}} 
+\index{Lua.Transform@{Lua.Transform}!localScale@{localScale}}
+\index{localScale@{localScale}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{localScale}{localScale}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+local\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The scale of the transform relative to the parent. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+// \mbox{\Hypertarget{class_lua_1_1_transform_a55680638b6e6ae6b1bd4b5095b1822f1}\label{class_lua_1_1_transform_a55680638b6e6ae6b1bd4b5095b1822f1}} 
+\index{Lua.Transform@{Lua.Transform}!lossyScale@{lossyScale}}
+\index{lossyScale@{lossyScale}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{lossyScale}{lossyScale}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+lossy\+Scale\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The global scale of the object (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_af1ca076a9406c3865fef9cbf8393e484}\label{class_lua_1_1_transform_af1ca076a9406c3865fef9cbf8393e484}} 
+\index{Lua.Transform@{Lua.Transform}!name@{name}}
+\index{name@{name}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Lua.\+Transform.\+name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The name of the object. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a8b6f784d7b29fbff37daec2e2001d991}\label{class_lua_1_1_transform_a8b6f784d7b29fbff37daec2e2001d991}} 
+\index{Lua.Transform@{Lua.Transform}!parent@{parent}}
+\index{parent@{parent}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_transform}{Transform}}? Lua.\+Transform.\+parent\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The parent of the transform. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a789b6abed611a7576ca2262bb9c5e6c3}\label{class_lua_1_1_transform_a789b6abed611a7576ca2262bb9c5e6c3}} 
+\index{Lua.Transform@{Lua.Transform}!position@{position}}
+\index{position@{position}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The position of the transform in world space. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_afa7cbcc49408b1a75564f5d379c877ac}\label{class_lua_1_1_transform_afa7cbcc49408b1a75564f5d379c877ac}} 
+\index{Lua.Transform@{Lua.Transform}!right@{right}}
+\index{right@{right}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+right\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The red axis of the transform in world space. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ac54361eab00110ecfa6d6c53ffb78533}\label{class_lua_1_1_transform_ac54361eab00110ecfa6d6c53ffb78533}} 
+\index{Lua.Transform@{Lua.Transform}!root@{root}}
+\index{root@{root}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_transform}{Transform}} Lua.\+Transform.\+root\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the topmost transform in the hierarchy. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_ab0b5488416c3d0f6e3de7b426227198c}\label{class_lua_1_1_transform_ab0b5488416c3d0f6e3de7b426227198c}} 
+\index{Lua.Transform@{Lua.Transform}!rotation@{rotation}}
+\index{rotation@{rotation}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Transform.\+rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The rotation of the transform in world space stored as a \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_transform_a98b72263be2f13a2917369c22b8539f3}\label{class_lua_1_1_transform_a98b72263be2f13a2917369c22b8539f3}} 
+\index{Lua.Transform@{Lua.Transform}!up@{up}}
+\index{up@{up}!Lua.Transform@{Lua.Transform}}
+\subsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Transform.\+up\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The green axis of the transform in world space. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Transform.\+cs\end{DoxyCompactItemize}

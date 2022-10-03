@@ -1,0 +1,871 @@
+\hypertarget{class_lua_1_1_mathf}{}\section{Lua.\+Mathf Class Reference}
+\label{class_lua_1_1_mathf}\index{Lua.Mathf@{Lua.Mathf}}
+
+
+A collection of common Unity math functions. Largely overlaps with built-\/in \mbox{\hyperlink{namespace_lua}{Lua}} math library (\href{https://www.lua.org/manual/5.3/manual.html\#6.7}{\texttt{ https\+://www.\+lua.\+org/manual/5.\+3/manual.\+html\#6.\+7}})  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a321380853cd01074ad91e673a7071c99}{Abs}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the absolute value of f. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a33b558ad9dabaee4792399525a89e4ce}{Acos}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the arc-\/cosine of f -\/ the angle in radians whose cosine is f. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_mathf_a2a53d9e05a8d05eaa05d1fced26906e6}{Approximately}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em Compares two floating point values and returns true if they are similar. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a85731b3f55f246a46df2a2f40bc87ae7}{Asin}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the arc-\/sine of f -\/ the angle in radians whose sine is f. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a03740fc6f71760901fbe5f8a6295edeb}{Atan}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the arc-\/tangent of f -\/ the angle in radians whose tangent is f. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_ab7f3034dcb7244d1cfb06ae17f014278}{Atan2}} (float y, float x)
+\begin{DoxyCompactList}\small\item\em Returns the angle in radians whose Tan is y/x. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_aa17eeb105797860b39d5765c5f4a8929}{Ceil}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the smallest integer greater to or equal to f. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_ad734e258b7adf07ed4a34557d80f0122}{Clamp}} (float value, float min, float max)
+\begin{DoxyCompactList}\small\item\em Clamps a value between a minimum float and maximum float value. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a8302fdbff60f945480e559d3f97474d5}{Clamp01}} (float value)
+\begin{DoxyCompactList}\small\item\em Clamps value between 0 and 1 and returns value. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_lua_1_1_mathf_ae78395f9919d38bd29ae567f6f1aac3e}{Closest\+Power\+Of\+Two}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the closest power of two value. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a9bb7f6cc54371f64edaf224c4a5365b6}{Cos}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the cosine of angle f in radians. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_aad5844ff29ce4955f86e72b701cf871b}{Delta\+Angle}} (float current, float target)
+\begin{DoxyCompactList}\small\item\em Calculates the shortest difference between two given angles given in degrees. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a2bde76bb17351b51bc55e2d65f8e9263}{Exp}} (float power)
+\begin{DoxyCompactList}\small\item\em Returns e raised to the specified power. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a72fc411403ab2b7e87ffd6e3989bc9e4}{Floor}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the largest integer smaller to or equal to f. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a4344694ab95eb4dc13046b0798a88ff3}{Inverse\+Lerp}} (float a, float b, float value)
+\begin{DoxyCompactList}\small\item\em Calculates the linear parameter t that produces the interpolant value within the range \mbox{[}a, b\mbox{]}. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_mathf_a44aca0d32ffbf1de0925f05b65d94032}{Is\+Power\+Of\+Two}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns true if the value is power of two. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a659f0bf0690e5056165eb8bd958d6751}{Lerp}} (float a, float b, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolates between a and b by t. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a2363a79cc48061f10c4e7e1b47df2538}{Lerp\+Angle}} (float a, float b, float t)
+\begin{DoxyCompactList}\small\item\em Same as Lerp but makes sure the values interpolate correctly when they wrap around 360 degrees. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a2707664a0c93b38cece4445ee6750709}{Lerp\+Unclamped}} (float a, float b, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolates between a and b by t with no limit to t. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a9d1e276c7cfc8fe9f902ebda005e04e1}{Log}} (float f, float p)
+\begin{DoxyCompactList}\small\item\em Returns the logarithm of a specified number in a specified base. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_afcdb61fd1acfbe37c5e7a675421f3dc9}{Log10}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the base 10 logarithm of a specified number. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_ae0c3619a26a60fdc6442011911e0e412}{Max}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em Returns largest of two or more values. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_ab683c60c60e63553655e8727a55f3e61}{Max}} (params float\mbox{[}$\,$\mbox{]} values)
+\begin{DoxyCompactList}\small\item\em Returns largest of two or more values. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_acc164cac8453f2551303265e346f4969}{Min}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em Returns the smallest of two or more values. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a1d580ef078dacb928fb6df039df2281b}{Min}} (params float\mbox{[}$\,$\mbox{]} values)
+\begin{DoxyCompactList}\small\item\em Returns the smallest of two or more values. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a0b9df3fa414f0b12c2fcfd1eee83570c}{Move\+Towards}} (float current, float target, float max\+Delta)
+\begin{DoxyCompactList}\small\item\em Moves a value current towards target. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_lua_1_1_mathf_abc78356d294242d7d4f10dc5e3e81a81}{Next\+Power\+Of\+Two}} (int value)
+\begin{DoxyCompactList}\small\item\em Returns the next power of two value. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a3044ff5b1dd835169520fd054c713d63}{Perlin\+Noise}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Generate 2D Perlin noise. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a8eed89df943f9dc0df1398e541e023ad}{Ping\+Pong}} (float t, float length)
+\begin{DoxyCompactList}\small\item\em Ping\+Pongs the value t, so that it is never larger than length and never smaller than 0. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_ace6b91fa037354fa541a5de450ba6e23}{Pow}} (float f, float p)
+\begin{DoxyCompactList}\small\item\em Returns f raised to power p. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_abf1f882dcf08b3749a27a28f6f7f3630}{Repeat}} (float t, float length)
+\begin{DoxyCompactList}\small\item\em Loops the value t, so that it is never larger than length and never smaller than 0. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a9f6511ccc1da8fd5228959f67b995d91}{Round}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns f rounded to the nearest integer. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_ae5d3654f321079c30baaf42bdf226d89}{Sign}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the sign of f. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a23fb3f1fdbc09b29120c653bb184fb96}{Sin}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the sine of angle f in radians. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_aa20bfd858dc30b96f3fb7a5033c4b6bf}{Sqrt}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns square root of f. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_afee5fd526c03b9d4f8f5e6fc978e04b8}{Smooth\+Step}} (float from, float to, float t)
+\begin{DoxyCompactList}\small\item\em Interpolates between min and max with smoothing at the limits. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_aefc20a4773c6e7ce2f493974dbdf27c1}{Tan}} (float f)
+\begin{DoxyCompactList}\small\item\em Returns the tangent of angle f in radians. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a5f003a3aab6299095b301066d0af6eab}{Deg2\+Rad}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Degrees-\/to-\/radians conversion constant (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a121e67b35c4d96893e79a5be089ebc8a}{Epsilon}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A tiny floating point value (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_ac3686fdccff0df0a6c797af8ba4722b1}{Infinity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A representation of positive infinity (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a0f4a13d448b3d1a96f3aaff159d6636b}{Negative\+Infinity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A representation of negative infinity (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_a408b4fa7c06dd48e2aa0d6fcde7adedc}{PI}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The infamous 3.\+14159265358979... value (Read Only). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_mathf_aed19ee907a834cbea518af347c4f39d7}{Rad2\+Deg}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Radians-\/to-\/degrees conversion constant (Read Only). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A collection of common Unity math functions. Largely overlaps with built-\/in \mbox{\hyperlink{namespace_lua}{Lua}} math library (\href{https://www.lua.org/manual/5.3/manual.html\#6.7}{\texttt{ https\+://www.\+lua.\+org/manual/5.\+3/manual.\+html\#6.\+7}}) 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a321380853cd01074ad91e673a7071c99}\label{class_lua_1_1_mathf_a321380853cd01074ad91e673a7071c99}} 
+\index{Lua.Mathf@{Lua.Mathf}!Abs@{Abs}}
+\index{Abs@{Abs}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Abs()}{Abs()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Abs (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the absolute value of f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a33b558ad9dabaee4792399525a89e4ce}\label{class_lua_1_1_mathf_a33b558ad9dabaee4792399525a89e4ce}} 
+\index{Lua.Mathf@{Lua.Mathf}!Acos@{Acos}}
+\index{Acos@{Acos}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Acos()}{Acos()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Acos (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the arc-\/cosine of f -\/ the angle in radians whose cosine is f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a2a53d9e05a8d05eaa05d1fced26906e6}\label{class_lua_1_1_mathf_a2a53d9e05a8d05eaa05d1fced26906e6}} 
+\index{Lua.Mathf@{Lua.Mathf}!Approximately@{Approximately}}
+\index{Approximately@{Approximately}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Approximately()}{Approximately()}}
+{\footnotesize\ttfamily static bool Lua.\+Mathf.\+Approximately (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compares two floating point values and returns true if they are similar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a85731b3f55f246a46df2a2f40bc87ae7}\label{class_lua_1_1_mathf_a85731b3f55f246a46df2a2f40bc87ae7}} 
+\index{Lua.Mathf@{Lua.Mathf}!Asin@{Asin}}
+\index{Asin@{Asin}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Asin()}{Asin()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Asin (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the arc-\/sine of f -\/ the angle in radians whose sine is f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a03740fc6f71760901fbe5f8a6295edeb}\label{class_lua_1_1_mathf_a03740fc6f71760901fbe5f8a6295edeb}} 
+\index{Lua.Mathf@{Lua.Mathf}!Atan@{Atan}}
+\index{Atan@{Atan}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Atan()}{Atan()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Atan (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the arc-\/tangent of f -\/ the angle in radians whose tangent is f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_ab7f3034dcb7244d1cfb06ae17f014278}\label{class_lua_1_1_mathf_ab7f3034dcb7244d1cfb06ae17f014278}} 
+\index{Lua.Mathf@{Lua.Mathf}!Atan2@{Atan2}}
+\index{Atan2@{Atan2}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Atan2()}{Atan2()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Atan2 (\begin{DoxyParamCaption}\item[{float}]{y,  }\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the angle in radians whose Tan is y/x. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & \\
+\hline
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_aa17eeb105797860b39d5765c5f4a8929}\label{class_lua_1_1_mathf_aa17eeb105797860b39d5765c5f4a8929}} 
+\index{Lua.Mathf@{Lua.Mathf}!Ceil@{Ceil}}
+\index{Ceil@{Ceil}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Ceil()}{Ceil()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Ceil (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the smallest integer greater to or equal to f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_ad734e258b7adf07ed4a34557d80f0122}\label{class_lua_1_1_mathf_ad734e258b7adf07ed4a34557d80f0122}} 
+\index{Lua.Mathf@{Lua.Mathf}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Clamp()}{Clamp()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Clamp (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clamps a value between a minimum float and maximum float value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a8302fdbff60f945480e559d3f97474d5}\label{class_lua_1_1_mathf_a8302fdbff60f945480e559d3f97474d5}} 
+\index{Lua.Mathf@{Lua.Mathf}!Clamp01@{Clamp01}}
+\index{Clamp01@{Clamp01}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Clamp01()}{Clamp01()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Clamp01 (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clamps value between 0 and 1 and returns value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_ae78395f9919d38bd29ae567f6f1aac3e}\label{class_lua_1_1_mathf_ae78395f9919d38bd29ae567f6f1aac3e}} 
+\index{Lua.Mathf@{Lua.Mathf}!ClosestPowerOfTwo@{ClosestPowerOfTwo}}
+\index{ClosestPowerOfTwo@{ClosestPowerOfTwo}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{ClosestPowerOfTwo()}{ClosestPowerOfTwo()}}
+{\footnotesize\ttfamily static int Lua.\+Mathf.\+Closest\+Power\+Of\+Two (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the closest power of two value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a9bb7f6cc54371f64edaf224c4a5365b6}\label{class_lua_1_1_mathf_a9bb7f6cc54371f64edaf224c4a5365b6}} 
+\index{Lua.Mathf@{Lua.Mathf}!Cos@{Cos}}
+\index{Cos@{Cos}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Cos()}{Cos()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Cos (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the cosine of angle f in radians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_aad5844ff29ce4955f86e72b701cf871b}\label{class_lua_1_1_mathf_aad5844ff29ce4955f86e72b701cf871b}} 
+\index{Lua.Mathf@{Lua.Mathf}!DeltaAngle@{DeltaAngle}}
+\index{DeltaAngle@{DeltaAngle}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{DeltaAngle()}{DeltaAngle()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Delta\+Angle (\begin{DoxyParamCaption}\item[{float}]{current,  }\item[{float}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the shortest difference between two given angles given in degrees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & \\
+\hline
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a2bde76bb17351b51bc55e2d65f8e9263}\label{class_lua_1_1_mathf_a2bde76bb17351b51bc55e2d65f8e9263}} 
+\index{Lua.Mathf@{Lua.Mathf}!Exp@{Exp}}
+\index{Exp@{Exp}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Exp()}{Exp()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Exp (\begin{DoxyParamCaption}\item[{float}]{power }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns e raised to the specified power. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em power} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a72fc411403ab2b7e87ffd6e3989bc9e4}\label{class_lua_1_1_mathf_a72fc411403ab2b7e87ffd6e3989bc9e4}} 
+\index{Lua.Mathf@{Lua.Mathf}!Floor@{Floor}}
+\index{Floor@{Floor}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Floor()}{Floor()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Floor (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the largest integer smaller to or equal to f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a4344694ab95eb4dc13046b0798a88ff3}\label{class_lua_1_1_mathf_a4344694ab95eb4dc13046b0798a88ff3}} 
+\index{Lua.Mathf@{Lua.Mathf}!InverseLerp@{InverseLerp}}
+\index{InverseLerp@{InverseLerp}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{InverseLerp()}{InverseLerp()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Inverse\+Lerp (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the linear parameter t that produces the interpolant value within the range \mbox{[}a, b\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a44aca0d32ffbf1de0925f05b65d94032}\label{class_lua_1_1_mathf_a44aca0d32ffbf1de0925f05b65d94032}} 
+\index{Lua.Mathf@{Lua.Mathf}!IsPowerOfTwo@{IsPowerOfTwo}}
+\index{IsPowerOfTwo@{IsPowerOfTwo}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{IsPowerOfTwo()}{IsPowerOfTwo()}}
+{\footnotesize\ttfamily static bool Lua.\+Mathf.\+Is\+Power\+Of\+Two (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the value is power of two. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a659f0bf0690e5056165eb8bd958d6751}\label{class_lua_1_1_mathf_a659f0bf0690e5056165eb8bd958d6751}} 
+\index{Lua.Mathf@{Lua.Mathf}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Lerp()}{Lerp()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Lerp (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Linearly interpolates between a and b by t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a2363a79cc48061f10c4e7e1b47df2538}\label{class_lua_1_1_mathf_a2363a79cc48061f10c4e7e1b47df2538}} 
+\index{Lua.Mathf@{Lua.Mathf}!LerpAngle@{LerpAngle}}
+\index{LerpAngle@{LerpAngle}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{LerpAngle()}{LerpAngle()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Lerp\+Angle (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Same as Lerp but makes sure the values interpolate correctly when they wrap around 360 degrees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a2707664a0c93b38cece4445ee6750709}\label{class_lua_1_1_mathf_a2707664a0c93b38cece4445ee6750709}} 
+\index{Lua.Mathf@{Lua.Mathf}!LerpUnclamped@{LerpUnclamped}}
+\index{LerpUnclamped@{LerpUnclamped}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{LerpUnclamped()}{LerpUnclamped()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Lerp\+Unclamped (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Linearly interpolates between a and b by t with no limit to t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a9d1e276c7cfc8fe9f902ebda005e04e1}\label{class_lua_1_1_mathf_a9d1e276c7cfc8fe9f902ebda005e04e1}} 
+\index{Lua.Mathf@{Lua.Mathf}!Log@{Log}}
+\index{Log@{Log}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Log (\begin{DoxyParamCaption}\item[{float}]{f,  }\item[{float}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the logarithm of a specified number in a specified base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_afcdb61fd1acfbe37c5e7a675421f3dc9}\label{class_lua_1_1_mathf_afcdb61fd1acfbe37c5e7a675421f3dc9}} 
+\index{Lua.Mathf@{Lua.Mathf}!Log10@{Log10}}
+\index{Log10@{Log10}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Log10()}{Log10()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Log10 (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the base 10 logarithm of a specified number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_ae0c3619a26a60fdc6442011911e0e412}\label{class_lua_1_1_mathf_ae0c3619a26a60fdc6442011911e0e412}} 
+\index{Lua.Mathf@{Lua.Mathf}!Max@{Max}}
+\index{Max@{Max}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Max (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns largest of two or more values. 
+
+\mbox{\Hypertarget{class_lua_1_1_mathf_ab683c60c60e63553655e8727a55f3e61}\label{class_lua_1_1_mathf_ab683c60c60e63553655e8727a55f3e61}} 
+\index{Lua.Mathf@{Lua.Mathf}!Max@{Max}}
+\index{Max@{Max}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Max (\begin{DoxyParamCaption}\item[{params float \mbox{[}$\,$\mbox{]}}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns largest of two or more values. 
+
+\mbox{\Hypertarget{class_lua_1_1_mathf_acc164cac8453f2551303265e346f4969}\label{class_lua_1_1_mathf_acc164cac8453f2551303265e346f4969}} 
+\index{Lua.Mathf@{Lua.Mathf}!Min@{Min}}
+\index{Min@{Min}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Min (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the smallest of two or more values. 
+
+\mbox{\Hypertarget{class_lua_1_1_mathf_a1d580ef078dacb928fb6df039df2281b}\label{class_lua_1_1_mathf_a1d580ef078dacb928fb6df039df2281b}} 
+\index{Lua.Mathf@{Lua.Mathf}!Min@{Min}}
+\index{Min@{Min}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Min (\begin{DoxyParamCaption}\item[{params float \mbox{[}$\,$\mbox{]}}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the smallest of two or more values. 
+
+\mbox{\Hypertarget{class_lua_1_1_mathf_a0b9df3fa414f0b12c2fcfd1eee83570c}\label{class_lua_1_1_mathf_a0b9df3fa414f0b12c2fcfd1eee83570c}} 
+\index{Lua.Mathf@{Lua.Mathf}!MoveTowards@{MoveTowards}}
+\index{MoveTowards@{MoveTowards}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{MoveTowards()}{MoveTowards()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Move\+Towards (\begin{DoxyParamCaption}\item[{float}]{current,  }\item[{float}]{target,  }\item[{float}]{max\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Moves a value current towards target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & \\
+\hline
+{\em target} & \\
+\hline
+{\em max\+Delta} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_abc78356d294242d7d4f10dc5e3e81a81}\label{class_lua_1_1_mathf_abc78356d294242d7d4f10dc5e3e81a81}} 
+\index{Lua.Mathf@{Lua.Mathf}!NextPowerOfTwo@{NextPowerOfTwo}}
+\index{NextPowerOfTwo@{NextPowerOfTwo}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{NextPowerOfTwo()}{NextPowerOfTwo()}}
+{\footnotesize\ttfamily static int Lua.\+Mathf.\+Next\+Power\+Of\+Two (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the next power of two value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a3044ff5b1dd835169520fd054c713d63}\label{class_lua_1_1_mathf_a3044ff5b1dd835169520fd054c713d63}} 
+\index{Lua.Mathf@{Lua.Mathf}!PerlinNoise@{PerlinNoise}}
+\index{PerlinNoise@{PerlinNoise}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{PerlinNoise()}{PerlinNoise()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Perlin\+Noise (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generate 2D Perlin noise. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Perlin noise is a pseudo-\/random pattern of float values generated across a 2D plane (although the technique does generalise to three or more dimensions, this is not implemented in Unity). The noise does not contain a completely random value at each point but rather consists of \char`\"{}waves\char`\"{} whose values gradually increase and decrease across the pattern. The noise can be used as the basis for texture effects but also for animation, generating terrain heightmaps and many other things. \mbox{\Hypertarget{class_lua_1_1_mathf_a8eed89df943f9dc0df1398e541e023ad}\label{class_lua_1_1_mathf_a8eed89df943f9dc0df1398e541e023ad}} 
+\index{Lua.Mathf@{Lua.Mathf}!PingPong@{PingPong}}
+\index{PingPong@{PingPong}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{PingPong()}{PingPong()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Ping\+Pong (\begin{DoxyParamCaption}\item[{float}]{t,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Ping\+Pongs the value t, so that it is never larger than length and never smaller than 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_ace6b91fa037354fa541a5de450ba6e23}\label{class_lua_1_1_mathf_ace6b91fa037354fa541a5de450ba6e23}} 
+\index{Lua.Mathf@{Lua.Mathf}!Pow@{Pow}}
+\index{Pow@{Pow}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Pow()}{Pow()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Pow (\begin{DoxyParamCaption}\item[{float}]{f,  }\item[{float}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns f raised to power p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_abf1f882dcf08b3749a27a28f6f7f3630}\label{class_lua_1_1_mathf_abf1f882dcf08b3749a27a28f6f7f3630}} 
+\index{Lua.Mathf@{Lua.Mathf}!Repeat@{Repeat}}
+\index{Repeat@{Repeat}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Repeat()}{Repeat()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Repeat (\begin{DoxyParamCaption}\item[{float}]{t,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loops the value t, so that it is never larger than length and never smaller than 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+{\em length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a9f6511ccc1da8fd5228959f67b995d91}\label{class_lua_1_1_mathf_a9f6511ccc1da8fd5228959f67b995d91}} 
+\index{Lua.Mathf@{Lua.Mathf}!Round@{Round}}
+\index{Round@{Round}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Round()}{Round()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Round (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns f rounded to the nearest integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_ae5d3654f321079c30baaf42bdf226d89}\label{class_lua_1_1_mathf_ae5d3654f321079c30baaf42bdf226d89}} 
+\index{Lua.Mathf@{Lua.Mathf}!Sign@{Sign}}
+\index{Sign@{Sign}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Sign()}{Sign()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Sign (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the sign of f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a23fb3f1fdbc09b29120c653bb184fb96}\label{class_lua_1_1_mathf_a23fb3f1fdbc09b29120c653bb184fb96}} 
+\index{Lua.Mathf@{Lua.Mathf}!Sin@{Sin}}
+\index{Sin@{Sin}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Sin()}{Sin()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Sin (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the sine of angle f in radians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_afee5fd526c03b9d4f8f5e6fc978e04b8}\label{class_lua_1_1_mathf_afee5fd526c03b9d4f8f5e6fc978e04b8}} 
+\index{Lua.Mathf@{Lua.Mathf}!SmoothStep@{SmoothStep}}
+\index{SmoothStep@{SmoothStep}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{SmoothStep()}{SmoothStep()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Smooth\+Step (\begin{DoxyParamCaption}\item[{float}]{from,  }\item[{float}]{to,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Interpolates between min and max with smoothing at the limits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & \\
+\hline
+{\em to} & \\
+\hline
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_aa20bfd858dc30b96f3fb7a5033c4b6bf}\label{class_lua_1_1_mathf_aa20bfd858dc30b96f3fb7a5033c4b6bf}} 
+\index{Lua.Mathf@{Lua.Mathf}!Sqrt@{Sqrt}}
+\index{Sqrt@{Sqrt}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Sqrt()}{Sqrt()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Sqrt (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns square root of f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_aefc20a4773c6e7ce2f493974dbdf27c1}\label{class_lua_1_1_mathf_aefc20a4773c6e7ce2f493974dbdf27c1}} 
+\index{Lua.Mathf@{Lua.Mathf}!Tan@{Tan}}
+\index{Tan@{Tan}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Tan()}{Tan()}}
+{\footnotesize\ttfamily static float Lua.\+Mathf.\+Tan (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the tangent of angle f in radians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a5f003a3aab6299095b301066d0af6eab}\label{class_lua_1_1_mathf_a5f003a3aab6299095b301066d0af6eab}} 
+\index{Lua.Mathf@{Lua.Mathf}!Deg2Rad@{Deg2Rad}}
+\index{Deg2Rad@{Deg2Rad}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Deg2Rad}{Deg2Rad}}
+{\footnotesize\ttfamily float Lua.\+Mathf.\+Deg2\+Rad\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Degrees-\/to-\/radians conversion constant (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a121e67b35c4d96893e79a5be089ebc8a}\label{class_lua_1_1_mathf_a121e67b35c4d96893e79a5be089ebc8a}} 
+\index{Lua.Mathf@{Lua.Mathf}!Epsilon@{Epsilon}}
+\index{Epsilon@{Epsilon}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Epsilon}{Epsilon}}
+{\footnotesize\ttfamily float Lua.\+Mathf.\+Epsilon\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+A tiny floating point value (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_ac3686fdccff0df0a6c797af8ba4722b1}\label{class_lua_1_1_mathf_ac3686fdccff0df0a6c797af8ba4722b1}} 
+\index{Lua.Mathf@{Lua.Mathf}!Infinity@{Infinity}}
+\index{Infinity@{Infinity}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Infinity}{Infinity}}
+{\footnotesize\ttfamily float Lua.\+Mathf.\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+A representation of positive infinity (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a0f4a13d448b3d1a96f3aaff159d6636b}\label{class_lua_1_1_mathf_a0f4a13d448b3d1a96f3aaff159d6636b}} 
+\index{Lua.Mathf@{Lua.Mathf}!NegativeInfinity@{NegativeInfinity}}
+\index{NegativeInfinity@{NegativeInfinity}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{NegativeInfinity}{NegativeInfinity}}
+{\footnotesize\ttfamily float Lua.\+Mathf.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+A representation of negative infinity (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_a408b4fa7c06dd48e2aa0d6fcde7adedc}\label{class_lua_1_1_mathf_a408b4fa7c06dd48e2aa0d6fcde7adedc}} 
+\index{Lua.Mathf@{Lua.Mathf}!PI@{PI}}
+\index{PI@{PI}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily float Lua.\+Mathf.\+PI\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The infamous 3.\+14159265358979... value (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_mathf_aed19ee907a834cbea518af347c4f39d7}\label{class_lua_1_1_mathf_aed19ee907a834cbea518af347c4f39d7}} 
+\index{Lua.Mathf@{Lua.Mathf}!Rad2Deg@{Rad2Deg}}
+\index{Rad2Deg@{Rad2Deg}!Lua.Mathf@{Lua.Mathf}}
+\subsubsection{\texorpdfstring{Rad2Deg}{Rad2Deg}}
+{\footnotesize\ttfamily float Lua.\+Mathf.\+Rad2\+Deg\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Radians-\/to-\/degrees conversion constant (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Mathf.\+cs\end{DoxyCompactItemize}

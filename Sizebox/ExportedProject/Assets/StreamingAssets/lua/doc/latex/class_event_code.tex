@@ -1,0 +1,175 @@
+\hypertarget{class_event_code}{}\section{Event\+Code Class Reference}
+\label{class_event_code}\index{EventCode@{EventCode}}
+
+
+Lists hardcoded engine \mbox{\hyperlink{class_lua_1_1_event}{Lua.\+Event}} names.  
+
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_event_code_a279c4c5e28c223c4a5c590af25823780}{On\+Crush}} = \char`\"{}On\+Crush\char`\"{}
+\begin{DoxyCompactList}\small\item\em Entity crushing micro event. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_afe7b5546673f18b5aacb38e272f8dcc0}{On\+Step}} = \char`\"{}On\+Step\char`\"{}
+\begin{DoxyCompactList}\small\item\em Entity footstep event. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_a03a965e04c12fca8491beb8ec3753df4}{On\+Spawn}} = \char`\"{}On\+Spawn\char`\"{}
+\begin{DoxyCompactList}\small\item\em Entity spawned event. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_a55f432be68d01cd15b1bf04936237711}{On\+Action\+Complete}} = \char`\"{}On\+Action\+Complete\char`\"{}
+\begin{DoxyCompactList}\small\item\em Action complete event. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_aaaadd94dd51e82dc133c6e5147e2ede2}{On\+Player\+Raygun\+Hit}} = \char`\"{}On\+Player\+Raygun\+Hit\char`\"{}
+\begin{DoxyCompactList}\small\item\em Player Raygun hit event. For raygun hits sent by the player \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_a42a2b4374afaaf0c95694abdd93e7fe9}{On\+Trigger\+Press}} = \char`\"{}On\+Trigger\+Press\char`\"{}
+\begin{DoxyCompactList}\small\item\em Player weapon trigger press event. For when player starts firing their weapon \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_a62441710d089523d4630ac962020a6b5}{On\+Trigger\+Release}} = \char`\"{}On\+Trigger\+Release\char`\"{}
+\begin{DoxyCompactList}\small\item\em Player weapon trigger release event. For when player stops firing their weapon \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_a0bb7a7064c6259124a48767341b0211f}{On\+A\+I\+Raygun\+Hit}} = \char`\"{}On\+A\+I\+Raygun\+Hit\char`\"{}
+\begin{DoxyCompactList}\small\item\em AI Raygun hit event. For raygun hits sent by an AI micro \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_a379d0656758a2f6d45f7a6b497f2d1e0}{On\+A\+I\+S\+M\+G\+Hit}} = \char`\"{}On\+A\+I\+S\+M\+G\+Hit\char`\"{}
+\begin{DoxyCompactList}\small\item\em AI Raygun hit event. For raygun hits sent by an AI micro \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_event_code_a6c5540673e62192cd85f1ef886e8076e}{On\+A\+I\+Weapon\+Fire}} = \char`\"{}On\+A\+I\+Weapon\+Fire\char`\"{}
+\begin{DoxyCompactList}\small\item\em AI weapon fire event. For when an AI micro fires their weapon \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lists hardcoded engine \mbox{\hyperlink{class_lua_1_1_event}{Lua.\+Event}} names. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_event_code_a55f432be68d01cd15b1bf04936237711}\label{class_event_code_a55f432be68d01cd15b1bf04936237711}} 
+\index{EventCode@{EventCode}!OnActionComplete@{OnActionComplete}}
+\index{OnActionComplete@{OnActionComplete}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnActionComplete}{OnActionComplete}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+Action\+Complete = \char`\"{}On\+Action\+Complete\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Action complete event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily agent} -\/ action entity
+\item {\ttfamily action} -\/ action name 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_a0bb7a7064c6259124a48767341b0211f}\label{class_event_code_a0bb7a7064c6259124a48767341b0211f}} 
+\index{EventCode@{EventCode}!OnAIRaygunHit@{OnAIRaygunHit}}
+\index{OnAIRaygunHit@{OnAIRaygunHit}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnAIRaygunHit}{OnAIRaygunHit}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+A\+I\+Raygun\+Hit = \char`\"{}On\+A\+I\+Raygun\+Hit\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+AI Raygun hit event. For raygun hits sent by an AI micro 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily target} -\/ entity that has been hit 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_a379d0656758a2f6d45f7a6b497f2d1e0}\label{class_event_code_a379d0656758a2f6d45f7a6b497f2d1e0}} 
+\index{EventCode@{EventCode}!OnAISMGHit@{OnAISMGHit}}
+\index{OnAISMGHit@{OnAISMGHit}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnAISMGHit}{OnAISMGHit}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+A\+I\+S\+M\+G\+Hit = \char`\"{}On\+A\+I\+S\+M\+G\+Hit\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+AI Raygun hit event. For raygun hits sent by an AI micro 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily target} -\/ entity that has been hit 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_a6c5540673e62192cd85f1ef886e8076e}\label{class_event_code_a6c5540673e62192cd85f1ef886e8076e}} 
+\index{EventCode@{EventCode}!OnAIWeaponFire@{OnAIWeaponFire}}
+\index{OnAIWeaponFire@{OnAIWeaponFire}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnAIWeaponFire}{OnAIWeaponFire}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+A\+I\+Weapon\+Fire = \char`\"{}On\+A\+I\+Weapon\+Fire\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+AI weapon fire event. For when an AI micro fires their weapon 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily entity} -\/ entity that has fired their weapon 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_a279c4c5e28c223c4a5c590af25823780}\label{class_event_code_a279c4c5e28c223c4a5c590af25823780}} 
+\index{EventCode@{EventCode}!OnCrush@{OnCrush}}
+\index{OnCrush@{OnCrush}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnCrush}{OnCrush}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+Crush = \char`\"{}On\+Crush\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Entity crushing micro event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily victim} -\/ crushed micro entity
+\item {\ttfamily crusher} -\/ crushing entity 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_aaaadd94dd51e82dc133c6e5147e2ede2}\label{class_event_code_aaaadd94dd51e82dc133c6e5147e2ede2}} 
+\index{EventCode@{EventCode}!OnPlayerRaygunHit@{OnPlayerRaygunHit}}
+\index{OnPlayerRaygunHit@{OnPlayerRaygunHit}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnPlayerRaygunHit}{OnPlayerRaygunHit}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+Player\+Raygun\+Hit = \char`\"{}On\+Player\+Raygun\+Hit\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Player Raygun hit event. For raygun hits sent by the player 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily target} -\/ entity that has been hit
+\item {\ttfamily magnitude} -\/ raygun\textquotesingle{}s magnitude value (float $\vert$ ranges from -\/1 to 1)
+\item {\ttfamily firing\+Mode} -\/ type of emission that hit target (int $\vert$ 0 -\/ projectile, 1 -\/ laser, 2 -\/ sonic)
+\item {\ttfamily charge\+Value} -\/ value of hit projectile charge value (float $\vert$ ranges from 0.\+125 -\/ 1) 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_a03a965e04c12fca8491beb8ec3753df4}\label{class_event_code_a03a965e04c12fca8491beb8ec3753df4}} 
+\index{EventCode@{EventCode}!OnSpawn@{OnSpawn}}
+\index{OnSpawn@{OnSpawn}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnSpawn}{OnSpawn}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+Spawn = \char`\"{}On\+Spawn\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Entity spawned event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily entity} -\/ spawned entity 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_afe7b5546673f18b5aacb38e272f8dcc0}\label{class_event_code_afe7b5546673f18b5aacb38e272f8dcc0}} 
+\index{EventCode@{EventCode}!OnStep@{OnStep}}
+\index{OnStep@{OnStep}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnStep}{OnStep}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+Step = \char`\"{}On\+Step\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Entity footstep event. 
+
+Listeners will be given following data\+:
+\begin{DoxyItemize}
+\item {\ttfamily entity} -\/ stepping entity
+\item {\ttfamily position} -\/ position of the step epicenter (vector)
+\item {\ttfamily magnitude} -\/ force of the step (float)
+\item {\ttfamily foot} -\/ foot number (0 -\/ left, 1 -\/ right) 
+\end{DoxyItemize}\mbox{\Hypertarget{class_event_code_a42a2b4374afaaf0c95694abdd93e7fe9}\label{class_event_code_a42a2b4374afaaf0c95694abdd93e7fe9}} 
+\index{EventCode@{EventCode}!OnTriggerPress@{OnTriggerPress}}
+\index{OnTriggerPress@{OnTriggerPress}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnTriggerPress}{OnTriggerPress}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+Trigger\+Press = \char`\"{}On\+Trigger\+Press\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Player weapon trigger press event. For when player starts firing their weapon 
+
+\mbox{\Hypertarget{class_event_code_a62441710d089523d4630ac962020a6b5}\label{class_event_code_a62441710d089523d4630ac962020a6b5}} 
+\index{EventCode@{EventCode}!OnTriggerRelease@{OnTriggerRelease}}
+\index{OnTriggerRelease@{OnTriggerRelease}!EventCode@{EventCode}}
+\subsubsection{\texorpdfstring{OnTriggerRelease}{OnTriggerRelease}}
+{\footnotesize\ttfamily string Event\+Code.\+On\+Trigger\+Release = \char`\"{}On\+Trigger\+Release\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Player weapon trigger release event. For when player stops firing their weapon 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Event\+Code.\+cs\end{DoxyCompactItemize}

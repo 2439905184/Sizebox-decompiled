@@ -1,0 +1,318 @@
+\hypertarget{class_lua_1_1_rigidbody}{}\section{Lua.\+Rigidbody Class Reference}
+\label{class_lua_1_1_rigidbody}\index{Lua.Rigidbody@{Lua.Rigidbody}}
+
+
+Control of an object\textquotesingle{}s position through physics simulation.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_rigidbody_a5d57a953b33d659f6e3b5508cd304960}{Add\+Explosion\+Force}} (float explosion\+Force, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} explosion\+Position, float explosion\+Radius)
+\begin{DoxyCompactList}\small\item\em Applies a force to a rigidbody that simulates explosion effects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_rigidbody_a57eff3c6b45bf8f5a8dfdb7fa1fc9f8f}{Add\+Force}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} force)
+\begin{DoxyCompactList}\small\item\em Adds a force to the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_rigidbody_a9770aa2b61c085f2581392a782f6742c}{Add\+Relative\+Force}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} force)
+\begin{DoxyCompactList}\small\item\em Adds a force to the rigidbody relative to its coordinate system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_rigidbody_a413146fdf9b4e57b433cbc01dc1bc288}{Move\+Position}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_rigidbody_a9bef020808bd389b43ac5d2f7d429dc9}{position}})
+\begin{DoxyCompactList}\small\item\em Moves the rigidbody to position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_rigidbody_a064bd1441d0a8d7e636619c87a98f7cf}{Move\+Rotation}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rot)
+\begin{DoxyCompactList}\small\item\em Rotates the rigidbody to rotation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_rigidbody_a267bf6dacb4ef9d2aeb0c798d2460245}{Closest\+Point\+On\+Bounds}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_rigidbody_a9bef020808bd389b43ac5d2f7d429dc9}{position}})
+\begin{DoxyCompactList}\small\item\em The closest point to the bounding box of the attached colliders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_lua_1_1_rigidbody_a901b3213408100236b17a3e55b64e6f7}{angular\+Drag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The angular drag of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_rigidbody_ab88493ae1a778194017c0e3a87c0625d}{angular\+Velocity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The angular velocity vector of the rigidbody measured in radians per second. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_rigidbody_ac537e281d009b3e07c93f7357fa743cd}{drag}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The drag of the object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_rigidbody_ad3f2380221d01eedada3df4d282a37d4}{freeze\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether physics will change the rotation of the object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_rigidbody_aeab0f1c55ada296d501909dd61533a35}{mass}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The mass of the rigidbody. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_rigidbody_a8171fc4d6eb8d7e448eeb45f9fbc05d8}{max\+Angular\+Velocity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The maximimum angular velocity of the rigidbody. (Default 7) range \{ 0, infinity \}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_rigidbody_a9bef020808bd389b43ac5d2f7d429dc9}{position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The position of the rigidbody. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_rigidbody_a6cb1207363fce98ec04cacf8c6f776cc}{rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The rotation of the rigidbody. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_rigidbody_a3838f1418140279bcec4d7a2f8ebbae2}{use\+Gravity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether gravity affects this rigidbody. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_rigidbody_abbc468f41391b7d34120f11f3f39b6fb}{velocity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The velocity vector of the rigidbody. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_rigidbody_a23530e52ed361ac1f758e8204a1c833b}{world\+Center\+Of\+Mass}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The center of mass of the rigidbody in world space (Read Only). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_rigidbody_aee1018d4d56ab085d013acc494c0d0f9}{is\+Kinematic}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether physics affects the rigidbody. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Control of an object\textquotesingle{}s position through physics simulation. 
+
+In a script, the Fixed\+Update function is recommended as the place to apply forces and change \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}} settings (as opposed to Update, which is used for most other frame update tasks). The reason for this is that physics updates are carried out in measured time steps that don\textquotesingle{}t coincide with the frame update. Fixed\+Update is called immediately before each physics update and so any changes made there will be processed directly. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a5d57a953b33d659f6e3b5508cd304960}\label{class_lua_1_1_rigidbody_a5d57a953b33d659f6e3b5508cd304960}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!AddExplosionForce@{AddExplosionForce}}
+\index{AddExplosionForce@{AddExplosionForce}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{AddExplosionForce()}{AddExplosionForce()}}
+{\footnotesize\ttfamily void Lua.\+Rigidbody.\+Add\+Explosion\+Force (\begin{DoxyParamCaption}\item[{float}]{explosion\+Force,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{explosion\+Position,  }\item[{float}]{explosion\+Radius }\end{DoxyParamCaption})}
+
+
+
+Applies a force to a rigidbody that simulates explosion effects. 
+
+The explosion is modelled as a sphere with a certain centre position and radius in world space; normally, anything outside the sphere is not affected by the explosion and the force decreases in proportion to distance from the centre. However, if a value of zero is passed for the radius then the full force will be applied regardless of how far the centre is from the rigidbody. 
+\begin{DoxyParams}{Parameters}
+{\em explosion\+Force} & The force of the explosion (which may be modified by distance).\\
+\hline
+{\em explosion\+Position} & The centre of the sphere within which the explosion has its effect.\\
+\hline
+{\em explosion\+Radius} & The radius of the sphere within which the explosion has its effect.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a57eff3c6b45bf8f5a8dfdb7fa1fc9f8f}\label{class_lua_1_1_rigidbody_a57eff3c6b45bf8f5a8dfdb7fa1fc9f8f}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!AddForce@{AddForce}}
+\index{AddForce@{AddForce}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{AddForce()}{AddForce()}}
+{\footnotesize\ttfamily void Lua.\+Rigidbody.\+Add\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{force }\end{DoxyParamCaption})}
+
+
+
+Adds a force to the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}. 
+
+Force is applied continuously along the direction of the force vector. 
+\begin{DoxyParams}{Parameters}
+{\em force} & Force vector in world coordinates.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a9770aa2b61c085f2581392a782f6742c}\label{class_lua_1_1_rigidbody_a9770aa2b61c085f2581392a782f6742c}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!AddRelativeForce@{AddRelativeForce}}
+\index{AddRelativeForce@{AddRelativeForce}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{AddRelativeForce()}{AddRelativeForce()}}
+{\footnotesize\ttfamily void Lua.\+Rigidbody.\+Add\+Relative\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{force }\end{DoxyParamCaption})}
+
+
+
+Adds a force to the rigidbody relative to its coordinate system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em force} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a267bf6dacb4ef9d2aeb0c798d2460245}\label{class_lua_1_1_rigidbody_a267bf6dacb4ef9d2aeb0c798d2460245}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!ClosestPointOnBounds@{ClosestPointOnBounds}}
+\index{ClosestPointOnBounds@{ClosestPointOnBounds}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{ClosestPointOnBounds()}{ClosestPointOnBounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Rigidbody.\+Closest\+Point\+On\+Bounds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position }\end{DoxyParamCaption})}
+
+
+
+The closest point to the bounding box of the attached colliders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a413146fdf9b4e57b433cbc01dc1bc288}\label{class_lua_1_1_rigidbody_a413146fdf9b4e57b433cbc01dc1bc288}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!MovePosition@{MovePosition}}
+\index{MovePosition@{MovePosition}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{MovePosition()}{MovePosition()}}
+{\footnotesize\ttfamily void Lua.\+Rigidbody.\+Move\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Moves the rigidbody to position. 
+
+Use \mbox{\hyperlink{class_lua_1_1_rigidbody_a413146fdf9b4e57b433cbc01dc1bc288}{Rigidbody.\+Move\+Position}} to move a \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}, complying with the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}\textquotesingle{}s interpolation setting. 
+\begin{DoxyParams}{Parameters}
+{\em position} & The new position for the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}} object.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a064bd1441d0a8d7e636619c87a98f7cf}\label{class_lua_1_1_rigidbody_a064bd1441d0a8d7e636619c87a98f7cf}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!MoveRotation@{MoveRotation}}
+\index{MoveRotation@{MoveRotation}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{MoveRotation()}{MoveRotation()}}
+{\footnotesize\ttfamily void Lua.\+Rigidbody.\+Move\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rot }\end{DoxyParamCaption})}
+
+
+
+Rotates the rigidbody to rotation. 
+
+Use \mbox{\hyperlink{class_lua_1_1_rigidbody_a064bd1441d0a8d7e636619c87a98f7cf}{Rigidbody.\+Move\+Rotation}} to rotate a \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}, complying with the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}\textquotesingle{}s interpolation setting. 
+\begin{DoxyParams}{Parameters}
+{\em rot} & The new rotation for the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a901b3213408100236b17a3e55b64e6f7}\label{class_lua_1_1_rigidbody_a901b3213408100236b17a3e55b64e6f7}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!angularDrag@{angularDrag}}
+\index{angularDrag@{angularDrag}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{angularDrag}{angularDrag}}
+{\footnotesize\ttfamily float Lua.\+Rigidbody.\+angular\+Drag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The angular drag of the object. 
+
+Angular drag can be used to slow down the rotation of an object. The higher the drag the more the rotation slows down. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_ab88493ae1a778194017c0e3a87c0625d}\label{class_lua_1_1_rigidbody_ab88493ae1a778194017c0e3a87c0625d}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!angularVelocity@{angularVelocity}}
+\index{angularVelocity@{angularVelocity}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{angularVelocity}{angularVelocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Rigidbody.\+angular\+Velocity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The angular velocity vector of the rigidbody measured in radians per second. 
+
+In most cases you should not modify it directly, as this can result in unrealistic behaviour. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_ac537e281d009b3e07c93f7357fa743cd}\label{class_lua_1_1_rigidbody_ac537e281d009b3e07c93f7357fa743cd}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!drag@{drag}}
+\index{drag@{drag}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{drag}{drag}}
+{\footnotesize\ttfamily float Lua.\+Rigidbody.\+drag\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The drag of the object. 
+
+Drag can be used to slow down an object. The higher the drag the more the object slows down. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_ad3f2380221d01eedada3df4d282a37d4}\label{class_lua_1_1_rigidbody_ad3f2380221d01eedada3df4d282a37d4}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!freezeRotation@{freezeRotation}}
+\index{freezeRotation@{freezeRotation}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{freezeRotation}{freezeRotation}}
+{\footnotesize\ttfamily bool Lua.\+Rigidbody.\+freeze\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether physics will change the rotation of the object. 
+
+If freeze\+Rotation is enabled, the rotation is not modified by the physics simulation. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_aee1018d4d56ab085d013acc494c0d0f9}\label{class_lua_1_1_rigidbody_aee1018d4d56ab085d013acc494c0d0f9}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!isKinematic@{isKinematic}}
+\index{isKinematic@{isKinematic}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{isKinematic}{isKinematic}}
+{\footnotesize\ttfamily bool Lua.\+Rigidbody.\+is\+Kinematic\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether physics affects the rigidbody. 
+
+If is\+Kinematic is enabled, Forces, collisions or joints will not affect the rigidbody anymore. The rigidbody will be under full control of animation or script control by changing transform.\+position. Kinematic bodies also affect the motion of other rigidbodies through collisions or joints. Eg. can connect a kinematic rigidbody to a normal rigidbody with a joint and the rigidbody will be constrained with the motion of the kinematic body. Kinematic rigidbodies are also particularly useful for making characters which are normally driven by an animation, but on certain events can be quickly turned into a ragdoll by setting is\+Kinematic to false. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_aeab0f1c55ada296d501909dd61533a35}\label{class_lua_1_1_rigidbody_aeab0f1c55ada296d501909dd61533a35}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!mass@{mass}}
+\index{mass@{mass}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{mass}{mass}}
+{\footnotesize\ttfamily float Lua.\+Rigidbody.\+mass\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The mass of the rigidbody. 
+
+Different Rigidbodies with large differences in mass can make the physics simulation unstable. Higher mass objects push lower mass objects more when colliding. Think of a big truck, hitting a small car. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a8171fc4d6eb8d7e448eeb45f9fbc05d8}\label{class_lua_1_1_rigidbody_a8171fc4d6eb8d7e448eeb45f9fbc05d8}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!maxAngularVelocity@{maxAngularVelocity}}
+\index{maxAngularVelocity@{maxAngularVelocity}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{maxAngularVelocity}{maxAngularVelocity}}
+{\footnotesize\ttfamily float Lua.\+Rigidbody.\+max\+Angular\+Velocity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The maximimum angular velocity of the rigidbody. (Default 7) range \{ 0, infinity \}. 
+
+The angular velocity of rigidbodies is clamped to max\+Angular\+Velocity to avoid numerical instability with fast rotating bodies. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a9bef020808bd389b43ac5d2f7d429dc9}\label{class_lua_1_1_rigidbody_a9bef020808bd389b43ac5d2f7d429dc9}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!position@{position}}
+\index{position@{position}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Rigidbody.\+position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The position of the rigidbody. 
+
+\mbox{\hyperlink{class_lua_1_1_rigidbody_a9bef020808bd389b43ac5d2f7d429dc9}{Rigidbody.\+position}} allows you to get and set the position of a \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}} using the physics engine. If you change the position of a Rigibody using \mbox{\hyperlink{class_lua_1_1_rigidbody_a9bef020808bd389b43ac5d2f7d429dc9}{Rigidbody.\+position}}, the transform will be updated after the next physics simulation step. This is faster than updating the position using \mbox{\hyperlink{class_lua_1_1_transform_a789b6abed611a7576ca2262bb9c5e6c3}{Transform.\+position}}, as the latter will cause all attached Colliders to recalculate their positions relative to the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}. If you want to continuously move a rigidbody use Move\+Position instead, which takes interpolation into account. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a6cb1207363fce98ec04cacf8c6f776cc}\label{class_lua_1_1_rigidbody_a6cb1207363fce98ec04cacf8c6f776cc}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!rotation@{rotation}}
+\index{rotation@{rotation}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Rigidbody.\+rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The rotation of the rigidbody. 
+
+\mbox{\hyperlink{class_lua_1_1_rigidbody_a6cb1207363fce98ec04cacf8c6f776cc}{Rigidbody.\+rotation}} allows you to get and set the rotation of a \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}} using the physics engine. If you change the rotation of a Rigibody using \mbox{\hyperlink{class_lua_1_1_rigidbody_a6cb1207363fce98ec04cacf8c6f776cc}{Rigidbody.\+rotation}}, the transform will be updated after the next physics simulation step. This is faster than updating the rotation using \mbox{\hyperlink{class_lua_1_1_transform_ab0b5488416c3d0f6e3de7b426227198c}{Transform.\+rotation}}, as the latter will cause all attached Colliders to recalculate their rotation relative to the \mbox{\hyperlink{class_lua_1_1_rigidbody}{Rigidbody}}. If you want to continuously rotate a rigidbody use Move\+Rotation instead, which takes interpolation into account. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a3838f1418140279bcec4d7a2f8ebbae2}\label{class_lua_1_1_rigidbody_a3838f1418140279bcec4d7a2f8ebbae2}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!useGravity@{useGravity}}
+\index{useGravity@{useGravity}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{useGravity}{useGravity}}
+{\footnotesize\ttfamily bool Lua.\+Rigidbody.\+use\+Gravity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether gravity affects this rigidbody. 
+
+If set to false the rigidbody will behave as in outer space. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_abbc468f41391b7d34120f11f3f39b6fb}\label{class_lua_1_1_rigidbody_abbc468f41391b7d34120f11f3f39b6fb}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!velocity@{velocity}}
+\index{velocity@{velocity}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Rigidbody.\+velocity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The velocity vector of the rigidbody. 
+
+In most cases you should not modify the velocity directly, as this can result in unrealistic behaviour. Don\textquotesingle{}t set the velocity of an object every physics step, this will lead to unrealistic physics simulation. A typical example where you would change the velocity is when jumping in a first person shooter, because you want an immediate change in velocity. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_rigidbody_a23530e52ed361ac1f758e8204a1c833b}\label{class_lua_1_1_rigidbody_a23530e52ed361ac1f758e8204a1c833b}} 
+\index{Lua.Rigidbody@{Lua.Rigidbody}!worldCenterOfMass@{worldCenterOfMass}}
+\index{worldCenterOfMass@{worldCenterOfMass}!Lua.Rigidbody@{Lua.Rigidbody}}
+\subsubsection{\texorpdfstring{worldCenterOfMass}{worldCenterOfMass}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Rigidbody.\+world\+Center\+Of\+Mass\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The center of mass of the rigidbody in world space (Read Only). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Rigidbody.\+cs\end{DoxyCompactItemize}

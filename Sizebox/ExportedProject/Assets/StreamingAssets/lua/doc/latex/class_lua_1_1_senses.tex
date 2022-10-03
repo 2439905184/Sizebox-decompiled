@@ -1,0 +1,179 @@
+\hypertarget{class_lua_1_1_senses}{}\section{Lua.\+Senses Class Reference}
+\label{class_lua_1_1_senses}\index{Lua.Senses@{Lua.Senses}}
+
+
+Control the senses of a entity such as the vision.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_lua_1_1_senses_a57bce39cc60df494445e5869f4dec72b}{Can\+See}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} target)
+\begin{DoxyCompactList}\small\item\em Returns true if the entity can see their target. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_lua_1_1_senses_a46bf9d49d69a4c9e8bc9c831e19c8a22}{Get\+Visible\+Entities}} (float distance)
+\begin{DoxyCompactList}\small\item\em Return the list of all visible entities. You have to choose a max distance relative to the agent, this is to reduce the number of entities to perform the visibiliy tests. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_lua_1_1_senses_a47a6e9f98ffd7a583fc308cb805dcf9d}{Get\+Entities\+In\+Radius}} (float distance)
+\begin{DoxyCompactList}\small\item\em Return the list of all entities within a distance relative to the agent. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_lua_1_1_senses_a55e0ed7d6a4383d1f9e552b3be07bcee}{Get\+Visible\+Micros}} (float distance)
+\begin{DoxyCompactList}\small\item\em Return the list of all visible micros. You have to choose a max distance relative to the agent, this is to reduce the number of entities to perform the visibiliy tests. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_lua_1_1_senses_adc485743dc4551711e19323a0e93c4a5}{Get\+Micros\+In\+Radius}} (float radius)
+\begin{DoxyCompactList}\small\item\em Returns all the micros in the agent radius (relative to their size). \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_lua_1_1_senses_a6f073fd811e4bb71908705e8ae868601}{Get\+Giantesses\+In\+Radius}} (float radius)
+\begin{DoxyCompactList}\small\item\em Returns all the giantesses in the agent radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_lua_1_1_senses_aed3385cd359ba4734ac8c114b524a1b2}{base\+Visibility\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Changes the base visibility distance. This is multiplied to the target scale. If the entity is 0.\+05 compared to the agent, and the base\+Visibility distance is 100, then the target will be visible at most at 5 meters (in the agent scale). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_senses_ac4a708caaa7a7381870d4f21d619c2e9}{field\+Of\+View}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Modify the field of view of the agent. The value can range from 0 to 360. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Control the senses of a entity such as the vision. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_senses_a57bce39cc60df494445e5869f4dec72b}\label{class_lua_1_1_senses_a57bce39cc60df494445e5869f4dec72b}} 
+\index{Lua.Senses@{Lua.Senses}!CanSee@{CanSee}}
+\index{CanSee@{CanSee}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{CanSee()}{CanSee()}}
+{\footnotesize\ttfamily bool Lua.\+Senses.\+Can\+See (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Returns true if the entity can see their target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_senses_a47a6e9f98ffd7a583fc308cb805dcf9d}\label{class_lua_1_1_senses_a47a6e9f98ffd7a583fc308cb805dcf9d}} 
+\index{Lua.Senses@{Lua.Senses}!GetEntitiesInRadius@{GetEntitiesInRadius}}
+\index{GetEntitiesInRadius@{GetEntitiesInRadius}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{GetEntitiesInRadius()}{GetEntitiesInRadius()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}$>$ Lua.\+Senses.\+Get\+Entities\+In\+Radius (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Return the list of all entities within a distance relative to the agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_senses_a6f073fd811e4bb71908705e8ae868601}\label{class_lua_1_1_senses_a6f073fd811e4bb71908705e8ae868601}} 
+\index{Lua.Senses@{Lua.Senses}!GetGiantessesInRadius@{GetGiantessesInRadius}}
+\index{GetGiantessesInRadius@{GetGiantessesInRadius}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{GetGiantessesInRadius()}{GetGiantessesInRadius()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}$>$ Lua.\+Senses.\+Get\+Giantesses\+In\+Radius (\begin{DoxyParamCaption}\item[{float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Returns all the giantesses in the agent radius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_senses_adc485743dc4551711e19323a0e93c4a5}\label{class_lua_1_1_senses_adc485743dc4551711e19323a0e93c4a5}} 
+\index{Lua.Senses@{Lua.Senses}!GetMicrosInRadius@{GetMicrosInRadius}}
+\index{GetMicrosInRadius@{GetMicrosInRadius}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{GetMicrosInRadius()}{GetMicrosInRadius()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}$>$ Lua.\+Senses.\+Get\+Micros\+In\+Radius (\begin{DoxyParamCaption}\item[{float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Returns all the micros in the agent radius (relative to their size). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_senses_a46bf9d49d69a4c9e8bc9c831e19c8a22}\label{class_lua_1_1_senses_a46bf9d49d69a4c9e8bc9c831e19c8a22}} 
+\index{Lua.Senses@{Lua.Senses}!GetVisibleEntities@{GetVisibleEntities}}
+\index{GetVisibleEntities@{GetVisibleEntities}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{GetVisibleEntities()}{GetVisibleEntities()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}$>$ Lua.\+Senses.\+Get\+Visible\+Entities (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Return the list of all visible entities. You have to choose a max distance relative to the agent, this is to reduce the number of entities to perform the visibiliy tests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_senses_a55e0ed7d6a4383d1f9e552b3be07bcee}\label{class_lua_1_1_senses_a55e0ed7d6a4383d1f9e552b3be07bcee}} 
+\index{Lua.Senses@{Lua.Senses}!GetVisibleMicros@{GetVisibleMicros}}
+\index{GetVisibleMicros@{GetVisibleMicros}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{GetVisibleMicros()}{GetVisibleMicros()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}$>$ Lua.\+Senses.\+Get\+Visible\+Micros (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+
+
+Return the list of all visible micros. You have to choose a max distance relative to the agent, this is to reduce the number of entities to perform the visibiliy tests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_senses_aed3385cd359ba4734ac8c114b524a1b2}\label{class_lua_1_1_senses_aed3385cd359ba4734ac8c114b524a1b2}} 
+\index{Lua.Senses@{Lua.Senses}!baseVisibilityDistance@{baseVisibilityDistance}}
+\index{baseVisibilityDistance@{baseVisibilityDistance}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{baseVisibilityDistance}{baseVisibilityDistance}}
+{\footnotesize\ttfamily float Lua.\+Senses.\+base\+Visibility\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Changes the base visibility distance. This is multiplied to the target scale. If the entity is 0.\+05 compared to the agent, and the base\+Visibility distance is 100, then the target will be visible at most at 5 meters (in the agent scale). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_senses_ac4a708caaa7a7381870d4f21d619c2e9}\label{class_lua_1_1_senses_ac4a708caaa7a7381870d4f21d619c2e9}} 
+\index{Lua.Senses@{Lua.Senses}!fieldOfView@{fieldOfView}}
+\index{fieldOfView@{fieldOfView}!Lua.Senses@{Lua.Senses}}
+\subsubsection{\texorpdfstring{fieldOfView}{fieldOfView}}
+{\footnotesize\ttfamily float Lua.\+Senses.\+field\+Of\+View\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Modify the field of view of the agent. The value can range from 0 to 360. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Senses.\+cs\end{DoxyCompactItemize}

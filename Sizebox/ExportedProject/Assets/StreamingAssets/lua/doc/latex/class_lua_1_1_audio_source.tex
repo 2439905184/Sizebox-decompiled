@@ -1,0 +1,316 @@
+\hypertarget{class_lua_1_1_audio_source}{}\section{Lua.\+Audio\+Source Class Reference}
+\label{class_lua_1_1_audio_source}\index{Lua.AudioSource@{Lua.AudioSource}}
+
+
+A representation of audio sources in 3D.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_audio_source_aad8aea6c6f265dfe440a6a8620416bf4}{Pause}} ()
+\begin{DoxyCompactList}\small\item\em Pauses playing the clip. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_audio_source_aef1a519a4611e2aa72570d113d92c904}{Play}} ()
+\begin{DoxyCompactList}\small\item\em Plays the clip. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_audio_source_a10ba6ce0794c8050458466082302bc09}{Play\+Delayed}} (float delay)
+\begin{DoxyCompactList}\small\item\em Plays the clip with a delay specified in seconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_audio_source_ac8a51a95f2285660337ddf45fd10252e}{Play\+One\+Shot}} (string \mbox{\hyperlink{class_lua_1_1_audio_source_a4913b6f1fa8dfe5eb528cd7e40f91684}{clip}}, float volume\+Scale)
+\begin{DoxyCompactList}\small\item\em Plays an Audio\+Clip, and scales the \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} volume by volume\+Scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_audio_source_a404e19781f62fa9186ecdcf535e7d4ae}{Play\+One\+Shot}} (string \mbox{\hyperlink{class_lua_1_1_audio_source_a4913b6f1fa8dfe5eb528cd7e40f91684}{clip}})
+\begin{DoxyCompactList}\small\item\em Plays an Audio\+Clip. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_audio_source_a3a622d080321f25beda52619d417dbce}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops playing the clip. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_audio_source_a3bbbde9384f38a43f97e48cd162b0dac}{Un\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em Unpause the paused playback of this \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} \mbox{\hyperlink{class_lua_1_1_audio_source_a9960981498216301c82794fa6a14d7ac}{New}} (\mbox{\hyperlink{class_lua_1_1_entity}{Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Create a new audiosource on a \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} \mbox{\hyperlink{class_lua_1_1_audio_source_a6b5a139f410004dd985f118c90dd5179}{New}} (\mbox{\hyperlink{class_lua_1_1_transform}{Transform}} transform)
+\begin{DoxyCompactList}\small\item\em Create a new audiosource on a transform \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_lua_1_1_audio_source_a132381c13acd88e5ef3e53e0e8c1ad66}{Play\+Clip\+At\+Point}} (string \mbox{\hyperlink{class_lua_1_1_audio_source_a4913b6f1fa8dfe5eb528cd7e40f91684}{clip}}, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} position, float \mbox{\hyperlink{class_lua_1_1_audio_source_a6e631df6c296491e5a29c8025878ddb4}{volume}})
+\begin{DoxyCompactList}\small\item\em Plays an Audio\+Clip at a given position in world space. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_audio_source_a7d14ab87ad493f85fa9ee1b747bf6df0}{Get\+Clip\+Length}} (string \mbox{\hyperlink{class_lua_1_1_audio_source_a4913b6f1fa8dfe5eb528cd7e40f91684}{clip}})
+\begin{DoxyCompactList}\small\item\em Gets length of a specified Audio\+Clip. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_lua_1_1_audio_source_a55ad4d09380c973f2001b2164aba4771}{max\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Max\+Distance is the distance where the sound is completely inaudible. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_audio_source_a66155ad664c665455476ea70f4779669}{min\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Within the Min distance the \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} will cease to grow louder in volume. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lua_1_1_audio_source_a4913b6f1fa8dfe5eb528cd7e40f91684}{clip}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The default Audio\+Clip to play. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_audio_source_aaef47740090cbe41ff5b4f4b40aad7b7}{is\+Playing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the clip playing right now (Read Only)? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_audio_source_a4ffd0dfe8f989efe964e368cc2a5995c}{loop}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the audio clip looping? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_audio_source_ad82dcfe66567f1dac8a15edc327c89ff}{mute}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Un-\/ / Mutes the \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}}. Mute sets the volume=0, Un-\/\+Mute restore the original volume. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_audio_source_a49d0053bb3cfa0b42c70f3b678e0d78f}{pitch}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The pitch of the audio source. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_audio_source_a88e74fc4c2c4cf17747d6bbdad516a8f}{spatial\+Blend}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets how much this \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} is affected by 3D spatialisation calculations (attenuation, doppler etc). 0.\+0 makes the sound full 2D, 1.\+0 makes it full 3D. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_audio_source_a6e631df6c296491e5a29c8025878ddb4}{volume}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The volume of the audio source (0.\+0 to 1.\+0). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A representation of audio sources in 3D. 
+
+You can play a single audio clip using Play, Pause and Stop. You can also adjust its volume while playing using the volume property, or seek using time. Multiple sounds can be played on one \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} using Play\+One\+Shot. You can play a clip at a static position in 3D space using Play\+Clip\+At\+Point. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a7d14ab87ad493f85fa9ee1b747bf6df0}\label{class_lua_1_1_audio_source_a7d14ab87ad493f85fa9ee1b747bf6df0}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!GetClipLength@{GetClipLength}}
+\index{GetClipLength@{GetClipLength}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{GetClipLength()}{GetClipLength()}}
+{\footnotesize\ttfamily static float Lua.\+Audio\+Source.\+Get\+Clip\+Length (\begin{DoxyParamCaption}\item[{string}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets length of a specified Audio\+Clip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & Audio data filename.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+length in seconds
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a9960981498216301c82794fa6a14d7ac}\label{class_lua_1_1_audio_source_a9960981498216301c82794fa6a14d7ac}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!New@{New}}
+\index{New@{New}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{New()}{New()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} Lua.\+Audio\+Source.\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new audiosource on a \mbox{\hyperlink{class_lua_1_1_entity}{Entity}} 
+
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a6b5a139f410004dd985f118c90dd5179}\label{class_lua_1_1_audio_source_a6b5a139f410004dd985f118c90dd5179}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!New@{New}}
+\index{New@{New}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{New()}{New()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} Lua.\+Audio\+Source.\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_transform}{Transform}}}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new audiosource on a transform 
+
+\mbox{\Hypertarget{class_lua_1_1_audio_source_aad8aea6c6f265dfe440a6a8620416bf4}\label{class_lua_1_1_audio_source_aad8aea6c6f265dfe440a6a8620416bf4}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!Pause@{Pause}}
+\index{Pause@{Pause}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily void Lua.\+Audio\+Source.\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pauses playing the clip. 
+
+See Also\+: Play, Stop functions. \mbox{\Hypertarget{class_lua_1_1_audio_source_aef1a519a4611e2aa72570d113d92c904}\label{class_lua_1_1_audio_source_aef1a519a4611e2aa72570d113d92c904}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!Play@{Play}}
+\index{Play@{Play}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void Lua.\+Audio\+Source.\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Plays the clip. 
+
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a132381c13acd88e5ef3e53e0e8c1ad66}\label{class_lua_1_1_audio_source_a132381c13acd88e5ef3e53e0e8c1ad66}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!PlayClipAtPoint@{PlayClipAtPoint}}
+\index{PlayClipAtPoint@{PlayClipAtPoint}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{PlayClipAtPoint()}{PlayClipAtPoint()}}
+{\footnotesize\ttfamily static void Lua.\+Audio\+Source.\+Play\+Clip\+At\+Point (\begin{DoxyParamCaption}\item[{string}]{clip,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{position,  }\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Plays an Audio\+Clip at a given position in world space. 
+
+This function creates an audio source, but automatically disposes of it once the clip has finished playing. 
+\begin{DoxyParams}{Parameters}
+{\em clip} & Audio data filename.\\
+\hline
+{\em position} & Position in world space from which sound originates.\\
+\hline
+{\em volume} & Playback volume.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a10ba6ce0794c8050458466082302bc09}\label{class_lua_1_1_audio_source_a10ba6ce0794c8050458466082302bc09}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!PlayDelayed@{PlayDelayed}}
+\index{PlayDelayed@{PlayDelayed}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{PlayDelayed()}{PlayDelayed()}}
+{\footnotesize\ttfamily void Lua.\+Audio\+Source.\+Play\+Delayed (\begin{DoxyParamCaption}\item[{float}]{delay }\end{DoxyParamCaption})}
+
+
+
+Plays the clip with a delay specified in seconds. 
+
+\mbox{\Hypertarget{class_lua_1_1_audio_source_ac8a51a95f2285660337ddf45fd10252e}\label{class_lua_1_1_audio_source_ac8a51a95f2285660337ddf45fd10252e}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!PlayOneShot@{PlayOneShot}}
+\index{PlayOneShot@{PlayOneShot}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{PlayOneShot()}{PlayOneShot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Audio\+Source.\+Play\+One\+Shot (\begin{DoxyParamCaption}\item[{string}]{clip,  }\item[{float}]{volume\+Scale }\end{DoxyParamCaption})}
+
+
+
+Plays an Audio\+Clip, and scales the \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} volume by volume\+Scale. 
+
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a404e19781f62fa9186ecdcf535e7d4ae}\label{class_lua_1_1_audio_source_a404e19781f62fa9186ecdcf535e7d4ae}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!PlayOneShot@{PlayOneShot}}
+\index{PlayOneShot@{PlayOneShot}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{PlayOneShot()}{PlayOneShot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Audio\+Source.\+Play\+One\+Shot (\begin{DoxyParamCaption}\item[{string}]{clip }\end{DoxyParamCaption})}
+
+
+
+Plays an Audio\+Clip. 
+
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a3a622d080321f25beda52619d417dbce}\label{class_lua_1_1_audio_source_a3a622d080321f25beda52619d417dbce}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!Stop@{Stop}}
+\index{Stop@{Stop}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Lua.\+Audio\+Source.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops playing the clip. 
+
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a3bbbde9384f38a43f97e48cd162b0dac}\label{class_lua_1_1_audio_source_a3bbbde9384f38a43f97e48cd162b0dac}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!UnPause@{UnPause}}
+\index{UnPause@{UnPause}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{UnPause()}{UnPause()}}
+{\footnotesize\ttfamily void Lua.\+Audio\+Source.\+Un\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unpause the paused playback of this \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}}. 
+
+This function is similar to calling Play () on a paused \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}}, except that it will not create a new playback voice if it is not currently paused. This is also useful if you have paused one-\/shots and want to resume playback without creating a new playback voice for the attached Audio\+Clip. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a4913b6f1fa8dfe5eb528cd7e40f91684}\label{class_lua_1_1_audio_source_a4913b6f1fa8dfe5eb528cd7e40f91684}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!clip@{clip}}
+\index{clip@{clip}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{clip}{clip}}
+{\footnotesize\ttfamily string Lua.\+Audio\+Source.\+clip\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The default Audio\+Clip to play. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_aaef47740090cbe41ff5b4f4b40aad7b7}\label{class_lua_1_1_audio_source_aaef47740090cbe41ff5b4f4b40aad7b7}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{isPlaying}{isPlaying}}
+{\footnotesize\ttfamily bool Lua.\+Audio\+Source.\+is\+Playing\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Is the clip playing right now (Read Only)? 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a4ffd0dfe8f989efe964e368cc2a5995c}\label{class_lua_1_1_audio_source_a4ffd0dfe8f989efe964e368cc2a5995c}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!loop@{loop}}
+\index{loop@{loop}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily bool Lua.\+Audio\+Source.\+loop\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the audio clip looping? 
+
+If you disable looping on a playing \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} the sound will stop after the end of the current loop. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a55ad4d09380c973f2001b2164aba4771}\label{class_lua_1_1_audio_source_a55ad4d09380c973f2001b2164aba4771}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!maxDistance@{maxDistance}}
+\index{maxDistance@{maxDistance}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{maxDistance}{maxDistance}}
+{\footnotesize\ttfamily float Lua.\+Audio\+Source.\+max\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Max\+Distance is the distance where the sound is completely inaudible. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a66155ad664c665455476ea70f4779669}\label{class_lua_1_1_audio_source_a66155ad664c665455476ea70f4779669}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!minDistance@{minDistance}}
+\index{minDistance@{minDistance}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{minDistance}{minDistance}}
+{\footnotesize\ttfamily float Lua.\+Audio\+Source.\+min\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Within the Min distance the \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} will cease to grow louder in volume. 
+
+Outside the min distance the volume starts to attenuate. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_ad82dcfe66567f1dac8a15edc327c89ff}\label{class_lua_1_1_audio_source_ad82dcfe66567f1dac8a15edc327c89ff}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!mute@{mute}}
+\index{mute@{mute}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{mute}{mute}}
+{\footnotesize\ttfamily bool Lua.\+Audio\+Source.\+mute\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Un-\/ / Mutes the \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}}. Mute sets the volume=0, Un-\/\+Mute restore the original volume. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a49d0053bb3cfa0b42c70f3b678e0d78f}\label{class_lua_1_1_audio_source_a49d0053bb3cfa0b42c70f3b678e0d78f}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!pitch@{pitch}}
+\index{pitch@{pitch}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily float Lua.\+Audio\+Source.\+pitch\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The pitch of the audio source. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a88e74fc4c2c4cf17747d6bbdad516a8f}\label{class_lua_1_1_audio_source_a88e74fc4c2c4cf17747d6bbdad516a8f}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!spatialBlend@{spatialBlend}}
+\index{spatialBlend@{spatialBlend}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{spatialBlend}{spatialBlend}}
+{\footnotesize\ttfamily float Lua.\+Audio\+Source.\+spatial\+Blend\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sets how much this \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} is affected by 3D spatialisation calculations (attenuation, doppler etc). 0.\+0 makes the sound full 2D, 1.\+0 makes it full 3D. 
+
+Aside from determining if this \mbox{\hyperlink{class_lua_1_1_audio_source}{Audio\+Source}} is heard as a 2D or 3D source, this property is useful to morph between the two modes. 3D spatial calculations are applied after stereo panning is determined and can be used in conjunction with pan\+Stereo. Morphing between the 2 modes is useful for sounds that should be progressively heard as normal 2D sounds the closer they are to the listener. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_audio_source_a6e631df6c296491e5a29c8025878ddb4}\label{class_lua_1_1_audio_source_a6e631df6c296491e5a29c8025878ddb4}} 
+\index{Lua.AudioSource@{Lua.AudioSource}!volume@{volume}}
+\index{volume@{volume}!Lua.AudioSource@{Lua.AudioSource}}
+\subsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily float Lua.\+Audio\+Source.\+volume\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The volume of the audio source (0.\+0 to 1.\+0). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Audio\+Source.\+cs\end{DoxyCompactItemize}

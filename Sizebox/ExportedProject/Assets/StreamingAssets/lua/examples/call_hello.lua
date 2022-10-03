@@ -1,0 +1,2 @@
+dofile("hello.lua")
+sayHello()

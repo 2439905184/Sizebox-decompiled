@@ -1,0 +1,228 @@
+\hypertarget{class_lua_1_1_player_entity}{}\section{Lua.\+Player\+Entity Class Reference}
+\label{class_lua_1_1_player_entity}\index{Lua.PlayerEntity@{Lua.PlayerEntity}}
+
+
+A \mbox{\hyperlink{class_lua_1_1_player_entity}{Player\+Entity}} represents player-\/controlled character.  
+
+
+Inheritance diagram for Lua.\+Player\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lua_1_1_player_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_player_entity_a9d1469da41be5408b4d6702dc04f3351}{Crush}} ()
+\begin{DoxyCompactList}\small\item\em Crushes the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_lua_1_1_player_entity_ae050a6ac5d73748b2e989b3b3fbfd61d}{climbing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Player is climbing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_player_entity_ae805d9b6fbe0ecb483f726fee471434f}{is\+Aiming}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Player is aiming. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_aabbfb4d83476aaa301ee4f526dd6ecf8}{walk\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when walking (holding {\ttfamily Alt} by default). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_a3b78a546178fca04a5bfd04159bebe51}{run\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when running. This is the default movement mode. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_acd890123e850bbd3c1e4e459b65ea5c1}{sprint\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when sprinting (holding {\ttfamily Shift} by default). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_a07be3c99f61960cadd5333939bc9ee88}{fly\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when flying (activated by pressing {\ttfamily E} by default). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_aee7c81573cc1de31d9f64fd13b534ae2}{super\+Fly\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when super flying (holding {\ttfamily Shift} by default while flying). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_a6917cc802f4f2de29b01e7c968b6336e}{climb\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when climbing (activated by pressing {\ttfamily C} by default). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_aac79f44819e1adfc1b5a2f6b1bbe61e6}{jump\+Power}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Jumping height (activated by pressing {\ttfamily Space} by default). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_player_entity_a1137d463c4ca74abf6fcb032e5311755}{autowalk}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is autowalk enabled? Toggled by pressing {\ttfamily Right Shift} by default. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_player_entity_a3406666c706b2b01b854bada1a04da5b}{size\+Change\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Speed of size change when holding {\ttfamily Size\+Up}/{\ttfamily Size\+Up} keys ({\ttfamily Z}/{\ttfamily X} by default). \end{DoxyCompactList}\item 
+override float \mbox{\hyperlink{class_lua_1_1_player_entity_af2e34e02994fcfdb032932e9da17e49d}{min\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Minimum player size. \end{DoxyCompactList}\item 
+override float \mbox{\hyperlink{class_lua_1_1_player_entity_a7ac787ce4c39f28cc36cb8b08c9934b7}{max\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Maximum player size. \end{DoxyCompactList}\item 
+override float \mbox{\hyperlink{class_lua_1_1_player_entity_a853ddbac1d9d5d71d593d8e3aa9ceb0c}{scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Player scale. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_lua_player_raygun}{Lua\+Player\+Raygun}} \mbox{\hyperlink{class_lua_1_1_player_entity_a47bfb3f0f7b06c235a1b516967d52408}{raygun}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Player scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{class_lua_1_1_player_entity}{Player\+Entity}} represents player-\/controlled character. 
+
+Accessible through the {\ttfamily player} global variable. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a9d1469da41be5408b4d6702dc04f3351}\label{class_lua_1_1_player_entity_a9d1469da41be5408b4d6702dc04f3351}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!Crush@{Crush}}
+\index{Crush@{Crush}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{Crush()}{Crush()}}
+{\footnotesize\ttfamily void Lua.\+Player\+Entity.\+Crush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crushes the player. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a1137d463c4ca74abf6fcb032e5311755}\label{class_lua_1_1_player_entity_a1137d463c4ca74abf6fcb032e5311755}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!autowalk@{autowalk}}
+\index{autowalk@{autowalk}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{autowalk}{autowalk}}
+{\footnotesize\ttfamily bool Lua.\+Player\+Entity.\+autowalk\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is autowalk enabled? Toggled by pressing {\ttfamily Right Shift} by default. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_ae050a6ac5d73748b2e989b3b3fbfd61d}\label{class_lua_1_1_player_entity_ae050a6ac5d73748b2e989b3b3fbfd61d}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!climbing@{climbing}}
+\index{climbing@{climbing}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{climbing}{climbing}}
+{\footnotesize\ttfamily bool Lua.\+Player\+Entity.\+climbing\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Player is climbing. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a6917cc802f4f2de29b01e7c968b6336e}\label{class_lua_1_1_player_entity_a6917cc802f4f2de29b01e7c968b6336e}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!climbSpeed@{climbSpeed}}
+\index{climbSpeed@{climbSpeed}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{climbSpeed}{climbSpeed}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+climb\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when climbing (activated by pressing {\ttfamily C} by default). 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a07be3c99f61960cadd5333939bc9ee88}\label{class_lua_1_1_player_entity_a07be3c99f61960cadd5333939bc9ee88}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!flySpeed@{flySpeed}}
+\index{flySpeed@{flySpeed}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{flySpeed}{flySpeed}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+fly\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when flying (activated by pressing {\ttfamily E} by default). 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_ae805d9b6fbe0ecb483f726fee471434f}\label{class_lua_1_1_player_entity_ae805d9b6fbe0ecb483f726fee471434f}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!isAiming@{isAiming}}
+\index{isAiming@{isAiming}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{isAiming}{isAiming}}
+{\footnotesize\ttfamily bool Lua.\+Player\+Entity.\+is\+Aiming\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Player is aiming. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_aac79f44819e1adfc1b5a2f6b1bbe61e6}\label{class_lua_1_1_player_entity_aac79f44819e1adfc1b5a2f6b1bbe61e6}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!jumpPower@{jumpPower}}
+\index{jumpPower@{jumpPower}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{jumpPower}{jumpPower}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+jump\+Power\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Jumping height (activated by pressing {\ttfamily Space} by default). 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a7ac787ce4c39f28cc36cb8b08c9934b7}\label{class_lua_1_1_player_entity_a7ac787ce4c39f28cc36cb8b08c9934b7}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!maxSize@{maxSize}}
+\index{maxSize@{maxSize}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{maxSize}{maxSize}}
+{\footnotesize\ttfamily override float Lua.\+Player\+Entity.\+max\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Maximum player size. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_af2e34e02994fcfdb032932e9da17e49d}\label{class_lua_1_1_player_entity_af2e34e02994fcfdb032932e9da17e49d}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!minSize@{minSize}}
+\index{minSize@{minSize}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{minSize}{minSize}}
+{\footnotesize\ttfamily override float Lua.\+Player\+Entity.\+min\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Minimum player size. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a47bfb3f0f7b06c235a1b516967d52408}\label{class_lua_1_1_player_entity_a47bfb3f0f7b06c235a1b516967d52408}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!raygun@{raygun}}
+\index{raygun@{raygun}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{raygun}{raygun}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_lua_player_raygun}{Lua\+Player\+Raygun}} Lua.\+Player\+Entity.\+raygun\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Player scale. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a3b78a546178fca04a5bfd04159bebe51}\label{class_lua_1_1_player_entity_a3b78a546178fca04a5bfd04159bebe51}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!runSpeed@{runSpeed}}
+\index{runSpeed@{runSpeed}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{runSpeed}{runSpeed}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+run\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when running. This is the default movement mode. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a853ddbac1d9d5d71d593d8e3aa9ceb0c}\label{class_lua_1_1_player_entity_a853ddbac1d9d5d71d593d8e3aa9ceb0c}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!scale@{scale}}
+\index{scale@{scale}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily override float Lua.\+Player\+Entity.\+scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Player scale. 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_a3406666c706b2b01b854bada1a04da5b}\label{class_lua_1_1_player_entity_a3406666c706b2b01b854bada1a04da5b}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!sizeChangeSpeed@{sizeChangeSpeed}}
+\index{sizeChangeSpeed@{sizeChangeSpeed}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{sizeChangeSpeed}{sizeChangeSpeed}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+size\+Change\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Speed of size change when holding {\ttfamily Size\+Up}/{\ttfamily Size\+Up} keys ({\ttfamily Z}/{\ttfamily X} by default). 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_acd890123e850bbd3c1e4e459b65ea5c1}\label{class_lua_1_1_player_entity_acd890123e850bbd3c1e4e459b65ea5c1}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!sprintSpeed@{sprintSpeed}}
+\index{sprintSpeed@{sprintSpeed}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{sprintSpeed}{sprintSpeed}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+sprint\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when sprinting (holding {\ttfamily Shift} by default). 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_aee7c81573cc1de31d9f64fd13b534ae2}\label{class_lua_1_1_player_entity_aee7c81573cc1de31d9f64fd13b534ae2}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!superFlySpeed@{superFlySpeed}}
+\index{superFlySpeed@{superFlySpeed}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{superFlySpeed}{superFlySpeed}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+super\+Fly\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when super flying (holding {\ttfamily Shift} by default while flying). 
+
+\mbox{\Hypertarget{class_lua_1_1_player_entity_aabbfb4d83476aaa301ee4f526dd6ecf8}\label{class_lua_1_1_player_entity_aabbfb4d83476aaa301ee4f526dd6ecf8}} 
+\index{Lua.PlayerEntity@{Lua.PlayerEntity}!walkSpeed@{walkSpeed}}
+\index{walkSpeed@{walkSpeed}!Lua.PlayerEntity@{Lua.PlayerEntity}}
+\subsubsection{\texorpdfstring{walkSpeed}{walkSpeed}}
+{\footnotesize\ttfamily float Lua.\+Player\+Entity.\+walk\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{class_lua_1_1_movement}{Movement}} speed when walking (holding {\ttfamily Alt} by default). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Player.\+cs\end{DoxyCompactItemize}

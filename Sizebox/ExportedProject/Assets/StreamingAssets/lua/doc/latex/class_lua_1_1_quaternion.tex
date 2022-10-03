@@ -1,0 +1,440 @@
+\hypertarget{class_lua_1_1_quaternion}{}\section{Lua.\+Quaternion Class Reference}
+\label{class_lua_1_1_quaternion}\index{Lua.Quaternion@{Lua.Quaternion}}
+
+
+Quaternions are used to represent rotations.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{class_lua_1_1_quaternion_a72a4b219c3442e088c7ee963feb1b372}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em String representation of this quaternion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_quaternion_a0cb037e26892fa50a048fc751f7f017a}{Set}} (float \mbox{\hyperlink{class_lua_1_1_quaternion_aefb405b7fafa79708a6d8120781debce}{x}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_ab7eb002a81cfc537a9c3afc8965ef2ec}{y}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_ac26c0a2710dd86783dee62c8645ee55c}{z}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_a4a66f5c598907b4d906b0c5dd0e28526}{w}})
+\begin{DoxyCompactList}\small\item\em Set x, y, z and w components of an existing \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_quaternion_aa7991983472a41d5d7c1b7cb61eb5580}{Set\+From\+To\+Rotation}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} from\+Direction, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} to\+Direction)
+\begin{DoxyCompactList}\small\item\em Creates a rotation which rotates from from\+Direction to to\+Direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_quaternion_aab942db162b73214d4b563bd6a49bad4}{Set\+Look\+Rotation}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} view)
+\begin{DoxyCompactList}\small\item\em Creates a rotation with the specified forward and upwards directions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_quaternion_a13062d4cdfe3635c74f2e57c893b6e2f}{Set\+Look\+Rotation}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} view, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} up)
+\begin{DoxyCompactList}\small\item\em Creates a rotation with the specified forward and upwards directions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a39cfba79d11687138569de7edd9e2727}{New}} (float \mbox{\hyperlink{class_lua_1_1_quaternion_aefb405b7fafa79708a6d8120781debce}{x}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_ab7eb002a81cfc537a9c3afc8965ef2ec}{y}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_ac26c0a2710dd86783dee62c8645ee55c}{z}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_a4a66f5c598907b4d906b0c5dd0e28526}{w}})
+\begin{DoxyCompactList}\small\item\em Constructs new \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} with given x,y,z,w components. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_lua_1_1_quaternion_ac70013482fc53c72c664561d67d5d677}{Concat}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} o, string s)
+\begin{DoxyCompactList}\small\item\em Concatenates a quaternion and a string. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_lua_1_1_quaternion_a9eab1ab6fc89906ecc0b8159c1429a04}{Concat}} (string s, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} o)
+\begin{DoxyCompactList}\small\item\em Concatenates a string and a quaternion. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_lua_1_1_quaternion_aef26c0eb5e338baa7dc1a87530b360d1}{Concat}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} o1, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} o2)
+\begin{DoxyCompactList}\small\item\em Concatenates 2 quaternions. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_quaternion_a9ecf171f4a2a8c0ad3ced7564ada2c6d}{Eq}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} o1, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} o2)
+\begin{DoxyCompactList}\small\item\em Tests 2 quaternions for equality. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_af6d179e922217cf36197ed89c6cff2a4}{operator $\ast$}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} lhs, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rhs)
+\begin{DoxyCompactList}\small\item\em Combines rotations lhs and rhs. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_quaternion_a7a0f65d72a342ca595d8a3a7f53b0892}{operator $\ast$}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rotation, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} vector)
+\begin{DoxyCompactList}\small\item\em Rotates a vector with rotation. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_quaternion_a4094309a8c66c50017bd92ffdfeb3bfd}{Angle}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} a, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} b)
+\begin{DoxyCompactList}\small\item\em Returns the angle in degrees between two rotations a and b. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a25f65fcc019124366264558209108498}{Angle\+Axis}} (float angle, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} axis)
+\begin{DoxyCompactList}\small\item\em Creates a rotation which rotates angle degrees around axis. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_lua_1_1_quaternion_a8479fc724c544d8784afeae5778e6a27}{Dot}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} a, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} b)
+\begin{DoxyCompactList}\small\item\em The dot product between two rotations. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_ac7134c2bdc28902fc519d42b7b803d9f}{Euler}} (float \mbox{\hyperlink{class_lua_1_1_quaternion_aefb405b7fafa79708a6d8120781debce}{x}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_ab7eb002a81cfc537a9c3afc8965ef2ec}{y}}, float \mbox{\hyperlink{class_lua_1_1_quaternion_ac26c0a2710dd86783dee62c8645ee55c}{z}})
+\begin{DoxyCompactList}\small\item\em Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis, and y degrees around the y axis (in that order). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a275393364a6f1475566b7bfe49dad51e}{Euler}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} euler)
+\begin{DoxyCompactList}\small\item\em Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis, and y degrees around the y axis (in that order). \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a78b8152d55e05c4b35a74ed09eae9d41}{From\+To\+Rotation}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} from\+Direction, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} to\+Direction)
+\begin{DoxyCompactList}\small\item\em Creates a rotation which rotates from from\+Direction to to\+Direction. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a324d82496815f927ebcaa21032843276}{Inverse}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} rotation)
+\begin{DoxyCompactList}\small\item\em Returns the Inverse of rotation. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a451a68530c7d148d83024edf4bb79e26}{Lerp}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} a, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} b, float t)
+\begin{DoxyCompactList}\small\item\em Interpolates between a and b by t and normalizes the result afterwards. The parameter t is clamped to the range \mbox{[}0, 1\mbox{]}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_ad43d2f3aa2d460ed567351f97aba6bfe}{Lerp\+Unclamped}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} a, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} b, float t)
+\begin{DoxyCompactList}\small\item\em Interpolates between a and b by t and normalizes the result afterwards. The parameter t is not clamped. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a7a17f92fd9d83a8b472db78d5cb74642}{Look\+Rotation}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} forward)
+\begin{DoxyCompactList}\small\item\em Creates a rotation with the specified forward and upwards directions. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_afa69beaa5748b6c941b9a3296d6c0638}{Look\+Rotation}} (\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} forward, \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} upwards)
+\begin{DoxyCompactList}\small\item\em Creates a rotation with the specified forward and upwards directions. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_abfa084dd85c43e01da75d9bcf3305871}{Rotate\+Towards}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} from, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} to, float max\+Degrees\+Delta)
+\begin{DoxyCompactList}\small\item\em Rotates a rotation from towards to. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a8848906e3924791706bc0bc853a4572b}{Slerp}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} a, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} b, float t)
+\begin{DoxyCompactList}\small\item\em Spherically interpolates between a and b by t. The parameter t is clamped to the range \mbox{[}0, 1\mbox{]}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_a5056ad858477a4b81765167a068d5379}{Slerp\+Unclamped}} (\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} a, \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} b, float t)
+\begin{DoxyCompactList}\small\item\em Spherically interpolates between a and b by t. The parameter t is not clamped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_lua_1_1_quaternion_a4a66f5c598907b4d906b0c5dd0e28526}{w}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em W component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_quaternion_aefb405b7fafa79708a6d8120781debce}{x}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em X component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_quaternion_ab7eb002a81cfc537a9c3afc8965ef2ec}{y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Y component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_quaternion_ac26c0a2710dd86783dee62c8645ee55c}{z}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Z component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} \mbox{\hyperlink{class_lua_1_1_quaternion_ac50cf6b67c4cb0363b834b7054cdd5fa}{euler\+Angles}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the euler angle representation of the rotation. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} \mbox{\hyperlink{class_lua_1_1_quaternion_ac7d56f4c2496af59e66550e35bff614c}{identity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The identity rotation (Read Only). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Quaternions are used to represent rotations. 
+
+They are compact, don\textquotesingle{}t suffer from gimbal lock and can easily be interpolated. Unity internally uses Quaternions to represent all rotations.
+
+They are based on complex numbers and are not easy to understand intuitively. You almost never access or modify individual \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} components (x,y,z,w); most often you would just take existing rotations (e.\+g. from the \mbox{\hyperlink{class_lua_1_1_transform}{Transform}}) and use them to construct new rotations (e.\+g. to smoothly interpolate between two rotations). The \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} functions that you use 99\% of the time are\+: \mbox{\hyperlink{class_lua_1_1_quaternion_a7a17f92fd9d83a8b472db78d5cb74642}{Quaternion.\+Look\+Rotation}}, \mbox{\hyperlink{class_lua_1_1_quaternion_a4094309a8c66c50017bd92ffdfeb3bfd}{Quaternion.\+Angle}}, \mbox{\hyperlink{class_lua_1_1_quaternion_ac7134c2bdc28902fc519d42b7b803d9f}{Quaternion.\+Euler}}, \mbox{\hyperlink{class_lua_1_1_quaternion_a8848906e3924791706bc0bc853a4572b}{Quaternion.\+Slerp}}, \mbox{\hyperlink{class_lua_1_1_quaternion_a78b8152d55e05c4b35a74ed09eae9d41}{Quaternion.\+From\+To\+Rotation}}, and \mbox{\hyperlink{class_lua_1_1_quaternion_ac7d56f4c2496af59e66550e35bff614c}{Quaternion.\+identity}}. (The other functions are only for exotic uses.)
+
+You can use the \mbox{\hyperlink{class_lua_1_1_quaternion_af6d179e922217cf36197ed89c6cff2a4}{Quaternion.\+operator$\ast$}} to rotate one rotation by another, or to rotate a vector by a rotation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a4094309a8c66c50017bd92ffdfeb3bfd}\label{class_lua_1_1_quaternion_a4094309a8c66c50017bd92ffdfeb3bfd}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Angle@{Angle}}
+\index{Angle@{Angle}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Angle()}{Angle()}}
+{\footnotesize\ttfamily static float Lua.\+Quaternion.\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the angle in degrees between two rotations a and b. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a25f65fcc019124366264558209108498}\label{class_lua_1_1_quaternion_a25f65fcc019124366264558209108498}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!AngleAxis@{AngleAxis}}
+\index{AngleAxis@{AngleAxis}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{AngleAxis()}{AngleAxis()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Angle\+Axis (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rotation which rotates angle degrees around axis. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_ac70013482fc53c72c664561d67d5d677}\label{class_lua_1_1_quaternion_ac70013482fc53c72c664561d67d5d677}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Concat@{Concat}}
+\index{Concat@{Concat}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Concat()}{Concat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static string Lua.\+Quaternion.\+Concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{o,  }\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concatenates a quaternion and a string. 
+
+Syntax for this operation is {\ttfamily q .. s}. \mbox{\hyperlink{class_lua_1_1_quaternion_a72a4b219c3442e088c7ee963feb1b372}{Quaternion.\+To\+String}} is used to convert quaternion to string. \mbox{\Hypertarget{class_lua_1_1_quaternion_a9eab1ab6fc89906ecc0b8159c1429a04}\label{class_lua_1_1_quaternion_a9eab1ab6fc89906ecc0b8159c1429a04}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Concat@{Concat}}
+\index{Concat@{Concat}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Concat()}{Concat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static string Lua.\+Quaternion.\+Concat (\begin{DoxyParamCaption}\item[{string}]{s,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concatenates a string and a quaternion. 
+
+Syntax for this operation is {\ttfamily s .. q}. \mbox{\hyperlink{class_lua_1_1_quaternion_a72a4b219c3442e088c7ee963feb1b372}{Quaternion.\+To\+String}} is used to convert quaternion to string. \mbox{\Hypertarget{class_lua_1_1_quaternion_aef26c0eb5e338baa7dc1a87530b360d1}\label{class_lua_1_1_quaternion_aef26c0eb5e338baa7dc1a87530b360d1}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Concat@{Concat}}
+\index{Concat@{Concat}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Concat()}{Concat()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static string Lua.\+Quaternion.\+Concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{o1,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{o2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Concatenates 2 quaternions. 
+
+Syntax for this operation is {\ttfamily q1 .. q2}. \mbox{\hyperlink{class_lua_1_1_quaternion_a72a4b219c3442e088c7ee963feb1b372}{Quaternion.\+To\+String}} is used to convert quaternions to strings. \mbox{\Hypertarget{class_lua_1_1_quaternion_a8479fc724c544d8784afeae5778e6a27}\label{class_lua_1_1_quaternion_a8479fc724c544d8784afeae5778e6a27}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Dot@{Dot}}
+\index{Dot@{Dot}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily static float Lua.\+Quaternion.\+Dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The dot product between two rotations. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a9ecf171f4a2a8c0ad3ced7564ada2c6d}\label{class_lua_1_1_quaternion_a9ecf171f4a2a8c0ad3ced7564ada2c6d}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Eq@{Eq}}
+\index{Eq@{Eq}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Eq()}{Eq()}}
+{\footnotesize\ttfamily static bool Lua.\+Quaternion.\+Eq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{o1,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{o2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tests 2 quaternions for equality. 
+
+Syntax for this operation is {\ttfamily q1 == q2}. This function tests whether dot product of two quaternions is close to 1.\+0.
+
+Note that because quaternions can represent rotations that are up to two full revolutions (720 degrees), this comparison can return false even if resulting rotations look the same. \mbox{\Hypertarget{class_lua_1_1_quaternion_ac7134c2bdc28902fc519d42b7b803d9f}\label{class_lua_1_1_quaternion_ac7134c2bdc28902fc519d42b7b803d9f}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Euler@{Euler}}
+\index{Euler@{Euler}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Euler()}{Euler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Euler (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis, and y degrees around the y axis (in that order). 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a275393364a6f1475566b7bfe49dad51e}\label{class_lua_1_1_quaternion_a275393364a6f1475566b7bfe49dad51e}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Euler@{Euler}}
+\index{Euler@{Euler}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Euler()}{Euler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Euler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{euler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a rotation that rotates z degrees around the z axis, x degrees around the x axis, and y degrees around the y axis (in that order). 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a78b8152d55e05c4b35a74ed09eae9d41}\label{class_lua_1_1_quaternion_a78b8152d55e05c4b35a74ed09eae9d41}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!FromToRotation@{FromToRotation}}
+\index{FromToRotation@{FromToRotation}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{FromToRotation()}{FromToRotation()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+From\+To\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{from\+Direction,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{to\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rotation which rotates from from\+Direction to to\+Direction. 
+
+Usually you use this to rotate a transform so that one of its axes eg. the y-\/axis -\/ follows a target direction to\+Direction in world space. \mbox{\Hypertarget{class_lua_1_1_quaternion_a324d82496815f927ebcaa21032843276}\label{class_lua_1_1_quaternion_a324d82496815f927ebcaa21032843276}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Inverse()}{Inverse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Inverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the Inverse of rotation. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a451a68530c7d148d83024edf4bb79e26}\label{class_lua_1_1_quaternion_a451a68530c7d148d83024edf4bb79e26}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Lerp()}{Lerp()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Lerp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Interpolates between a and b by t and normalizes the result afterwards. The parameter t is clamped to the range \mbox{[}0, 1\mbox{]}. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_ad43d2f3aa2d460ed567351f97aba6bfe}\label{class_lua_1_1_quaternion_ad43d2f3aa2d460ed567351f97aba6bfe}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!LerpUnclamped@{LerpUnclamped}}
+\index{LerpUnclamped@{LerpUnclamped}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{LerpUnclamped()}{LerpUnclamped()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Lerp\+Unclamped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Interpolates between a and b by t and normalizes the result afterwards. The parameter t is not clamped. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a7a17f92fd9d83a8b472db78d5cb74642}\label{class_lua_1_1_quaternion_a7a17f92fd9d83a8b472db78d5cb74642}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!LookRotation@{LookRotation}}
+\index{LookRotation@{LookRotation}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{LookRotation()}{LookRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Look\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{forward }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rotation with the specified forward and upwards directions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forward} & The direction to look in.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the computed quaternion. If used to orient a \mbox{\hyperlink{class_lua_1_1_transform}{Transform}}, the Z axis will be aligned with forward/ and the Y axis with upwards if these vectors are orthogonal. Logs an error if the forward direction is zero.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_quaternion_afa69beaa5748b6c941b9a3296d6c0638}\label{class_lua_1_1_quaternion_afa69beaa5748b6c941b9a3296d6c0638}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!LookRotation@{LookRotation}}
+\index{LookRotation@{LookRotation}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{LookRotation()}{LookRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Look\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{forward,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{upwards }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rotation with the specified forward and upwards directions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forward} & The direction to look in.\\
+\hline
+{\em upwards} & The vector that defines in which direction up is.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the computed quaternion. If used to orient a \mbox{\hyperlink{class_lua_1_1_transform}{Transform}}, the Z axis will be aligned with forward/ and the Y axis with upwards if these vectors are orthogonal. Logs an error if the forward direction is zero.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a39cfba79d11687138569de7edd9e2727}\label{class_lua_1_1_quaternion_a39cfba79d11687138569de7edd9e2727}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!New@{New}}
+\index{New@{New}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{New()}{New()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+New (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Constructs new \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} with given x,y,z,w components. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_af6d179e922217cf36197ed89c6cff2a4}\label{class_lua_1_1_quaternion_af6d179e922217cf36197ed89c6cff2a4}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+operator $\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{lhs,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Combines rotations lhs and rhs. 
+
+Rotating by the product {\ttfamily lhs $\ast$ rhs} is the same as applying the two rotations in sequence\+: {\ttfamily lhs} first and then {\ttfamily rhs}, relative to the reference frame resulting from {\ttfamily lhs} rotation. Note that this means rotations are not commutative, so {\ttfamily lhs $\ast$ rhs} does not give the same rotation as {\ttfamily rhs $\ast$ lhs}. \mbox{\Hypertarget{class_lua_1_1_quaternion_a7a0f65d72a342ca595d8a3a7f53b0892}\label{class_lua_1_1_quaternion_a7a0f65d72a342ca595d8a3a7f53b0892}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Quaternion.\+operator $\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{rotation,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rotates a vector with rotation. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_abfa084dd85c43e01da75d9bcf3305871}\label{class_lua_1_1_quaternion_abfa084dd85c43e01da75d9bcf3305871}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!RotateTowards@{RotateTowards}}
+\index{RotateTowards@{RotateTowards}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{RotateTowards()}{RotateTowards()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Rotate\+Towards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{from,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{to,  }\item[{float}]{max\+Degrees\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rotates a rotation from towards to. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a0cb037e26892fa50a048fc751f7f017a}\label{class_lua_1_1_quaternion_a0cb037e26892fa50a048fc751f7f017a}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Set@{Set}}
+\index{Set@{Set}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void Lua.\+Quaternion.\+Set (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w }\end{DoxyParamCaption})}
+
+
+
+Set x, y, z and w components of an existing \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_aa7991983472a41d5d7c1b7cb61eb5580}\label{class_lua_1_1_quaternion_aa7991983472a41d5d7c1b7cb61eb5580}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!SetFromToRotation@{SetFromToRotation}}
+\index{SetFromToRotation@{SetFromToRotation}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{SetFromToRotation()}{SetFromToRotation()}}
+{\footnotesize\ttfamily void Lua.\+Quaternion.\+Set\+From\+To\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{from\+Direction,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{to\+Direction }\end{DoxyParamCaption})}
+
+
+
+Creates a rotation which rotates from from\+Direction to to\+Direction. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_aab942db162b73214d4b563bd6a49bad4}\label{class_lua_1_1_quaternion_aab942db162b73214d4b563bd6a49bad4}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!SetLookRotation@{SetLookRotation}}
+\index{SetLookRotation@{SetLookRotation}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{SetLookRotation()}{SetLookRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lua.\+Quaternion.\+Set\+Look\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{view }\end{DoxyParamCaption})}
+
+
+
+Creates a rotation with the specified forward and upwards directions. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a13062d4cdfe3635c74f2e57c893b6e2f}\label{class_lua_1_1_quaternion_a13062d4cdfe3635c74f2e57c893b6e2f}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!SetLookRotation@{SetLookRotation}}
+\index{SetLookRotation@{SetLookRotation}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{SetLookRotation()}{SetLookRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lua.\+Quaternion.\+Set\+Look\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{view,  }\item[{\mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}}}]{up }\end{DoxyParamCaption})}
+
+
+
+Creates a rotation with the specified forward and upwards directions. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a8848906e3924791706bc0bc853a4572b}\label{class_lua_1_1_quaternion_a8848906e3924791706bc0bc853a4572b}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!Slerp@{Slerp}}
+\index{Slerp@{Slerp}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{Slerp()}{Slerp()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Slerp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spherically interpolates between a and b by t. The parameter t is clamped to the range \mbox{[}0, 1\mbox{]}. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a5056ad858477a4b81765167a068d5379}\label{class_lua_1_1_quaternion_a5056ad858477a4b81765167a068d5379}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!SlerpUnclamped@{SlerpUnclamped}}
+\index{SlerpUnclamped@{SlerpUnclamped}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{SlerpUnclamped()}{SlerpUnclamped()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+Slerp\+Unclamped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{a,  }\item[{\mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}}]{b,  }\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spherically interpolates between a and b by t. The parameter t is not clamped. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a72a4b219c3442e088c7ee963feb1b372}\label{class_lua_1_1_quaternion_a72a4b219c3442e088c7ee963feb1b372}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!ToString@{ToString}}
+\index{ToString@{ToString}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Lua.\+Quaternion.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+String representation of this quaternion. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_quaternion_ac50cf6b67c4cb0363b834b7054cdd5fa}\label{class_lua_1_1_quaternion_ac50cf6b67c4cb0363b834b7054cdd5fa}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!eulerAngles@{eulerAngles}}
+\index{eulerAngles@{eulerAngles}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{eulerAngles}{eulerAngles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_vector3}{Vector3}} Lua.\+Quaternion.\+euler\+Angles\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the euler angle representation of the rotation. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_ac7d56f4c2496af59e66550e35bff614c}\label{class_lua_1_1_quaternion_ac7d56f4c2496af59e66550e35bff614c}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!identity@{identity}}
+\index{identity@{identity}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{identity}{identity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}} Lua.\+Quaternion.\+identity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The identity rotation (Read Only). 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_a4a66f5c598907b4d906b0c5dd0e28526}\label{class_lua_1_1_quaternion_a4a66f5c598907b4d906b0c5dd0e28526}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!w@{w}}
+\index{w@{w}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily float Lua.\+Quaternion.\+w\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+W component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_aefb405b7fafa79708a6d8120781debce}\label{class_lua_1_1_quaternion_aefb405b7fafa79708a6d8120781debce}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!x@{x}}
+\index{x@{x}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Lua.\+Quaternion.\+x\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+X component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_ab7eb002a81cfc537a9c3afc8965ef2ec}\label{class_lua_1_1_quaternion_ab7eb002a81cfc537a9c3afc8965ef2ec}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!y@{y}}
+\index{y@{y}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Lua.\+Quaternion.\+y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Y component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. 
+
+\mbox{\Hypertarget{class_lua_1_1_quaternion_ac26c0a2710dd86783dee62c8645ee55c}\label{class_lua_1_1_quaternion_ac26c0a2710dd86783dee62c8645ee55c}} 
+\index{Lua.Quaternion@{Lua.Quaternion}!z@{z}}
+\index{z@{z}!Lua.Quaternion@{Lua.Quaternion}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily float Lua.\+Quaternion.\+z\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Z component of the \mbox{\hyperlink{class_lua_1_1_quaternion}{Quaternion}}. Don\textquotesingle{}t modify this directly unless you know quaternions inside out. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Quaternion.\+cs\end{DoxyCompactItemize}

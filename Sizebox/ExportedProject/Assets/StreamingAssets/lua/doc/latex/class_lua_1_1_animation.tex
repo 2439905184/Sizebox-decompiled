@@ -1,0 +1,378 @@
+\hypertarget{class_lua_1_1_animation}{}\section{Lua.\+Animation Class Reference}
+\label{class_lua_1_1_animation}\index{Lua.Animation@{Lua.Animation}}
+
+
+Component to control the animation for humanoid entities.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lua_1_1_animation_a27ca2f8a6b74867c4727315bbce3878f}{Set}} (string animation\+Name)
+\begin{DoxyCompactList}\small\item\em Will transition to the specified animation. This function is ignored if the entity is a player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_animation_afbab459005c0736f8b52459185cf1637}{Set\+And\+Wait}} (string animation\+Name)
+\begin{DoxyCompactList}\small\item\em Will transition to the specified animation and it will wait until completes before doing another action. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_lua_1_1_animation_afa4d0d4dc374917da05e5c26e75c20b0}{Get}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the current animation or pose. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_animation_ad3fe96a39d87c9f3b1121fbbd05f61ea}{Set\+Pose}} (string pose\+Name)
+\begin{DoxyCompactList}\small\item\em Will set the specified pose. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_ac615b08b06a84330cddb327e6d28f6c9}{Get\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Get the current Speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lua_1_1_animation_aefdc9f4c78bada7dacfdb39d07c4b576}{Set\+Speed}} (float speed)
+\begin{DoxyCompactList}\small\item\em Changes the speed of the \mbox{\hyperlink{class_lua_1_1_animation}{Animation}}. Default is 1. The final speed can be affected by the global speed and the scale of the giantess. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_ad7c23e47dae3b3c354d317724e93e887}{Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get current animation time. May exceed animation length for looped animations. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_a8da88aefb747e3128bcbf35be8451b21}{Get\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Get current animation length in seconds. Depends on animation speed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_ae9196e188d96824f23cf65b1f835aa1a}{Get\+Progress}} ()
+\begin{DoxyCompactList}\small\item\em Get current animation completion percentage. Values above 100\% are possible for looped animations. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_animation_afd07956e9f1dc6f551d8ca036493a646}{Is\+Completed}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the animation has been completed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_animation_a6f6e8dabc438a05a0338f69a25a61d71}{Is\+In\+Transition}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the animation is in transition to another animation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lua_1_1_animation_aede5bb0940e1daed76c816ba30dac6f2}{Is\+In\+Pose}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the entity is in a pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_lua_1_1_animation_a1002a4f745d48a64fd26affa514ee0d2}{Animation\+Exists}} (string animation\+Name)
+\begin{DoxyCompactList}\small\item\em Returns true if an animation with the specified name exists. \end{DoxyCompactList}\item 
+static I\+List$<$ string $>$ \mbox{\hyperlink{class_lua_1_1_animation_a62391765462757427af96fbde304ec23}{Get\+Animation\+List}} ()
+\begin{DoxyCompactList}\small\item\em A list of all animations. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_lua_1_1_animation_a7826d8216e7d202f625e697341ae62fc}{Pose\+Exists}} (string pose\+Name)
+\begin{DoxyCompactList}\small\item\em Returns true if a pose with the specified name exists. \end{DoxyCompactList}\item 
+static I\+List$<$ string $>$ \mbox{\hyperlink{class_lua_1_1_animation_aab1106afb022117d78df5cc01e426197}{Get\+Pose\+List}} ()
+\begin{DoxyCompactList}\small\item\em A list of all poses. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_lua_1_1_animation_af1f4b9f2d2a3e595a08a7f5e5d095580}{Set\+Global\+Speed}} (float speed)
+\begin{DoxyCompactList}\small\item\em Changes the global speed of giantess. It affects all the giantess on the scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_lua_1_1_animation_ad91c4ef8fcb303877802e1e38fd27b85}{Get\+Global\+Speed}} (float speed)
+\begin{DoxyCompactList}\small\item\em Returns the global speed of giantess. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_a7dee7e3d2e6bdffed96f20822e4bb307}{min\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The slowest speed when the giantess is at maximun scale. (Without applying the speed multiplier) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_a49aa08ef58b67f1af48526781176fce3}{max\+Speed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The fastest speed when the giantess is at minimun scale. (Without applying the speed multiplier) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_ad1f57da869e710f55a79e82ceb579cc0}{transition\+Duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How long it takes to transition from one animation to another \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_lua_1_1_animation_a4418e6d09f625ad76932922c568bf987}{speed\+Multiplier}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The giantess speed is multiplied by this factor (the one that you find in the animation panel). The default value is 1. (Read Only) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Component to control the animation for humanoid entities. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_animation_a1002a4f745d48a64fd26affa514ee0d2}\label{class_lua_1_1_animation_a1002a4f745d48a64fd26affa514ee0d2}} 
+\index{Lua.Animation@{Lua.Animation}!AnimationExists@{AnimationExists}}
+\index{AnimationExists@{AnimationExists}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{AnimationExists()}{AnimationExists()}}
+{\footnotesize\ttfamily static bool Lua.\+Animation.\+Animation\+Exists (\begin{DoxyParamCaption}\item[{string}]{animation\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if an animation with the specified name exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_afa4d0d4dc374917da05e5c26e75c20b0}\label{class_lua_1_1_animation_afa4d0d4dc374917da05e5c26e75c20b0}} 
+\index{Lua.Animation@{Lua.Animation}!Get@{Get}}
+\index{Get@{Get}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily string Lua.\+Animation.\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the current animation or pose. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_a62391765462757427af96fbde304ec23}\label{class_lua_1_1_animation_a62391765462757427af96fbde304ec23}} 
+\index{Lua.Animation@{Lua.Animation}!GetAnimationList@{GetAnimationList}}
+\index{GetAnimationList@{GetAnimationList}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{GetAnimationList()}{GetAnimationList()}}
+{\footnotesize\ttfamily static I\+List$<$string$>$ Lua.\+Animation.\+Get\+Animation\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A list of all animations. 
+
+\mbox{\Hypertarget{class_lua_1_1_animation_ad91c4ef8fcb303877802e1e38fd27b85}\label{class_lua_1_1_animation_ad91c4ef8fcb303877802e1e38fd27b85}} 
+\index{Lua.Animation@{Lua.Animation}!GetGlobalSpeed@{GetGlobalSpeed}}
+\index{GetGlobalSpeed@{GetGlobalSpeed}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{GetGlobalSpeed()}{GetGlobalSpeed()}}
+{\footnotesize\ttfamily static void Lua.\+Animation.\+Get\+Global\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the global speed of giantess. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_animation_a8da88aefb747e3128bcbf35be8451b21}\label{class_lua_1_1_animation_a8da88aefb747e3128bcbf35be8451b21}} 
+\index{Lua.Animation@{Lua.Animation}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get current animation length in seconds. Depends on animation speed. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_aab1106afb022117d78df5cc01e426197}\label{class_lua_1_1_animation_aab1106afb022117d78df5cc01e426197}} 
+\index{Lua.Animation@{Lua.Animation}!GetPoseList@{GetPoseList}}
+\index{GetPoseList@{GetPoseList}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{GetPoseList()}{GetPoseList()}}
+{\footnotesize\ttfamily static I\+List$<$string$>$ Lua.\+Animation.\+Get\+Pose\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A list of all poses. 
+
+\mbox{\Hypertarget{class_lua_1_1_animation_ae9196e188d96824f23cf65b1f835aa1a}\label{class_lua_1_1_animation_ae9196e188d96824f23cf65b1f835aa1a}} 
+\index{Lua.Animation@{Lua.Animation}!GetProgress@{GetProgress}}
+\index{GetProgress@{GetProgress}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{GetProgress()}{GetProgress()}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+Get\+Progress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get current animation completion percentage. Values above 100\% are possible for looped animations. 
+
+Equivalent to Get\+Time / Get\+Length \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_ac615b08b06a84330cddb327e6d28f6c9}\label{class_lua_1_1_animation_ac615b08b06a84330cddb327e6d28f6c9}} 
+\index{Lua.Animation@{Lua.Animation}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current Speed. 
+
+The current speed is calculated by\+: global\+Speed $\ast$ scale\+Modifier $\ast$ speed\+Multiplier. The scale modifier slow down the giantess according to the size. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_ad7c23e47dae3b3c354d317724e93e887}\label{class_lua_1_1_animation_ad7c23e47dae3b3c354d317724e93e887}} 
+\index{Lua.Animation@{Lua.Animation}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get current animation time. May exceed animation length for looped animations. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_afd07956e9f1dc6f551d8ca036493a646}\label{class_lua_1_1_animation_afd07956e9f1dc6f551d8ca036493a646}} 
+\index{Lua.Animation@{Lua.Animation}!IsCompleted@{IsCompleted}}
+\index{IsCompleted@{IsCompleted}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{IsCompleted()}{IsCompleted()}}
+{\footnotesize\ttfamily bool Lua.\+Animation.\+Is\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the animation has been completed. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_aede5bb0940e1daed76c816ba30dac6f2}\label{class_lua_1_1_animation_aede5bb0940e1daed76c816ba30dac6f2}} 
+\index{Lua.Animation@{Lua.Animation}!IsInPose@{IsInPose}}
+\index{IsInPose@{IsInPose}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{IsInPose()}{IsInPose()}}
+{\footnotesize\ttfamily bool Lua.\+Animation.\+Is\+In\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the entity is in a pose. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_a6f6e8dabc438a05a0338f69a25a61d71}\label{class_lua_1_1_animation_a6f6e8dabc438a05a0338f69a25a61d71}} 
+\index{Lua.Animation@{Lua.Animation}!IsInTransition@{IsInTransition}}
+\index{IsInTransition@{IsInTransition}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{IsInTransition()}{IsInTransition()}}
+{\footnotesize\ttfamily bool Lua.\+Animation.\+Is\+In\+Transition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the animation is in transition to another animation. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_a7826d8216e7d202f625e697341ae62fc}\label{class_lua_1_1_animation_a7826d8216e7d202f625e697341ae62fc}} 
+\index{Lua.Animation@{Lua.Animation}!PoseExists@{PoseExists}}
+\index{PoseExists@{PoseExists}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{PoseExists()}{PoseExists()}}
+{\footnotesize\ttfamily static bool Lua.\+Animation.\+Pose\+Exists (\begin{DoxyParamCaption}\item[{string}]{pose\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if a pose with the specified name exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pose\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_a27ca2f8a6b74867c4727315bbce3878f}\label{class_lua_1_1_animation_a27ca2f8a6b74867c4727315bbce3878f}} 
+\index{Lua.Animation@{Lua.Animation}!Set@{Set}}
+\index{Set@{Set}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void Lua.\+Animation.\+Set (\begin{DoxyParamCaption}\item[{string}]{animation\+Name }\end{DoxyParamCaption})}
+
+
+
+Will transition to the specified animation. This function is ignored if the entity is a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_animation_afbab459005c0736f8b52459185cf1637}\label{class_lua_1_1_animation_afbab459005c0736f8b52459185cf1637}} 
+\index{Lua.Animation@{Lua.Animation}!SetAndWait@{SetAndWait}}
+\index{SetAndWait@{SetAndWait}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{SetAndWait()}{SetAndWait()}}
+{\footnotesize\ttfamily void Lua.\+Animation.\+Set\+And\+Wait (\begin{DoxyParamCaption}\item[{string}]{animation\+Name }\end{DoxyParamCaption})}
+
+
+
+Will transition to the specified animation and it will wait until completes before doing another action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animation\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_animation_af1f4b9f2d2a3e595a08a7f5e5d095580}\label{class_lua_1_1_animation_af1f4b9f2d2a3e595a08a7f5e5d095580}} 
+\index{Lua.Animation@{Lua.Animation}!SetGlobalSpeed@{SetGlobalSpeed}}
+\index{SetGlobalSpeed@{SetGlobalSpeed}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{SetGlobalSpeed()}{SetGlobalSpeed()}}
+{\footnotesize\ttfamily static void Lua.\+Animation.\+Set\+Global\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Changes the global speed of giantess. It affects all the giantess on the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_animation_ad3fe96a39d87c9f3b1121fbbd05f61ea}\label{class_lua_1_1_animation_ad3fe96a39d87c9f3b1121fbbd05f61ea}} 
+\index{Lua.Animation@{Lua.Animation}!SetPose@{SetPose}}
+\index{SetPose@{SetPose}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{SetPose()}{SetPose()}}
+{\footnotesize\ttfamily void Lua.\+Animation.\+Set\+Pose (\begin{DoxyParamCaption}\item[{string}]{pose\+Name }\end{DoxyParamCaption})}
+
+
+
+Will set the specified pose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pose\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_animation_aefdc9f4c78bada7dacfdb39d07c4b576}\label{class_lua_1_1_animation_aefdc9f4c78bada7dacfdb39d07c4b576}} 
+\index{Lua.Animation@{Lua.Animation}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Lua.\+Animation.\+Set\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})}
+
+
+
+Changes the speed of the \mbox{\hyperlink{class_lua_1_1_animation}{Animation}}. Default is 1. The final speed can be affected by the global speed and the scale of the giantess. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_lua_1_1_animation_a49aa08ef58b67f1af48526781176fce3}\label{class_lua_1_1_animation_a49aa08ef58b67f1af48526781176fce3}} 
+\index{Lua.Animation@{Lua.Animation}!maxSpeed@{maxSpeed}}
+\index{maxSpeed@{maxSpeed}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{maxSpeed}{maxSpeed}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+max\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The fastest speed when the giantess is at minimun scale. (Without applying the speed multiplier) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_a7dee7e3d2e6bdffed96f20822e4bb307}\label{class_lua_1_1_animation_a7dee7e3d2e6bdffed96f20822e4bb307}} 
+\index{Lua.Animation@{Lua.Animation}!minSpeed@{minSpeed}}
+\index{minSpeed@{minSpeed}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{minSpeed}{minSpeed}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+min\+Speed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The slowest speed when the giantess is at maximun scale. (Without applying the speed multiplier) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_a4418e6d09f625ad76932922c568bf987}\label{class_lua_1_1_animation_a4418e6d09f625ad76932922c568bf987}} 
+\index{Lua.Animation@{Lua.Animation}!speedMultiplier@{speedMultiplier}}
+\index{speedMultiplier@{speedMultiplier}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{speedMultiplier}{speedMultiplier}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+speed\+Multiplier\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The giantess speed is multiplied by this factor (the one that you find in the animation panel). The default value is 1. (Read Only) 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_animation_ad1f57da869e710f55a79e82ceb579cc0}\label{class_lua_1_1_animation_ad1f57da869e710f55a79e82ceb579cc0}} 
+\index{Lua.Animation@{Lua.Animation}!transitionDuration@{transitionDuration}}
+\index{transitionDuration@{transitionDuration}!Lua.Animation@{Lua.Animation}}
+\subsubsection{\texorpdfstring{transitionDuration}{transitionDuration}}
+{\footnotesize\ttfamily float Lua.\+Animation.\+transition\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How long it takes to transition from one animation to another 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Animation.\+cs\end{DoxyCompactItemize}

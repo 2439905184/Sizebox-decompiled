@@ -1,0 +1,83 @@
+\hypertarget{class_lua_1_1_event}{}\section{Lua.\+Event Class Reference}
+\label{class_lua_1_1_event}\index{Lua.Event@{Lua.Event}}
+
+
+Interface of the \mbox{\hyperlink{class_lua_1_1_event}{Event}} system.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_lua_1_1_event_a4f4b7c37fb65d1ee54fd1acbf0c9a62a}{Send}} (string code, Dyn\+Value data)
+\begin{DoxyCompactList}\small\item\em Sends a custom event. \end{DoxyCompactList}\item 
+static Listener \mbox{\hyperlink{class_lua_1_1_event_a439c6db49f39ede1ac95b7863b3a3f9a}{Register}} (Dyn\+Value instance, string code, Dyn\+Value function)
+\begin{DoxyCompactList}\small\item\em Registers a new listener interested in events of given type. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_lua_1_1_event_a9b74e2fbd70a5168d210ac326f6ca032}{Unregister}} (Listener listener)
+\begin{DoxyCompactList}\small\item\em Unregisters a listener, removing it from the list of active listeners. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface of the \mbox{\hyperlink{class_lua_1_1_event}{Event}} system. 
+
+See \mbox{\hyperlink{class_event_code}{Event\+Code}}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lua_1_1_event_a439c6db49f39ede1ac95b7863b3a3f9a}\label{class_lua_1_1_event_a439c6db49f39ede1ac95b7863b3a3f9a}} 
+\index{Lua.Event@{Lua.Event}!Register@{Register}}
+\index{Register@{Register}!Lua.Event@{Lua.Event}}
+\subsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily static Listener Lua.\+Event.\+Register (\begin{DoxyParamCaption}\item[{Dyn\+Value}]{instance,  }\item[{string}]{code,  }\item[{Dyn\+Value}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a new listener interested in events of given type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & interested object. Usually {\ttfamily self}.\\
+\hline
+{\em code} & type of events to listen to. See \mbox{\hyperlink{class_event_code}{Event\+Code}}.\\
+\hline
+{\em function} & function that will be invoked to handle the event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a listener handle, that can be used to unregister from events
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_lua_1_1_event_a4f4b7c37fb65d1ee54fd1acbf0c9a62a}\label{class_lua_1_1_event_a4f4b7c37fb65d1ee54fd1acbf0c9a62a}} 
+\index{Lua.Event@{Lua.Event}!Send@{Send}}
+\index{Send@{Send}!Lua.Event@{Lua.Event}}
+\subsubsection{\texorpdfstring{Send()}{Send()}}
+{\footnotesize\ttfamily static void Lua.\+Event.\+Send (\begin{DoxyParamCaption}\item[{string}]{code,  }\item[{Dyn\+Value}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sends a custom event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & type of this event. Only listeners that are listenting to this type of events will be notified.\\
+\hline
+{\em data} & data to pass to registered listeners.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lua_1_1_event_a9b74e2fbd70a5168d210ac326f6ca032}\label{class_lua_1_1_event_a9b74e2fbd70a5168d210ac326f6ca032}} 
+\index{Lua.Event@{Lua.Event}!Unregister@{Unregister}}
+\index{Unregister@{Unregister}!Lua.Event@{Lua.Event}}
+\subsubsection{\texorpdfstring{Unregister()}{Unregister()}}
+{\footnotesize\ttfamily static void Lua.\+Event.\+Unregister (\begin{DoxyParamCaption}\item[{Listener}]{listener }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unregisters a listener, removing it from the list of active listeners. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em listener} & a listener handle returned by \mbox{\hyperlink{class_lua_1_1_event_a439c6db49f39ede1ac95b7863b3a3f9a}{Event.\+Register}}\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lua\+Event.\+cs\end{DoxyCompactItemize}
